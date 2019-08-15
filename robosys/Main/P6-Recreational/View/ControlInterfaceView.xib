@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ControlInterfaceViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="70N-da-U0R"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ControlInterfaceView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="运动界面" translatesAutoresizingMaskIntoConstraints="NO" id="m33-HD-dqq">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="抬手条" highlightedImage="抬手条-按下" translatesAutoresizingMaskIntoConstraints="NO" id="U6V-nn-oTX">
+                    <rect key="frame" x="603" y="153" width="44" height="207"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ss8-1c-YZf" userLabel="返回">
+                    <rect key="frame" x="17" y="20" width="50" height="50"/>
+                    <state key="normal" backgroundImage="返回-运动"/>
+                    <connections>
+                        <action selector="back:" destination="iN0-l3-epB" eventType="touchUpInside" id="rcz-qx-zky"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6p-EV-MlM" userLabel="录制">
+                    <rect key="frame" x="121" y="28" width="34" height="34"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="录制"/>
+                    <connections>
+                        <action selector="record:" destination="iN0-l3-epB" eventType="touchUpInside" id="d4r-mv-tKw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuQ-qM-Ssw" userLabel="向前向后">
+                    <rect key="frame" x="310" y="313" width="47" height="47"/>
+                    <state key="normal" image="前进-运动"/>
+                    <connections>
+                        <action selector="backOrForward:" destination="iN0-l3-epB" eventType="touchUpInside" id="IgT-rG-H0A"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="抬手条" highlightedImage="抬手条-按下" translatesAutoresizingMaskIntoConstraints="NO" id="rf8-Fj-n9O">
+                    <rect key="frame" x="20" y="153" width="44" height="207"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="抬头-运动" highlightedImage="抬头-按下-运动" translatesAutoresizingMaskIntoConstraints="NO" id="A7t-Aa-heX">
+                    <rect key="frame" x="111" y="109.5" width="54" height="57"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="CsZ-1d-rGa" appends="YES" id="1Rd-fI-IeQ"/>
+                    </connections>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="原地左转-运动" highlightedImage="原地左转-按下-运动" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-hx-Iil">
+                    <rect key="frame" x="109" y="304" width="57" height="56"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="mcE-Nf-Yco" appends="YES" id="4bx-ZY-lGs"/>
+                    </connections>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="左转头-运动" highlightedImage="左转头-按下-运动" translatesAutoresizingMaskIntoConstraints="NO" id="uFp-Ub-b52">
+                    <rect key="frame" x="58" y="159.5" width="53" height="72"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="SjW-Oe-yId" appends="YES" id="9Kn-xh-57Z"/>
+                    </connections>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="低头-运动" highlightedImage="低头-按下-运动" translatesAutoresizingMaskIntoConstraints="NO" id="Jst-uo-rAd">
+                    <rect key="frame" x="111" y="208.5" width="54" height="56"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="MiM-K4-NIr" appends="YES" id="x1l-tE-hLy"/>
+                    </connections>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="小盒居中标志" translatesAutoresizingMaskIntoConstraints="NO" id="TxS-4x-fdM">
+                    <rect key="frame" x="121" y="171.5" width="34" height="32"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="右转头-运动" highlightedImage="右转头-按下-运动" translatesAutoresizingMaskIntoConstraints="NO" id="cEa-Sa-ohh">
+                    <rect key="frame" x="170" y="158.5" width="53" height="73"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="GZy-fG-uL9" appends="YES" id="CO2-1I-3uP"/>
+                    </connections>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjk-0A-v4o" userLabel="暂停">
+                    <rect key="frame" x="600" y="20" width="50" height="50"/>
+                    <state key="normal" backgroundImage="暂停-运动"/>
+                    <connections>
+                        <action selector="pause:" destination="iN0-l3-epB" eventType="touchUpInside" id="vk5-As-nE8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94A-ID-HH8">
+                    <rect key="frame" x="441" y="29" width="96" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95.5" id="83I-lV-aLJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="20"/>
+                    <state key="normal" title="0.00米" backgroundImage="里程数据框">
+                        <color key="titleColor" red="0.23137254900000001" green="0.50588235290000005" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="原地右转-运动" highlightedImage="原地右转-按下-运动" translatesAutoresizingMaskIntoConstraints="NO" id="hIa-w8-0FC">
+                    <rect key="frame" x="461" y="304" width="57" height="56"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="NsU-iB-vGi" appends="YES" id="hyJ-Ed-4jF"/>
+                    </connections>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="点头-运动" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-ne-6LP">
+                    <rect key="frame" x="461" y="135.5" width="57" height="31"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="aya-Oc-X2o" appends="YES" id="VaU-5F-Vsa"/>
+                    </connections>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="摇头-运动" translatesAutoresizingMaskIntoConstraints="NO" id="Pk1-B8-lVE">
+                    <rect key="frame" x="469" y="208.5" width="41" height="53"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="fjw-6x-GKn" appends="YES" id="elP-NK-xiZ"/>
+                    </connections>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PEy-lJ-POU">
+                    <rect key="frame" x="266" y="103" width="135" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="135" id="KNP-Rl-At8"/>
+                    </constraints>
+                </imageView>
+                <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZ2-FX-pph">
+                    <rect key="frame" x="121" y="70" width="66" height="23"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="15"/>
+                    <state key="normal" title="00:00:00" backgroundImage="录音时间框-左">
+                        <color key="titleColor" red="0.23137254901960785" green="0.50588235294117645" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="运动时速底槽" translatesAutoresizingMaskIntoConstraints="NO" id="3JU-a3-Klu">
+                    <rect key="frame" x="231" y="29" width="205" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="205" id="pn1-Py-aqU"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miV-AJ-6wV" userLabel="时间">
+                    <rect key="frame" x="441" y="70" width="66" height="23"/>
+                    <state key="normal" title="00:00:00" backgroundImage="运动模式时间框-右">
+                        <color key="titleColor" red="0.23137254900000001" green="0.50588235290000005" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="数据轮装饰" translatesAutoresizingMaskIntoConstraints="NO" id="0rW-0r-lew">
+                    <rect key="frame" x="181" y="159" width="305" height="201"/>
+                </imageView>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77z-RI-A50">
+                    <rect key="frame" x="253" y="55" width="162" height="38"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="15"/>
+                    <state key="normal" backgroundImage="运动模式速度数据">
+                        <color key="titleColor" red="0.23137254900000001" green="0.50588235290000005" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="erJ-2B-vlE">
+                    <rect key="frame" x="29" y="176" width="25" height="160"/>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHP-YA-vvV">
+                    <rect key="frame" x="613" y="178" width="25" height="158"/>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fkl-h5-Kwh">
+                    <rect key="frame" x="231" y="29" width="205" height="18"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="TxS-4x-fdM" firstAttribute="leading" secondItem="uFp-Ub-b52" secondAttribute="trailing" constant="10" id="0jx-BH-fWn"/>
+                <constraint firstItem="VuQ-qM-Ssw" firstAttribute="top" secondItem="PEy-lJ-POU" secondAttribute="bottom" constant="20" id="2Fc-TS-eee"/>
+                <constraint firstItem="94A-ID-HH8" firstAttribute="centerY" secondItem="qjk-0A-v4o" secondAttribute="centerY" id="2dm-Nb-ZJK"/>
+                <constraint firstItem="tZ2-FX-pph" firstAttribute="leading" secondItem="i6p-EV-MlM" secondAttribute="leading" id="3a6-dv-lfZ"/>
+                <constraint firstItem="Jst-uo-rAd" firstAttribute="centerX" secondItem="TxS-4x-fdM" secondAttribute="centerX" id="5r2-mS-DqU"/>
+                <constraint firstItem="Pk1-B8-lVE" firstAttribute="top" secondItem="Jst-uo-rAd" secondAttribute="top" id="6fz-VB-mzO"/>
+                <constraint firstItem="qjk-0A-v4o" firstAttribute="centerY" secondItem="i6p-EV-MlM" secondAttribute="centerY" id="6gq-hx-YyZ"/>
+                <constraint firstItem="uFp-Ub-b52" firstAttribute="centerY" secondItem="TxS-4x-fdM" secondAttribute="centerY" constant="8" id="6qd-s1-S6z"/>
+                <constraint firstItem="rf8-Fj-n9O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="7kI-0k-TY6"/>
+                <constraint firstItem="Pk1-B8-lVE" firstAttribute="centerX" secondItem="hIa-w8-0FC" secondAttribute="centerX" id="9Ok-oW-K6Q"/>
+                <constraint firstItem="tZ2-FX-pph" firstAttribute="top" secondItem="i6p-EV-MlM" secondAttribute="bottom" constant="8" id="Aaf-np-BvQ"/>
+                <constraint firstItem="3JU-a3-Klu" firstAttribute="top" secondItem="94A-ID-HH8" secondAttribute="top" id="AlE-eS-ewL"/>
+                <constraint firstItem="94A-ID-HH8" firstAttribute="leading" secondItem="3JU-a3-Klu" secondAttribute="trailing" constant="5" id="Aox-jx-du0"/>
+                <constraint firstItem="VuQ-qM-Ssw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Axe-Tc-xhc"/>
+                <constraint firstItem="bHP-YA-vvV" firstAttribute="bottom" secondItem="erJ-2B-vlE" secondAttribute="bottom" id="BQG-gD-Lxm"/>
+                <constraint firstItem="cEa-Sa-ohh" firstAttribute="leading" secondItem="Jst-uo-rAd" secondAttribute="trailing" constant="5" id="Chn-GQ-O3h"/>
+                <constraint firstItem="U6V-nn-oTX" firstAttribute="height" secondItem="rf8-Fj-n9O" secondAttribute="height" id="Cn4-o2-85Z"/>
+                <constraint firstItem="U6V-nn-oTX" firstAttribute="bottom" secondItem="VuQ-qM-Ssw" secondAttribute="bottom" id="DBM-jV-cmY"/>
+                <constraint firstItem="TxS-4x-fdM" firstAttribute="centerX" secondItem="A7t-Aa-heX" secondAttribute="centerX" id="DXV-2e-m2n"/>
+                <constraint firstAttribute="bottom" secondItem="erJ-2B-vlE" secondAttribute="bottom" constant="39" id="DkE-sp-PHC"/>
+                <constraint firstItem="77z-RI-A50" firstAttribute="centerX" secondItem="3JU-a3-Klu" secondAttribute="centerX" id="E6E-rQ-Qy9"/>
+                <constraint firstItem="i6p-EV-MlM" firstAttribute="leading" secondItem="Ss8-1c-YZf" secondAttribute="trailing" constant="54" id="IJ2-EA-nYU"/>
+                <constraint firstItem="Ss8-1c-YZf" firstAttribute="centerX" secondItem="rf8-Fj-n9O" secondAttribute="centerX" id="Ikg-3a-ty5"/>
+                <constraint firstItem="U6V-nn-oTX" firstAttribute="width" secondItem="rf8-Fj-n9O" secondAttribute="width" id="KH8-lj-erf"/>
+                <constraint firstItem="bHP-YA-vvV" firstAttribute="centerY" secondItem="U6V-nn-oTX" secondAttribute="centerY" id="Mzn-g4-7WY"/>
+                <constraint firstAttribute="trailing" secondItem="U6V-nn-oTX" secondAttribute="trailing" constant="20" id="NDc-NP-02z"/>
+                <constraint firstItem="qjk-0A-v4o" firstAttribute="centerX" secondItem="U6V-nn-oTX" secondAttribute="centerX" id="Nc4-nL-8NR"/>
+                <constraint firstItem="cEa-Sa-ohh" firstAttribute="centerY" secondItem="TxS-4x-fdM" secondAttribute="centerY" constant="8" id="OAa-78-bm9"/>
+                <constraint firstItem="0rW-0r-lew" firstAttribute="trailing" secondItem="hIa-w8-0FC" secondAttribute="leading" id="PFQ-QI-dyL"/>
+                <constraint firstItem="m33-HD-dqq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PIS-RF-Cay"/>
+                <constraint firstItem="Ss8-1c-YZf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Qf8-ds-IEH"/>
+                <constraint firstItem="PEy-lJ-POU" firstAttribute="centerX" secondItem="0rW-0r-lew" secondAttribute="centerX" id="Rpq-ol-ZtF"/>
+                <constraint firstItem="fBd-ne-6LP" firstAttribute="centerX" secondItem="Pk1-B8-lVE" secondAttribute="centerX" id="Rwf-lg-AsO"/>
+                <constraint firstItem="PEy-lJ-POU" firstAttribute="top" secondItem="77z-RI-A50" secondAttribute="bottom" constant="10" id="SK0-Mm-lST"/>
+                <constraint firstItem="miV-AJ-6wV" firstAttribute="centerY" secondItem="tZ2-FX-pph" secondAttribute="centerY" id="U2y-yL-g38"/>
+                <constraint firstItem="rf8-Fj-n9O" firstAttribute="bottom" secondItem="VuQ-qM-Ssw" secondAttribute="bottom" id="WOd-Wu-RW0"/>
+                <constraint firstItem="Fkl-h5-Kwh" firstAttribute="top" secondItem="3JU-a3-Klu" secondAttribute="top" id="XaA-R0-wjJ"/>
+                <constraint firstItem="Fkl-h5-Kwh" firstAttribute="leading" secondItem="3JU-a3-Klu" secondAttribute="leading" id="bR2-Eo-EnB"/>
+                <constraint firstItem="PEy-lJ-POU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cyk-6S-dPe"/>
+                <constraint firstItem="hIa-w8-0FC" firstAttribute="bottom" secondItem="VuQ-qM-Ssw" secondAttribute="bottom" id="dQc-If-ASb"/>
+                <constraint firstItem="0rW-0r-lew" firstAttribute="bottom" secondItem="VuQ-qM-Ssw" secondAttribute="bottom" id="dpr-2d-sNa"/>
+                <constraint firstItem="TxS-4x-fdM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eXT-FR-To4"/>
+                <constraint firstAttribute="trailing" secondItem="m33-HD-dqq" secondAttribute="trailing" id="ebB-J4-Koe"/>
+                <constraint firstItem="vjx-hx-Iil" firstAttribute="bottom" secondItem="VuQ-qM-Ssw" secondAttribute="bottom" id="erb-Tp-LoP"/>
+                <constraint firstItem="0rW-0r-lew" firstAttribute="leading" secondItem="vjx-hx-Iil" secondAttribute="trailing" id="f8w-pO-3xs"/>
+                <constraint firstItem="bHP-YA-vvV" firstAttribute="width" secondItem="erJ-2B-vlE" secondAttribute="width" id="fWR-KO-oFC"/>
+                <constraint firstAttribute="bottom" secondItem="VuQ-qM-Ssw" secondAttribute="bottom" constant="15" id="fZP-oO-gw0"/>
+                <constraint firstItem="94A-ID-HH8" firstAttribute="centerX" secondItem="fBd-ne-6LP" secondAttribute="centerX" id="g8M-2r-Gxm"/>
+                <constraint firstItem="77z-RI-A50" firstAttribute="bottom" secondItem="tZ2-FX-pph" secondAttribute="bottom" id="hPE-N3-tg2"/>
+                <constraint firstItem="A7t-Aa-heX" firstAttribute="centerX" secondItem="i6p-EV-MlM" secondAttribute="centerX" id="i98-Qr-sDz"/>
+                <constraint firstItem="Jst-uo-rAd" firstAttribute="top" secondItem="TxS-4x-fdM" secondAttribute="bottom" constant="5" id="idk-EX-yLk"/>
+                <constraint firstItem="bHP-YA-vvV" firstAttribute="width" secondItem="U6V-nn-oTX" secondAttribute="height" multiplier="25:207" id="jCk-2G-QmM"/>
+                <constraint firstItem="erJ-2B-vlE" firstAttribute="centerY" secondItem="rf8-Fj-n9O" secondAttribute="centerY" id="kHA-SP-Hco"/>
+                <constraint firstItem="bHP-YA-vvV" firstAttribute="centerX" secondItem="U6V-nn-oTX" secondAttribute="centerX" id="kkg-ae-jnE"/>
+                <constraint firstItem="fBd-ne-6LP" firstAttribute="bottom" secondItem="A7t-Aa-heX" secondAttribute="bottom" id="lSn-UK-yrN"/>
+                <constraint firstItem="erJ-2B-vlE" firstAttribute="width" secondItem="rf8-Fj-n9O" secondAttribute="height" multiplier="25:207" id="lfY-jg-dTn"/>
+                <constraint firstItem="erJ-2B-vlE" firstAttribute="centerX" secondItem="rf8-Fj-n9O" secondAttribute="centerX" id="m5A-Qo-YwB"/>
+                <constraint firstItem="m33-HD-dqq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oUU-0e-wtc"/>
+                <constraint firstItem="i6p-EV-MlM" firstAttribute="centerY" secondItem="Ss8-1c-YZf" secondAttribute="centerY" id="oqr-yr-atv"/>
+                <constraint firstItem="TxS-4x-fdM" firstAttribute="top" secondItem="A7t-Aa-heX" secondAttribute="bottom" constant="5" id="qW9-Sl-1MR"/>
+                <constraint firstItem="0rW-0r-lew" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qjD-CB-KEz"/>
+                <constraint firstAttribute="bottom" secondItem="m33-HD-dqq" secondAttribute="bottom" id="uTN-SK-cwE"/>
+                <constraint firstItem="vjx-hx-Iil" firstAttribute="centerX" secondItem="Jst-uo-rAd" secondAttribute="centerX" id="uqO-ge-uA1"/>
+                <constraint firstItem="Fkl-h5-Kwh" firstAttribute="width" secondItem="3JU-a3-Klu" secondAttribute="width" id="uwb-pU-9bD"/>
+                <constraint firstItem="miV-AJ-6wV" firstAttribute="leading" secondItem="94A-ID-HH8" secondAttribute="leading" id="v7f-bS-QfW"/>
+                <constraint firstItem="3JU-a3-Klu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="w5V-8J-rJG"/>
+                <constraint firstItem="Fkl-h5-Kwh" firstAttribute="height" secondItem="3JU-a3-Klu" secondAttribute="height" id="xFg-12-0aY"/>
+                <constraint firstItem="94A-ID-HH8" firstAttribute="leading" secondItem="Fkl-h5-Kwh" secondAttribute="trailing" constant="5" id="yfz-CW-EDW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="PFQ-QI-dyL"/>
+                    <exclude reference="f8w-pO-3xs"/>
+                    <exclude reference="Rpq-ol-ZtF"/>
+                    <exclude reference="Aox-jx-du0"/>
+                    <exclude reference="jCk-2G-QmM"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backOrForwardBtn" destination="VuQ-qM-Ssw" id="qDi-mu-NpQ"/>
+                <outlet property="distanceBtn" destination="94A-ID-HH8" id="nLS-XD-kUZ"/>
+                <outlet property="leftScroll" destination="erJ-2B-vlE" id="e8B-sE-S9i"/>
+                <outlet property="midImage" destination="PEy-lJ-POU" id="unp-dS-5M5"/>
+                <outlet property="middleScroll" destination="Fkl-h5-Kwh" id="a52-Go-eFs"/>
+                <outlet property="playBtn" destination="tZ2-FX-pph" id="E15-aX-GmE"/>
+                <outlet property="recordBtn" destination="i6p-EV-MlM" id="gpO-dm-kDB"/>
+                <outlet property="rightScroll" destination="bHP-YA-vvV" id="l3L-Rf-4c0"/>
+                <outlet property="speedBtn" destination="77z-RI-A50" id="Hmr-qR-u3E"/>
+                <outlet property="totalBtn" destination="miV-AJ-6wV" id="P3T-EQ-C9b"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="CsZ-1d-rGa">
+            <connections>
+                <action selector="pressUp:" destination="iN0-l3-epB" id="KRg-0V-ST3"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="GZy-fG-uL9">
+            <connections>
+                <action selector="pressRight:" destination="iN0-l3-epB" id="9VB-6i-Jos"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="MiM-K4-NIr">
+            <connections>
+                <action selector="pressDown:" destination="iN0-l3-epB" id="Bec-ar-kDf"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="SjW-Oe-yId">
+            <connections>
+                <action selector="pressLeft:" destination="iN0-l3-epB" id="3RE-aI-K5o"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="mcE-Nf-Yco">
+            <connections>
+                <action selector="pressLeftTurn:" destination="iN0-l3-epB" id="o8i-cB-2lZ"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="NsU-iB-vGi">
+            <connections>
+                <action selector="pressRightTurn:" destination="iN0-l3-epB" id="Mxb-s5-o7M"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="fjw-6x-GKn">
+            <connections>
+                <action selector="pressShakeHead:" destination="iN0-l3-epB" id="evZ-ZI-E6u"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="aya-Oc-X2o">
+            <connections>
+                <action selector="pressNodHead:" destination="iN0-l3-epB" id="lJg-zJ-3bz"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="低头-按下-运动" width="54" height="56"/>
+        <image name="低头-运动" width="54" height="56"/>
+        <image name="前进-运动" width="47" height="47"/>
+        <image name="原地右转-按下-运动" width="57" height="56"/>
+        <image name="原地右转-运动" width="57" height="56"/>
+        <image name="原地左转-按下-运动" width="57" height="56"/>
+        <image name="原地左转-运动" width="57" height="56"/>
+        <image name="右转头-按下-运动" width="53" height="73"/>
+        <image name="右转头-运动" width="53" height="73"/>
+        <image name="小盒居中标志" width="34" height="32"/>
+        <image name="左转头-按下-运动" width="53" height="72"/>
+        <image name="左转头-运动" width="53" height="72"/>
+        <image name="录制" width="34" height="34"/>
+        <image name="录音时间框-左" width="66" height="23"/>
+        <image name="抬头-按下-运动" width="54" height="57"/>
+        <image name="抬头-运动" width="54" height="57"/>
+        <image name="抬手条" width="44" height="207"/>
+        <image name="抬手条-按下" width="44" height="207"/>
+        <image name="摇头-运动" width="41" height="53"/>
+        <image name="数据轮装饰" width="305" height="201"/>
+        <image name="暂停-运动" width="50" height="50"/>
+        <image name="点头-运动" width="57" height="31"/>
+        <image name="运动时速底槽" width="276" height="18"/>
+        <image name="运动模式时间框-右" width="66" height="23"/>
+        <image name="运动模式速度数据" width="162" height="38"/>
+        <image name="运动界面" width="333" height="187"/>
+        <image name="返回-运动" width="50" height="50"/>
+        <image name="里程数据框" width="87" height="31"/>
+    </resources>
+</document>

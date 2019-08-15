@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedBackViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="lg3-tj-VcL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FeedBackView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-背景" translatesAutoresizingMaskIntoConstraints="NO" id="NXH-EB-9EO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="15U-25-PLb">
+                    <rect key="frame" x="10" y="200" width="355" height="200"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="NK3-zG-jIC"/>
+                    </constraints>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92f-ER-Xlv">
+                    <rect key="frame" x="60" y="590" width="255" height="37"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="15"/>
+                    <state key="normal" title="发送" backgroundImage="小蓝按钮">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="DjN-16-eYy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NXH-EB-9EO" secondAttribute="trailing" id="5zT-Rl-V1N"/>
+                <constraint firstItem="NXH-EB-9EO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BEM-YF-KiC"/>
+                <constraint firstItem="15U-25-PLb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="200" id="Bju-7S-Tic"/>
+                <constraint firstItem="92f-ER-Xlv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="H09-02-vts"/>
+                <constraint firstAttribute="bottom" secondItem="92f-ER-Xlv" secondAttribute="bottom" constant="40" id="Hdu-Pn-gif"/>
+                <constraint firstItem="15U-25-PLb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="KU5-Ik-5W3"/>
+                <constraint firstItem="92f-ER-Xlv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="RCK-jL-UMZ"/>
+                <constraint firstAttribute="bottom" secondItem="NXH-EB-9EO" secondAttribute="bottom" id="cHj-gu-tbg"/>
+                <constraint firstItem="15U-25-PLb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eFJ-pr-Rbc"/>
+                <constraint firstItem="NXH-EB-9EO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ubE-hx-zIM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="ensureBtn" destination="92f-ER-Xlv" id="W1I-vf-bgw"/>
+                <outlet property="textView" destination="15U-25-PLb" id="Hqq-Ug-cPE"/>
+            </connections>
+            <point key="canvasLocation" x="-124" y="257"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="小蓝按钮" width="139" height="37"/>
+        <image name="首页-背景" width="375" height="667"/>
+    </resources>
+</document>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Sec-7Y-tJ4" id="cHd-My-aTC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Sec-7Y-tJ4" customClass="RegistView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-背景" translatesAutoresizingMaskIntoConstraints="NO" id="eji-XX-Mut"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我已阅读并同意归墟电子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dQ-Dv-Y13">
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="13"/>
+                    <color key="textColor" red="0.66274509800000003" green="0.72549019609999998" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrQ-GU-COI">
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="13"/>
+                    <state key="normal" title="《用户使用协议》"/>
+                    <connections>
+                        <action selector="showProtocol:" destination="Sec-7Y-tJ4" eventType="touchUpInside" id="eg9-1e-YjL"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6~16位任意组合" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Qk-H1-QYh" userLabel="密码" customClass="AppTextField" customModule="robosys" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <action selector="TxtFieldStatus:" destination="Sec-7Y-tJ4" eventType="editingDidEnd" id="xXD-FQ-M10"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入4位验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqQ-ZQ-dns" userLabel="验证码" customClass="AppTextField" customModule="robosys" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="TxtFieldStatus:" destination="Sec-7Y-tJ4" eventType="editingDidEnd" id="Jqh-IU-Oq4"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdh-BK-Dlt">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="12"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="获取验证码" backgroundImage="获取验证码按钮">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="getCaptcha:" destination="Sec-7Y-tJ4" eventType="touchUpInside" id="lp9-bJ-pqv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZv-QE-KW2" userLabel="选择框">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="8P1-GU-Eo7"/>
+                        <constraint firstAttribute="height" constant="20" id="mZ2-e7-XVp"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="changeImg:" destination="Sec-7Y-tJ4" eventType="touchUpInside" id="Mnm-FF-zRJ"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请再输入一遍密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kt1-mm-nyn" userLabel="确认密码" customClass="AppTextField" customModule="robosys" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <action selector="TxtFieldStatus:" destination="Sec-7Y-tJ4" eventType="editingDidEnd" id="a4z-E5-xef"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入11位手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDY-cn-JC5" userLabel="用户名" customClass="AppTextField" customModule="robosys" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="TxtFieldStatus:" destination="Sec-7Y-tJ4" eventType="editingDidEnd" id="5lp-0I-X9r"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEA-oX-a95">
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="18"/>
+                    <state key="normal" title="注册小盒帐号" backgroundImage="圆角矩形-1">
+                        <color key="titleColor" red="0.9437615131" green="0.98393771819999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="regist:" destination="Sec-7Y-tJ4" eventType="touchUpInside" id="7nu-ze-pIv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1Qk-H1-QYh" firstAttribute="centerY" secondItem="Sec-7Y-tJ4" secondAttribute="centerY" id="1jR-h9-AGC"/>
+                <constraint firstAttribute="bottom" secondItem="eji-XX-Mut" secondAttribute="bottom" id="3l3-F5-aHQ"/>
+                <constraint firstItem="1Qk-H1-QYh" firstAttribute="leading" secondItem="kt1-mm-nyn" secondAttribute="leading" id="8dn-PF-u6O"/>
+                <constraint firstItem="IDY-cn-JC5" firstAttribute="trailing" secondItem="fdh-BK-Dlt" secondAttribute="trailing" id="A14-Hh-uDP"/>
+                <constraint firstItem="IDY-cn-JC5" firstAttribute="centerX" secondItem="Sec-7Y-tJ4" secondAttribute="centerX" id="Adx-TA-UGJ"/>
+                <constraint firstItem="IDY-cn-JC5" firstAttribute="width" secondItem="1Qk-H1-QYh" secondAttribute="width" id="GKo-sl-00K"/>
+                <constraint firstItem="mEA-oX-a95" firstAttribute="top" secondItem="7dQ-Dv-Y13" secondAttribute="bottom" constant="80" id="IrR-Ua-4AF"/>
+                <constraint firstItem="eji-XX-Mut" firstAttribute="top" secondItem="Sec-7Y-tJ4" secondAttribute="top" id="JhT-Ag-Lia"/>
+                <constraint firstItem="FrQ-GU-COI" firstAttribute="leading" secondItem="7dQ-Dv-Y13" secondAttribute="trailing" id="Lz7-4E-Pxs"/>
+                <constraint firstItem="fdh-BK-Dlt" firstAttribute="trailing" secondItem="1Qk-H1-QYh" secondAttribute="trailing" id="NoY-vd-InZ"/>
+                <constraint firstItem="eji-XX-Mut" firstAttribute="leading" secondItem="Sec-7Y-tJ4" secondAttribute="leading" id="Off-8Q-irC"/>
+                <constraint firstItem="mEA-oX-a95" firstAttribute="width" secondItem="kt1-mm-nyn" secondAttribute="width" id="OzO-4m-YyQ"/>
+                <constraint firstItem="FrQ-GU-COI" firstAttribute="height" secondItem="7dQ-Dv-Y13" secondAttribute="height" id="Q5R-h0-Kbk"/>
+                <constraint firstItem="IDY-cn-JC5" firstAttribute="leading" secondItem="Sec-7Y-tJ4" secondAttribute="leading" constant="10" id="Qns-sG-SNw"/>
+                <constraint firstItem="mqQ-ZQ-dns" firstAttribute="top" secondItem="IDY-cn-JC5" secondAttribute="bottom" constant="10" id="Saa-TB-A6v"/>
+                <constraint firstItem="fdh-BK-Dlt" firstAttribute="leading" secondItem="mqQ-ZQ-dns" secondAttribute="trailing" constant="10" id="SuO-e1-2Hg"/>
+                <constraint firstItem="fdh-BK-Dlt" firstAttribute="width" secondItem="mqQ-ZQ-dns" secondAttribute="width" id="Xls-av-fPu"/>
+                <constraint firstItem="7dQ-Dv-Y13" firstAttribute="centerY" secondItem="jZv-QE-KW2" secondAttribute="centerY" id="a59-YJ-Nqu"/>
+                <constraint firstItem="1Qk-H1-QYh" firstAttribute="top" secondItem="mqQ-ZQ-dns" secondAttribute="bottom" constant="10" id="bPX-vX-kV4"/>
+                <constraint firstItem="fdh-BK-Dlt" firstAttribute="centerY" secondItem="mqQ-ZQ-dns" secondAttribute="centerY" id="dQi-8n-EAZ"/>
+                <constraint firstAttribute="trailing" secondItem="eji-XX-Mut" secondAttribute="trailing" id="dsi-jF-cQn"/>
+                <constraint firstItem="IDY-cn-JC5" firstAttribute="leading" secondItem="1Qk-H1-QYh" secondAttribute="leading" id="iqK-Q8-FgM"/>
+                <constraint firstItem="kt1-mm-nyn" firstAttribute="top" secondItem="1Qk-H1-QYh" secondAttribute="bottom" constant="10" id="j1h-Ef-izh"/>
+                <constraint firstItem="jZv-QE-KW2" firstAttribute="top" secondItem="kt1-mm-nyn" secondAttribute="bottom" constant="10" id="jPF-sO-Ge2"/>
+                <constraint firstItem="FrQ-GU-COI" firstAttribute="centerY" secondItem="7dQ-Dv-Y13" secondAttribute="centerY" id="kip-Av-2R0"/>
+                <constraint firstItem="7dQ-Dv-Y13" firstAttribute="leading" secondItem="jZv-QE-KW2" secondAttribute="trailing" constant="10" id="lAE-K8-Aye"/>
+                <constraint firstItem="jZv-QE-KW2" firstAttribute="leading" secondItem="kt1-mm-nyn" secondAttribute="leading" id="mZ0-uX-b81"/>
+                <constraint firstItem="1Qk-H1-QYh" firstAttribute="width" secondItem="kt1-mm-nyn" secondAttribute="width" id="ox8-Ns-OnW"/>
+                <constraint firstItem="7dQ-Dv-Y13" firstAttribute="height" secondItem="jZv-QE-KW2" secondAttribute="height" id="qBc-LM-Os2"/>
+                <constraint firstItem="mEA-oX-a95" firstAttribute="centerX" secondItem="Sec-7Y-tJ4" secondAttribute="centerX" id="uDp-Ah-HHC"/>
+                <constraint firstItem="mqQ-ZQ-dns" firstAttribute="leading" secondItem="1Qk-H1-QYh" secondAttribute="leading" id="xz3-Ks-fTN"/>
+                <constraint firstItem="mqQ-ZQ-dns" firstAttribute="height" secondItem="1Qk-H1-QYh" secondAttribute="height" id="yYS-QM-J8s"/>
+            </constraints>
+            <connections>
+                <outlet property="captchaBtn" destination="fdh-BK-Dlt" id="7pt-mt-61o"/>
+                <outlet property="captchaTxtField" destination="mqQ-ZQ-dns" id="XJl-0c-KIV"/>
+                <outlet property="chooseBtn" destination="jZv-QE-KW2" id="DT1-KO-670"/>
+                <outlet property="ensurePswTxtField" destination="kt1-mm-nyn" id="50p-if-aze"/>
+                <outlet property="pswTxtField" destination="1Qk-H1-QYh" id="OvG-6X-JuE"/>
+                <outlet property="registBtn" destination="mEA-oX-a95" id="Egu-er-4sD"/>
+                <outlet property="userNameTxtField" destination="IDY-cn-JC5" id="iZy-br-bBg"/>
+            </connections>
+            <point key="canvasLocation" x="244" y="332"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="圆角矩形-1" width="254" height="37"/>
+        <image name="获取验证码按钮" width="105" height="38"/>
+        <image name="首页-背景" width="375" height="667"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProgramAlertView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WiFi弹窗" translatesAutoresizingMaskIntoConstraints="NO" id="SwG-dn-nLS">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="240"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnV-0M-fJO">
+                    <rect key="frame" x="170" y="183" width="110" height="37"/>
+                    <state key="normal" title="确认" backgroundImage="小蓝按钮">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickEnsure:" destination="iN0-l3-epB" eventType="touchUpInside" id="hKU-Wl-n89"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmz-VX-VPI">
+                    <rect key="frame" x="20" y="183" width="110" height="37"/>
+                    <state key="normal" title="取消" backgroundImage="小橙按钮">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="tLj-Qg-UQw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Vmz-VX-VPI" secondAttribute="bottom" constant="20" id="8Ku-6p-i6J"/>
+                <constraint firstItem="Vmz-VX-VPI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="FWh-Jj-w6e"/>
+                <constraint firstItem="NnV-0M-fJO" firstAttribute="leading" secondItem="Vmz-VX-VPI" secondAttribute="trailing" constant="40" id="FnU-px-X7e"/>
+                <constraint firstAttribute="trailing" secondItem="NnV-0M-fJO" secondAttribute="trailing" constant="20" id="HOk-2f-ezj"/>
+                <constraint firstItem="SwG-dn-nLS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qka-F0-3Qb"/>
+                <constraint firstAttribute="bottom" secondItem="NnV-0M-fJO" secondAttribute="bottom" constant="20" id="TBx-3C-nG2"/>
+                <constraint firstAttribute="bottom" secondItem="SwG-dn-nLS" secondAttribute="bottom" id="j3b-Rg-EJx"/>
+                <constraint firstItem="SwG-dn-nLS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jGM-SS-hzl"/>
+                <constraint firstAttribute="trailing" secondItem="SwG-dn-nLS" secondAttribute="trailing" id="qZ4-J0-sEU"/>
+                <constraint firstItem="Vmz-VX-VPI" firstAttribute="width" secondItem="NnV-0M-fJO" secondAttribute="width" id="y4T-Ex-XS9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="Vmz-VX-VPI" id="Dy3-Vf-nsU"/>
+                <outlet property="ensureBtn" destination="NnV-0M-fJO" id="OZg-0H-eQm"/>
+            </connections>
+            <point key="canvasLocation" x="201" y="130"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WiFi弹窗" width="327" height="344"/>
+        <image name="小橙按钮" width="139" height="37"/>
+        <image name="小蓝按钮" width="139" height="37"/>
+    </resources>
+</document>

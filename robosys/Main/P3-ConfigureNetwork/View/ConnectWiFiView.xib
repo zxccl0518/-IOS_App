@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConnectWIFIViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="JJ0-yD-dXE" id="Qzy-pc-w7e"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JJ0-yD-dXE" customClass="ConnectWiFiView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-背景" translatesAutoresizingMaskIntoConstraints="NO" id="o9w-AW-eGx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请选择可用WIFI" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3Gw-Xn-n7E" customClass="AppTextField" customModule="robosys" customModuleProvider="target">
+                    <rect key="frame" x="15" y="237" width="345" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="TxtFieldStatus:" destination="JJ0-yD-dXE" eventType="editingDidEnd" id="HdR-JQ-pNG"/>
+                        <action selector="clickSSID:" destination="JJ0-yD-dXE" eventType="editingDidBegin" id="Tbb-3X-YEq"/>
+                        <action selector="txtFieldStatus:" destination="JJ0-yD-dXE" eventType="editingChanged" id="xv1-MJ-R1R"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入WIFI密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nf9-MU-odI" customClass="AppTextField" customModule="robosys" customModuleProvider="target">
+                    <rect key="frame" x="15" y="286" width="345" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="TxtFieldStatus:" destination="JJ0-yD-dXE" eventType="editingDidEnd" id="MkC-CD-WSS"/>
+                        <action selector="txtFieldStatus:" destination="JJ0-yD-dXE" eventType="editingChanged" id="eYd-Ns-ucd"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyw-Up-I5X">
+                    <rect key="frame" x="61" y="353" width="254" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="uGo-8Y-TAq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="15"/>
+                    <state key="normal" title="确定" backgroundImage="圆角矩形-1">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickEnsure:" destination="JJ0-yD-dXE" eventType="touchUpInside" id="Puu-PO-1z0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95w-45-Xev">
+                    <rect key="frame" x="331" y="622" width="24" height="25"/>
+                    <state key="normal" backgroundImage="疑问"/>
+                    <connections>
+                        <action selector="clickIssue:" destination="JJ0-yD-dXE" eventType="touchUpInside" id="fgv-Ff-lHa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m01-hP-2j5">
+                    <rect key="frame" x="168" y="616" width="153" height="37"/>
+                    <state key="normal" title="不联网，进行离线控制" backgroundImage="正常">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickNoWIFI:" destination="JJ0-yD-dXE" eventType="touchUpInside" id="OKT-dQ-00m"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="记得按下机器人背后的WIFI配置按钮哦！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNh-Gx-mqA">
+                    <rect key="frame" x="15" y="200" width="345" height="17"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Gw-Xn-n7E" firstAttribute="centerX" secondItem="JJ0-yD-dXE" secondAttribute="centerX" id="1ZR-by-3v6"/>
+                <constraint firstItem="3Gw-Xn-n7E" firstAttribute="width" secondItem="zNh-Gx-mqA" secondAttribute="width" id="2bU-5E-ptI"/>
+                <constraint firstItem="nf9-MU-odI" firstAttribute="width" secondItem="3Gw-Xn-n7E" secondAttribute="width" id="9Qn-XX-epz"/>
+                <constraint firstItem="o9w-AW-eGx" firstAttribute="leading" secondItem="JJ0-yD-dXE" secondAttribute="leading" id="Eqd-PB-jKO"/>
+                <constraint firstAttribute="bottom" secondItem="95w-45-Xev" secondAttribute="bottom" constant="20" id="F1F-Oe-wHx"/>
+                <constraint firstAttribute="trailing" secondItem="o9w-AW-eGx" secondAttribute="trailing" id="MgX-gS-QIY"/>
+                <constraint firstItem="fyw-Up-I5X" firstAttribute="top" secondItem="nf9-MU-odI" secondAttribute="bottom" constant="37" id="Nl6-6Q-xaE"/>
+                <constraint firstItem="nf9-MU-odI" firstAttribute="centerX" secondItem="JJ0-yD-dXE" secondAttribute="centerX" id="OGD-ge-aFy"/>
+                <constraint firstItem="95w-45-Xev" firstAttribute="leading" secondItem="m01-hP-2j5" secondAttribute="trailing" constant="10" id="Om1-vB-7Uc"/>
+                <constraint firstItem="3Gw-Xn-n7E" firstAttribute="top" secondItem="zNh-Gx-mqA" secondAttribute="bottom" constant="20" id="T8n-3Y-Roj"/>
+                <constraint firstItem="m01-hP-2j5" firstAttribute="centerY" secondItem="95w-45-Xev" secondAttribute="centerY" id="XaP-VZ-jcB"/>
+                <constraint firstAttribute="trailing" secondItem="95w-45-Xev" secondAttribute="trailing" constant="20" id="bPp-RQ-0bW"/>
+                <constraint firstItem="nf9-MU-odI" firstAttribute="top" secondItem="3Gw-Xn-n7E" secondAttribute="bottom" constant="19" id="bf1-yL-DNV"/>
+                <constraint firstAttribute="bottom" secondItem="o9w-AW-eGx" secondAttribute="bottom" id="dwR-cA-7se"/>
+                <constraint firstItem="o9w-AW-eGx" firstAttribute="top" secondItem="JJ0-yD-dXE" secondAttribute="top" id="hLW-V7-Hzh"/>
+                <constraint firstItem="zNh-Gx-mqA" firstAttribute="top" secondItem="JJ0-yD-dXE" secondAttribute="top" constant="200" id="qQo-Kb-N75"/>
+                <constraint firstItem="fyw-Up-I5X" firstAttribute="centerX" secondItem="JJ0-yD-dXE" secondAttribute="centerX" id="qYN-Np-OMe"/>
+                <constraint firstItem="zNh-Gx-mqA" firstAttribute="centerX" secondItem="JJ0-yD-dXE" secondAttribute="centerX" id="s7k-jN-pt1"/>
+                <constraint firstItem="nf9-MU-odI" firstAttribute="leading" secondItem="JJ0-yD-dXE" secondAttribute="leading" constant="15" id="wV0-8U-XHP"/>
+            </constraints>
+            <connections>
+                <outlet property="ensureBtn" destination="fyw-Up-I5X" id="LBf-nP-d1G"/>
+                <outlet property="pswTxtField" destination="nf9-MU-odI" id="alc-zT-K5E"/>
+                <outlet property="ssidTxtField" destination="3Gw-Xn-n7E" id="IHK-D4-I9n"/>
+            </connections>
+            <point key="canvasLocation" x="125" y="444"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="圆角矩形-1" width="254" height="37"/>
+        <image name="正常" width="135" height="37"/>
+        <image name="疑问" width="24" height="25"/>
+        <image name="首页-背景" width="375" height="667"/>
+    </resources>
+</document>

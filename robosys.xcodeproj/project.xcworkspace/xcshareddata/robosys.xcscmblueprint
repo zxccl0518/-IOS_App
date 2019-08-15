@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "59A9671C1F98092FBA95FCCEFEDD918D35BB27E7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b1e5aaab-4cbf-4f9d-9ec9-b003b20e49cc++5326" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "b1e5aaab-4cbf-4f9d-9ec9-b003b20e49cc++5326" : 0,
+    "59A9671C1F98092FBA95FCCEFEDD918D35BB27E7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E2D41498-B8D4-4A85-A0CD-E7115C8BB64C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "b1e5aaab-4cbf-4f9d-9ec9-b003b20e49cc++5326" : "ios\/",
+    "59A9671C1F98092FBA95FCCEFEDD918D35BB27E7" : "roboapp-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "robosys",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "robosys.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/max.liu@192.168.0.119:29418\/app\/roboapp-ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "59A9671C1F98092FBA95FCCEFEDD918D35BB27E7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/svn.joekoe.cn\/client.robosys.app",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b1e5aaab-4cbf-4f9d-9ec9-b003b20e49cc++5326"
+    }
+  ]
+}

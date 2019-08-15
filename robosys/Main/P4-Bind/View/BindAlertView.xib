@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BindAlertView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="244"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WiFi弹窗" translatesAutoresizingMaskIntoConstraints="NO" id="Tpc-Ek-ang">
+                    <rect key="frame" x="0.0" y="0.0" width="290" height="244"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MrBOX-********" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="129" translatesAutoresizingMaskIntoConstraints="NO" id="o3i-HP-1bh" userLabel="name">
+                    <rect key="frame" x="80" y="77" width="129" height="31"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定成功，您已成为以下机器人的管理员" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="270" translatesAutoresizingMaskIntoConstraints="NO" id="urM-AW-ZvQ" userLabel="title">
+                    <rect key="frame" x="10" y="19" width="270" height="14"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="从今以后你就是Ta的主人了，请你好好照顾Ta哦" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="270" translatesAutoresizingMaskIntoConstraints="NO" id="CHI-wF-AEP" userLabel="subtitle">
+                    <rect key="frame" x="10" y="41" width="270" height="26"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="给Ta起个名字吧，每个机器人都想有个好听的名字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="270" translatesAutoresizingMaskIntoConstraints="NO" id="AwD-hQ-YDe" userLabel="content">
+                    <rect key="frame" x="10" y="116" width="270" height="12"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="男盒-头像" translatesAutoresizingMaskIntoConstraints="NO" id="1VS-fo-6yd" userLabel="portrait">
+                    <rect key="frame" x="42" y="77" width="33" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="JfF-QJ-KZ1"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="JfF-QJ-KZ1"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="仅支持中文，八个汉字以内" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FXU-Dx-Biu" customClass="AppTextField" customModule="robosys" customModuleProvider="target">
+                    <rect key="frame" x="50" y="148" width="189" height="30"/>
+                    <color key="backgroundColor" red="0.039215686274509803" green="0.086274509803921567" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textChange:" destination="iN0-l3-epB" eventType="editingDidEnd" id="hza-BL-aGk"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulb-oJ-q59">
+                    <rect key="frame" x="75" y="192" width="139" height="37"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="14"/>
+                    <state key="normal" title="必须的！" backgroundImage="小蓝按钮"/>
+                    <connections>
+                        <action selector="clickEnsure:" destination="iN0-l3-epB" eventType="touchUpInside" id="WTH-4E-jYK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="urM-AW-ZvQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="1Fa-xW-LxW"/>
+                <constraint firstAttribute="bottom" secondItem="Tpc-Ek-ang" secondAttribute="bottom" id="3dH-Ug-fnF"/>
+                <constraint firstItem="o3i-HP-1bh" firstAttribute="bottom" secondItem="1VS-fo-6yd" secondAttribute="bottom" id="6AP-xI-QOf"/>
+                <constraint firstItem="CHI-wF-AEP" firstAttribute="leading" secondItem="urM-AW-ZvQ" secondAttribute="leading" id="Afb-L0-w0F"/>
+                <constraint firstItem="o3i-HP-1bh" firstAttribute="top" secondItem="CHI-wF-AEP" secondAttribute="bottom" constant="10" id="Chc-Dz-fKu"/>
+                <constraint firstItem="CHI-wF-AEP" firstAttribute="top" secondItem="urM-AW-ZvQ" secondAttribute="bottom" constant="8" id="E1J-6e-37R"/>
+                <constraint firstItem="1VS-fo-6yd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="FVs-jb-28i"/>
+                <constraint firstItem="Tpc-Ek-ang" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gso-DT-R39"/>
+                <constraint firstItem="AwD-hQ-YDe" firstAttribute="leading" secondItem="CHI-wF-AEP" secondAttribute="leading" id="HDF-1q-Dxb"/>
+                <constraint firstItem="urM-AW-ZvQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="JPl-ys-nhI"/>
+                <constraint firstItem="o3i-HP-1bh" firstAttribute="top" secondItem="1VS-fo-6yd" secondAttribute="top" id="Nb2-iV-0xh"/>
+                <constraint firstItem="AwD-hQ-YDe" firstAttribute="top" secondItem="o3i-HP-1bh" secondAttribute="bottom" constant="8" id="Noh-8z-Law"/>
+                <constraint firstItem="FXU-Dx-Biu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ORk-rQ-mQU"/>
+                <constraint firstItem="Tpc-Ek-ang" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ty4-iZ-ptD"/>
+                <constraint firstItem="o3i-HP-1bh" firstAttribute="leading" secondItem="1VS-fo-6yd" secondAttribute="trailing" constant="5" id="ZcO-ev-f4K"/>
+                <constraint firstAttribute="bottom" secondItem="Ulb-oJ-q59" secondAttribute="bottom" constant="15" id="Zqs-59-edR"/>
+                <constraint firstItem="urM-AW-ZvQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cPP-Xb-IMc"/>
+                <constraint firstItem="CHI-wF-AEP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ci7-HF-Eon"/>
+                <constraint firstItem="o3i-HP-1bh" firstAttribute="centerY" secondItem="1VS-fo-6yd" secondAttribute="centerY" id="epJ-gg-8QI"/>
+                <constraint firstItem="Ulb-oJ-q59" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="grq-Hr-Hjx"/>
+                <constraint firstItem="FXU-Dx-Biu" firstAttribute="top" secondItem="AwD-hQ-YDe" secondAttribute="bottom" constant="20" id="hnV-gT-R3q"/>
+                <constraint firstAttribute="trailing" secondItem="Tpc-Ek-ang" secondAttribute="trailing" id="kK6-VQ-UYG"/>
+                <constraint firstItem="AwD-hQ-YDe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lkh-sL-8sp"/>
+                <constraint firstItem="o3i-HP-1bh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zho-L5-xu4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="FVs-jb-28i"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="ensureBtn" destination="Ulb-oJ-q59" id="3AW-ia-jfz"/>
+                <outlet property="txtField" destination="FXU-Dx-Biu" id="T0h-hW-86o"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="204"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WiFi弹窗" width="327" height="344"/>
+        <image name="小蓝按钮" width="139" height="37"/>
+        <image name="男盒-头像" width="33" height="31"/>
+    </resources>
+</document>

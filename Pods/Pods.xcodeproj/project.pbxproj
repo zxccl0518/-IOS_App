@@ -1,0 +1,1325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004858CAB77681C767A177C969DCF9D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3812AFE7F499933717902CA63F06C791 /* QuartzCore.framework */; };
+		0AA7F1D1F172F4007E3E63719722ACAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA5FC1855E7806D4531983305801DC /* Foundation.framework */; };
+		0CFDE64A4C03977D418AC4DDDF42B697 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E11FD8F9640326FF47E707B94109F377 /* SVProgressHUD.m */; };
+		0D967D2CFF622AA6843D6B2F9ED16C39 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32AE28C82180DA576FFA19B7F7C743E2 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E28173983C29FD780105373CDDB134C /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15543AA574A37C14190B5BC4D0DFD8CB /* ConstraintItem.swift */; };
+		0F024563AC0489D268E1FD5A7CB68387 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A91E0373A255CB4F2A951B6E2EA501 /* SVIndefiniteAnimatedView.m */; };
+		103D4C61BC5B04E02C439B574F621B14 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0CF98BC107D883B3589EA27593D72 /* ConstraintMaker.swift */; };
+		224597F99763285DFCC69B3D0FF140AA /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB063DAA09631B0BC44A12D791A07BFA /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E3529FF7C1E05941846724DF180DA02 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A995065EBAFE2A0687B56BE6E3AC19 /* YYClassInfo.m */; };
+		2EC95DB554888B5C10DDD9A3C2BF575B /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5788E770FFF66FB31048230B79412C36 /* SnapKit-dummy.m */; };
+		37C304A0798C0A28C95C326BF7080EDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA5FC1855E7806D4531983305801DC /* Foundation.framework */; };
+		3CF9C42F4C7E43188A31270C64A1F42F /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA25BC23F4BEB42B5C18337C18455FE /* EdgeInsets.swift */; };
+		40417DEE03BF74D6FC4C6A0BA1B10B31 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A0947E52ACB35DD9972713C43405848 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		487C5BB0C211F9ABD072B3B6BB867904 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1CAF8859AAEB3BE8409B416304A3D8A8 /* SVProgressHUD.bundle */; };
+		49D9F9EA2AC396D949D9C7FC49C6E1B2 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80109BE5FF817EA7585D5891ABD72B8E /* ViewController+SnapKit.swift */; };
+		513D5435F77CD97E19E7E5B4F6D86B0E /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AE4704A0F7861380FB33037663AF73 /* YYModel-dummy.m */; };
+		57F13EB9F23F284F08A6798D1E20EEB8 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CE6AA6597EF8180D08CB6554D2FFC8 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E298F42AB485718539A1097644167F0 /* Pods-robosys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6D66F8B299F3AD85650EA04BA71B5 /* Pods-robosys-dummy.m */; };
+		63449410C1C8BFDC3602CDAF7EA0356C /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BCBF348A8BC647A9E200E865F731F5 /* ConstraintDescription.swift */; };
+		6A224C80AEF13C0F13653324587787C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA5FC1855E7806D4531983305801DC /* Foundation.framework */; };
+		70C4F2E632669E3DF31023BB1D4A686A /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED10045112A184A8615F84BB1C1F5 /* View+SnapKit.swift */; };
+		75630D92B7087E2796B028C992BF97C3 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCDA12CBED7D9A09ACBABEE2A9503B /* Constraint.swift */; };
+		7AC30DA7B082B4D191F115B2FDE9B5E8 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67349E357CA9D904255C7B9753C1BAF /* SnapKit.swift */; };
+		7EDC3CE2F97C9551B6B142981710C93E /* YYModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D8EA309487C9ED75D98F3CBF3A961A /* YYModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		833271ACC1D444A8ED1CE89AF4F1FAD5 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DFEE9FC4A831310BD3FE8E604963484 /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		864C2B46FCDFCF4105CA4DDFD314D84F /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228E59F524C13D187751F74ECB054C5 /* Debugging.swift */; };
+		9BCF80EFC835C99A1AD1AB45FC8EEBAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA5FC1855E7806D4531983305801DC /* Foundation.framework */; };
+		AA9E3D31EC660070C59AB7E9A090878E /* Pods-robosysUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5392D2C3B8779ADDA01273A32161283F /* Pods-robosysUITests-dummy.m */; };
+		AC4E9977F9BEF851F2F2CCD171253B3E /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC6C38864696C19DCAE6EB17378DDFB /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2473E23EBA838C123BCE3F843A92E2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA5FC1855E7806D4531983305801DC /* Foundation.framework */; };
+		BC24052FD168E584FAA6C545E9B2DD46 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E365676D93F8B3BE641C077B451E32A6 /* LayoutConstraint.swift */; };
+		BDAE0021FBB40F2706A31D0E7A559987 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA5FC1855E7806D4531983305801DC /* Foundation.framework */; };
+		C077D7EA08A7D65A03F60545A124853F /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C27946EABF3058D7200DD5946B920 /* SVProgressHUD-dummy.m */; };
+		C27E6DAD79038358081DC762D768A7A0 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4536AF20E9A75595F2B1F56A30AA2163 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4148F94C2F8396817B97652FA8DA3F9 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 874F9A98D8B0EBC79DEB96945DE0851F /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC72D90C6A453586E021952DAE5DDB8C /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305CE1D5711A97770F47201B1393A95 /* SVRadialGradientLayer.m */; };
+		D0316AED64D96AEB8641244B95A2DC14 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1701F97AFACEBB459BB08A5D79CB89A0 /* ConstraintAttributes.swift */; };
+		D18259EF26DA13AA6ABE0570B300871A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A6F2976F6E9C2FE11FA19DECB026B3 /* CoreFoundation.framework */; };
+		D19FB706FD90D81A7F4598684FB7E09E /* Pods-robosysTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4075E1C7AC8E4E915A260161F75EAD8 /* Pods-robosysTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D66A4E28131922D980711AF4C64678E6 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5495E2A44A8FC004DE3A522956FEFA3 /* SVProgressAnimatedView.m */; };
+		DEA958BB6BFE5D7BDF50730C548A25E5 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA3142A6DEBA72C9541613EA66A13D0 /* NSObject+YYModel.m */; };
+		E1AFC0B1C5EAE0C4AA7D09EAA40D5F91 /* Pods-robosysTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59318419E7330D57F8555AB069E4B026 /* Pods-robosysTests-dummy.m */; };
+		E3964E67BDD88C242596A3ADBC41EF93 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F87C8684ED8554F1AA781B13DFD6E3 /* ConstraintRelation.swift */; };
+		E51E9F987EE854987A2CD8CEE7E8806A /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A34033B1D08BEB7F5D9E17A5AFDD18C5 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA9114FA9CC06C7B1E9DB2B13AE4CE1A /* Pods-robosysUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC1DEAAEADE12F824B9D9FFE7994932D /* Pods-robosysUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBADD21ED86DA9B6F0B751A5A94113E5 /* Pods-robosys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54F9A9347D7A081900F6B7E9076760D1 /* Pods-robosys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59340282915B1BEB2AF15810EDFF8B98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC9413388C05D8396248B99E760D403;
+			remoteInfo = YYModel;
+		};
+		7E1DC7CAD6B5D8B2D527601EA5093D13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 437D08323757871754A82C1B978340E5;
+			remoteInfo = SnapKit;
+		};
+		A6FCDAC03BF6EE5DB84E36CC40DD6494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE9A6EA3A1B9768D72CB400296353264;
+			remoteInfo = SVProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00BCBF348A8BC647A9E200E865F731F5 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		0507BEC4D0BDFE7CD45E8CCF58D3D7C4 /* Pods-robosysUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-robosysUITests.release.xcconfig"; sourceTree = "<group>"; };
+		05D56054E5C78CD8652E14D413B51F25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B8194A9A2FC83E666CD33FE881A16EE /* Pods-robosysTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-robosysTests.release.xcconfig"; sourceTree = "<group>"; };
+		119DC9E7667BAEA2E0431918103E54D5 /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		14C4F090443FB1021587BE4EA81CB3D3 /* Pods-robosysUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-robosysUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		15543AA574A37C14190B5BC4D0DFD8CB /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		1701F97AFACEBB459BB08A5D79CB89A0 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		185C27946EABF3058D7200DD5946B920 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		1CAF8859AAEB3BE8409B416304A3D8A8 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		20A6F2976F6E9C2FE11FA19DECB026B3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		21C43E9887A57E5EDEFE142B8DD261AA /* Pods-robosysUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-robosysUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		268F21B5B816F54134E83AA925FD286B /* Pods-robosysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-robosysTests.debug.xcconfig"; sourceTree = "<group>"; };
+		292BAE65801CB81FD08C6CE252AEFB74 /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYModel.framework; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD218DF636548733C5F1EBB7DD68A21 /* Pods_robosysUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_robosysUITests.framework; path = "Pods-robosysUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D810714C39E2FF0C67E1F134CF7B89D /* Pods-robosys-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-robosys-frameworks.sh"; sourceTree = "<group>"; };
+		314BDAE3D450204E38A9FABB5B6739B9 /* Pods-robosysTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-robosysTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		32AE28C82180DA576FFA19B7F7C743E2 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		3520C53913B711859D0A41AAC44F8B7D /* Pods-robosysUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-robosysUITests.modulemap"; sourceTree = "<group>"; };
+		3812AFE7F499933717902CA63F06C791 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		38D632AEF8A7165605E7A2721D65FEB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A64D04DA0572EA99ED615F38BC49EBA /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		3AB66FD7287EB61A32A628C69555694A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D65D2939B47886E254C2956166C5120 /* Pods-robosysTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-robosysTests-resources.sh"; sourceTree = "<group>"; };
+		3DFEE9FC4A831310BD3FE8E604963484 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
+		4536AF20E9A75595F2B1F56A30AA2163 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		4B4B765D25E60C2F0C8CA3B0EEE9ACD8 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4C8CB88C5CC8FED1A39D6BC4542E31 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		526ED10045112A184A8615F84BB1C1F5 /* View+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnapKit.swift"; path = "Source/View+SnapKit.swift"; sourceTree = "<group>"; };
+		5392D2C3B8779ADDA01273A32161283F /* Pods-robosysUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-robosysUITests-dummy.m"; sourceTree = "<group>"; };
+		54F9A9347D7A081900F6B7E9076760D1 /* Pods-robosys-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-robosys-umbrella.h"; sourceTree = "<group>"; };
+		5788E770FFF66FB31048230B79412C36 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		59318419E7330D57F8555AB069E4B026 /* Pods-robosysTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-robosysTests-dummy.m"; sourceTree = "<group>"; };
+		62198FBF1E8F874CC747FD2AA93C0A7C /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		62915D2AF869E383B1E82455E3659D6B /* Pods-robosys.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-robosys.modulemap"; sourceTree = "<group>"; };
+		6305CE1D5711A97770F47201B1393A95 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		63BCDA12CBED7D9A09ACBABEE2A9503B /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		6C457EBC18F85E070310A387CD4FD7B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CBB54305FFC51E235C47C19F1FECCE3 /* Pods-robosysUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-robosysUITests-resources.sh"; sourceTree = "<group>"; };
+		70A91E0373A255CB4F2A951B6E2EA501 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		72B9C60799C55F14819B3D18103651D7 /* Pods-robosys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-robosys.release.xcconfig"; sourceTree = "<group>"; };
+		78292FBA726BC80C9590DFF27D60918E /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YYModel.modulemap; sourceTree = "<group>"; };
+		79679069068ED3F65773BC9613FC923C /* Pods-robosysTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-robosysTests.modulemap"; sourceTree = "<group>"; };
+		7A0947E52ACB35DD9972713C43405848 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		7AD6D66F8B299F3AD85650EA04BA71B5 /* Pods-robosys-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-robosys-dummy.m"; sourceTree = "<group>"; };
+		80109BE5FF817EA7585D5891ABD72B8E /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+SnapKit.swift"; path = "Source/ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		8578BC7BEE0D26C9599320C0D9CCF594 /* Pods-robosys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-robosys.debug.xcconfig"; sourceTree = "<group>"; };
+		874F9A98D8B0EBC79DEB96945DE0851F /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		9047D711B3A6BF4646334A280724AA3D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96C0CF98BC107D883B3589EA27593D72 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		A34033B1D08BEB7F5D9E17A5AFDD18C5 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		AB063DAA09631B0BC44A12D791A07BFA /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		ABC6C38864696C19DCAE6EB17378DDFB /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
+		ADA25BC23F4BEB42B5C18337C18455FE /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Source/EdgeInsets.swift; sourceTree = "<group>"; };
+		B034CDF07BB74582E74B86FF65492ADF /* Pods-robosys-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-robosys-acknowledgements.plist"; sourceTree = "<group>"; };
+		B39BBC4D332BD9495E62700CF6AFBCBE /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		B4F87C8684ED8554F1AA781B13DFD6E3 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		B5495E2A44A8FC004DE3A522956FEFA3 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		BC1DEAAEADE12F824B9D9FFE7994932D /* Pods-robosysUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-robosysUITests-umbrella.h"; sourceTree = "<group>"; };
+		C4075E1C7AC8E4E915A260161F75EAD8 /* Pods-robosysTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-robosysTests-umbrella.h"; sourceTree = "<group>"; };
+		C67349E357CA9D904255C7B9753C1BAF /* SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapKit.swift; path = Source/SnapKit.swift; sourceTree = "<group>"; };
+		C7A798501F846718BA3FC811286A8754 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C87B6299CB019AB68AD25BF0EAF3BC3A /* Pods-robosys-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-robosys-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8BC822DCF5FFA6F179DD9D61AA3B5D5 /* Pods_robosysTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_robosysTests.framework; path = "Pods-robosysTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD584AFB1EF665327F1C9D523503BCB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDEF19D83DA5345F7961588545BAD398 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		D228E59F524C13D187751F74ECB054C5 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		D2D8EA309487C9ED75D98F3CBF3A961A /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
+		D5CE6AA6597EF8180D08CB6554D2FFC8 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
+		DCA287CEB2C923625A288FB3962F2376 /* Pods_robosys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_robosys.framework; path = "Pods-robosys.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA3142A6DEBA72C9541613EA66A13D0 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
+		DE8F258D5188316A06FBD691C745FFB2 /* Pods-robosysUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-robosysUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E11FD8F9640326FF47E707B94109F377 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		E365676D93F8B3BE641C077B451E32A6 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		E3959FFABC06817441E7D99594DB2CE7 /* Pods-robosysTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-robosysTests-frameworks.sh"; sourceTree = "<group>"; };
+		E398DF691E42A87E5C569C189D9B2527 /* Pods-robosys-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-robosys-resources.sh"; sourceTree = "<group>"; };
+		E68D67C5D518D96DA2F6113C1FEB055A /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		E7864B6F396A80F48294163304B29ABA /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
+		E9A995065EBAFE2A0687B56BE6E3AC19 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		EE87B1A25627E0C6C59A26F727D3B947 /* Pods-robosysTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-robosysTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2AE4704A0F7861380FB33037663AF73 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
+		F55D00CF6BAF2862C2EE08AF4C0FC7E0 /* Pods-robosysUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-robosysUITests-frameworks.sh"; sourceTree = "<group>"; };
+		FCEA5FC1855E7806D4531983305801DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BDA5A68835E80C00AAE8375C33437E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCF80EFC835C99A1AD1AB45FC8EEBAF /* Foundation.framework in Frameworks */,
+				004858CAB77681C767A177C969DCF9D6 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C9CBA7BCEDDFA6C86748BD84D6D7DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2473E23EBA838C123BCE3F843A92E2D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A592DD9A1F1419608DB96177A9B1AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA7F1D1F172F4007E3E63719722ACAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A59F307950E199687B6C869D9CC5A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37C304A0798C0A28C95C326BF7080EDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A630A0B2889FB73F1091FE9F05AFB55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18259EF26DA13AA6ABE0570B300871A /* CoreFoundation.framework in Frameworks */,
+				6A224C80AEF13C0F13653324587787C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA6D9CAE48DF14980EE107966A0A1C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAE0021FBB40F2706A31D0E7A559987 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09104AC8591E1E446155FA0873F93E9C /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				AB063DAA09631B0BC44A12D791A07BFA /* SVIndefiniteAnimatedView.h */,
+				70A91E0373A255CB4F2A951B6E2EA501 /* SVIndefiniteAnimatedView.m */,
+				32AE28C82180DA576FFA19B7F7C743E2 /* SVProgressAnimatedView.h */,
+				B5495E2A44A8FC004DE3A522956FEFA3 /* SVProgressAnimatedView.m */,
+				4536AF20E9A75595F2B1F56A30AA2163 /* SVProgressHUD.h */,
+				E11FD8F9640326FF47E707B94109F377 /* SVProgressHUD.m */,
+				A34033B1D08BEB7F5D9E17A5AFDD18C5 /* SVRadialGradientLayer.h */,
+				6305CE1D5711A97770F47201B1393A95 /* SVRadialGradientLayer.m */,
+				FFE29188B81CD60738430C427F058A68 /* Resources */,
+				17F92737EFBE743BAA6715EE4104E2CC /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		0942AA534E6747CF997CB4F883D17717 /* Pods-robosysTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7A798501F846718BA3FC811286A8754 /* Info.plist */,
+				79679069068ED3F65773BC9613FC923C /* Pods-robosysTests.modulemap */,
+				314BDAE3D450204E38A9FABB5B6739B9 /* Pods-robosysTests-acknowledgements.markdown */,
+				EE87B1A25627E0C6C59A26F727D3B947 /* Pods-robosysTests-acknowledgements.plist */,
+				59318419E7330D57F8555AB069E4B026 /* Pods-robosysTests-dummy.m */,
+				E3959FFABC06817441E7D99594DB2CE7 /* Pods-robosysTests-frameworks.sh */,
+				3D65D2939B47886E254C2956166C5120 /* Pods-robosysTests-resources.sh */,
+				C4075E1C7AC8E4E915A260161F75EAD8 /* Pods-robosysTests-umbrella.h */,
+				268F21B5B816F54134E83AA925FD286B /* Pods-robosysTests.debug.xcconfig */,
+				0B8194A9A2FC83E666CD33FE881A16EE /* Pods-robosysTests.release.xcconfig */,
+			);
+			name = "Pods-robosysTests";
+			path = "Target Support Files/Pods-robosysTests";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				267D5729FFA46A48BCDE56CC7B0A1B3D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17F92737EFBE743BAA6715EE4104E2CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AB66FD7287EB61A32A628C69555694A /* Info.plist */,
+				E68D67C5D518D96DA2F6113C1FEB055A /* SVProgressHUD.modulemap */,
+				CDEF19D83DA5345F7961588545BAD398 /* SVProgressHUD.xcconfig */,
+				185C27946EABF3058D7200DD5946B920 /* SVProgressHUD-dummy.m */,
+				B39BBC4D332BD9495E62700CF6AFBCBE /* SVProgressHUD-prefix.pch */,
+				7A0947E52ACB35DD9972713C43405848 /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		20BF22D00C0FD48273A69A6089268F84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCA287CEB2C923625A288FB3962F2376 /* Pods_robosys.framework */,
+				C8BC822DCF5FFA6F179DD9D61AA3B5D5 /* Pods_robosysTests.framework */,
+				2BD218DF636548733C5F1EBB7DD68A21 /* Pods_robosysUITests.framework */,
+				9047D711B3A6BF4646334A280724AA3D /* SnapKit.framework */,
+				4B4B765D25E60C2F0C8CA3B0EEE9ACD8 /* SVProgressHUD.framework */,
+				292BAE65801CB81FD08C6CE252AEFB74 /* YYModel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		267D5729FFA46A48BCDE56CC7B0A1B3D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				20A6F2976F6E9C2FE11FA19DECB026B3 /* CoreFoundation.framework */,
+				FCEA5FC1855E7806D4531983305801DC /* Foundation.framework */,
+				3812AFE7F499933717902CA63F06C791 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2936E7E55FC9BFF0F8EB5951EF5BC1F0 /* Pods-robosys */ = {
+			isa = PBXGroup;
+			children = (
+				05D56054E5C78CD8652E14D413B51F25 /* Info.plist */,
+				62915D2AF869E383B1E82455E3659D6B /* Pods-robosys.modulemap */,
+				C87B6299CB019AB68AD25BF0EAF3BC3A /* Pods-robosys-acknowledgements.markdown */,
+				B034CDF07BB74582E74B86FF65492ADF /* Pods-robosys-acknowledgements.plist */,
+				7AD6D66F8B299F3AD85650EA04BA71B5 /* Pods-robosys-dummy.m */,
+				2D810714C39E2FF0C67E1F134CF7B89D /* Pods-robosys-frameworks.sh */,
+				E398DF691E42A87E5C569C189D9B2527 /* Pods-robosys-resources.sh */,
+				54F9A9347D7A081900F6B7E9076760D1 /* Pods-robosys-umbrella.h */,
+				8578BC7BEE0D26C9599320C0D9CCF594 /* Pods-robosys.debug.xcconfig */,
+				72B9C60799C55F14819B3D18103651D7 /* Pods-robosys.release.xcconfig */,
+			);
+			name = "Pods-robosys";
+			path = "Target Support Files/Pods-robosys";
+			sourceTree = "<group>";
+		};
+		3361C0296179A7A10EEA6067C6EAF8C5 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				63BCDA12CBED7D9A09ACBABEE2A9503B /* Constraint.swift */,
+				1701F97AFACEBB459BB08A5D79CB89A0 /* ConstraintAttributes.swift */,
+				00BCBF348A8BC647A9E200E865F731F5 /* ConstraintDescription.swift */,
+				15543AA574A37C14190B5BC4D0DFD8CB /* ConstraintItem.swift */,
+				96C0CF98BC107D883B3589EA27593D72 /* ConstraintMaker.swift */,
+				B4F87C8684ED8554F1AA781B13DFD6E3 /* ConstraintRelation.swift */,
+				D228E59F524C13D187751F74ECB054C5 /* Debugging.swift */,
+				ADA25BC23F4BEB42B5C18337C18455FE /* EdgeInsets.swift */,
+				E365676D93F8B3BE641C077B451E32A6 /* LayoutConstraint.swift */,
+				C67349E357CA9D904255C7B9753C1BAF /* SnapKit.swift */,
+				526ED10045112A184A8615F84BB1C1F5 /* View+SnapKit.swift */,
+				80109BE5FF817EA7585D5891ABD72B8E /* ViewController+SnapKit.swift */,
+				D84D7A1C18FEDAAF5A92808A505650FC /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		57727401B76D9A6F0B5F73FAAA9D0443 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3361C0296179A7A10EEA6067C6EAF8C5 /* SnapKit */,
+				09104AC8591E1E446155FA0873F93E9C /* SVProgressHUD */,
+				995231D415A39F8E8263B938CEA40CEF /* YYModel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B9B924968D76EBE1F2DC8A0A349CB0F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D632AEF8A7165605E7A2721D65FEB0 /* Info.plist */,
+				78292FBA726BC80C9590DFF27D60918E /* YYModel.modulemap */,
+				E7864B6F396A80F48294163304B29ABA /* YYModel.xcconfig */,
+				F2AE4704A0F7861380FB33037663AF73 /* YYModel-dummy.m */,
+				119DC9E7667BAEA2E0431918103E54D5 /* YYModel-prefix.pch */,
+				D2D8EA309487C9ED75D98F3CBF3A961A /* YYModel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YYModel";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				57727401B76D9A6F0B5F73FAAA9D0443 /* Pods */,
+				20BF22D00C0FD48273A69A6089268F84 /* Products */,
+				B78169DE9C544A0B109A87767FAFD34A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		995231D415A39F8E8263B938CEA40CEF /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				ABC6C38864696C19DCAE6EB17378DDFB /* NSObject+YYModel.h */,
+				DDA3142A6DEBA72C9541613EA66A13D0 /* NSObject+YYModel.m */,
+				D5CE6AA6597EF8180D08CB6554D2FFC8 /* YYClassInfo.h */,
+				E9A995065EBAFE2A0687B56BE6E3AC19 /* YYClassInfo.m */,
+				3DFEE9FC4A831310BD3FE8E604963484 /* YYModel.h */,
+				6B9B924968D76EBE1F2DC8A0A349CB0F /* Support Files */,
+			);
+			name = YYModel;
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		B78169DE9C544A0B109A87767FAFD34A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2936E7E55FC9BFF0F8EB5951EF5BC1F0 /* Pods-robosys */,
+				0942AA534E6747CF997CB4F883D17717 /* Pods-robosysTests */,
+				FC582B3C610D783847BB64D59E768B3E /* Pods-robosysUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D84D7A1C18FEDAAF5A92808A505650FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C457EBC18F85E070310A387CD4FD7B0 /* Info.plist */,
+				62198FBF1E8F874CC747FD2AA93C0A7C /* SnapKit.modulemap */,
+				3A64D04DA0572EA99ED615F38BC49EBA /* SnapKit.xcconfig */,
+				5788E770FFF66FB31048230B79412C36 /* SnapKit-dummy.m */,
+				4E4C8CB88C5CC8FED1A39D6BC4542E31 /* SnapKit-prefix.pch */,
+				874F9A98D8B0EBC79DEB96945DE0851F /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		FC582B3C610D783847BB64D59E768B3E /* Pods-robosysUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD584AFB1EF665327F1C9D523503BCB4 /* Info.plist */,
+				3520C53913B711859D0A41AAC44F8B7D /* Pods-robosysUITests.modulemap */,
+				21C43E9887A57E5EDEFE142B8DD261AA /* Pods-robosysUITests-acknowledgements.markdown */,
+				DE8F258D5188316A06FBD691C745FFB2 /* Pods-robosysUITests-acknowledgements.plist */,
+				5392D2C3B8779ADDA01273A32161283F /* Pods-robosysUITests-dummy.m */,
+				F55D00CF6BAF2862C2EE08AF4C0FC7E0 /* Pods-robosysUITests-frameworks.sh */,
+				6CBB54305FFC51E235C47C19F1FECCE3 /* Pods-robosysUITests-resources.sh */,
+				BC1DEAAEADE12F824B9D9FFE7994932D /* Pods-robosysUITests-umbrella.h */,
+				14C4F090443FB1021587BE4EA81CB3D3 /* Pods-robosysUITests.debug.xcconfig */,
+				0507BEC4D0BDFE7CD45E8CCF58D3D7C4 /* Pods-robosysUITests.release.xcconfig */,
+			);
+			name = "Pods-robosysUITests";
+			path = "Target Support Files/Pods-robosysUITests";
+			sourceTree = "<group>";
+		};
+		FFE29188B81CD60738430C427F058A68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1CAF8859AAEB3BE8409B416304A3D8A8 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		45801A564369CAAB15C7F2664F120C8A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9114FA9CC06C7B1E9DB2B13AE4CE1A /* Pods-robosysUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7813E19E87D8C114B4FC66BE910C7B0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19FB706FD90D81A7F4598684FB7E09E /* Pods-robosysTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0215F5E850FC1E032F803074E075BB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4148F94C2F8396817B97652FA8DA3F9 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC26A99491255C56AAA008F4F63D78A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBADD21ED86DA9B6F0B751A5A94113E5 /* Pods-robosys-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB0BEF510F49B842EDEA6816323315 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224597F99763285DFCC69B3D0FF140AA /* SVIndefiniteAnimatedView.h in Headers */,
+				0D967D2CFF622AA6843D6B2F9ED16C39 /* SVProgressAnimatedView.h in Headers */,
+				40417DEE03BF74D6FC4C6A0BA1B10B31 /* SVProgressHUD-umbrella.h in Headers */,
+				C27E6DAD79038358081DC762D768A7A0 /* SVProgressHUD.h in Headers */,
+				E51E9F987EE854987A2CD8CEE7E8806A /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9F4C454A6F18172131453D01B963CB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4E9977F9BEF851F2F2CCD171253B3E /* NSObject+YYModel.h in Headers */,
+				57F13EB9F23F284F08A6798D1E20EEB8 /* YYClassInfo.h in Headers */,
+				7EDC3CE2F97C9551B6B142981710C93E /* YYModel-umbrella.h in Headers */,
+				833271ACC1D444A8ED1CE89AF4F1FAD5 /* YYModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		036E08430F1EBA55B84472F1CBCDD64D /* Pods-robosys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FBCECB88FED1D149DE3278F15674833 /* Build configuration list for PBXNativeTarget "Pods-robosys" */;
+			buildPhases = (
+				FBD7746796C0F2274456B2F545B790DB /* Sources */,
+				86A59F307950E199687B6C869D9CC5A0 /* Frameworks */,
+				AC26A99491255C56AAA008F4F63D78A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3AC897138B88198F0227D7A2AB2B9A2 /* PBXTargetDependency */,
+				D407F8113D96CB00F7B13AFEEA588D22 /* PBXTargetDependency */,
+				6643560BFC78146C9538885BA1D142B8 /* PBXTargetDependency */,
+			);
+			name = "Pods-robosys";
+			productName = "Pods-robosys";
+			productReference = DCA287CEB2C923625A288FB3962F2376 /* Pods_robosys.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2244110E55C59841B3B8920134E834EF /* Pods-robosysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8126DB583A8972DE2CCCF354C598A93F /* Build configuration list for PBXNativeTarget "Pods-robosysTests" */;
+			buildPhases = (
+				85614AD5491211CCABA60AEFF8E48561 /* Sources */,
+				CCA6D9CAE48DF14980EE107966A0A1C3 /* Frameworks */,
+				7813E19E87D8C114B4FC66BE910C7B0C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-robosysTests";
+			productName = "Pods-robosysTests";
+			productReference = C8BC822DCF5FFA6F179DD9D61AA3B5D5 /* Pods_robosysTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		437D08323757871754A82C1B978340E5 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 436536E4A38A41D0D5104430427B1B9E /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				4E14EB23437FD4C3332F84AB6760F31F /* Sources */,
+				16C9CBA7BCEDDFA6C86748BD84D6D7DB /* Frameworks */,
+				A0215F5E850FC1E032F803074E075BB2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 9047D711B3A6BF4646334A280724AA3D /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9DC9413388C05D8396248B99E760D403 /* YYModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7147E60B6D3C2F5E5B0DA085050AC087 /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildPhases = (
+				560145FCAD3AD82FDD60A6C5FB11F65C /* Sources */,
+				8A630A0B2889FB73F1091FE9F05AFB55 /* Frameworks */,
+				C9F4C454A6F18172131453D01B963CB7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYModel;
+			productName = YYModel;
+			productReference = 292BAE65801CB81FD08C6CE252AEFB74 /* YYModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6ADA048BD598364963C8F37EADD2E20 /* Pods-robosysUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C5488FEB469FC9997B548403D549D6E /* Build configuration list for PBXNativeTarget "Pods-robosysUITests" */;
+			buildPhases = (
+				EBA3B45BFDA474300D096683A4DD2E23 /* Sources */,
+				1A592DD9A1F1419608DB96177A9B1AAC /* Frameworks */,
+				45801A564369CAAB15C7F2664F120C8A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-robosysUITests";
+			productName = "Pods-robosysUITests";
+			productReference = 2BD218DF636548733C5F1EBB7DD68A21 /* Pods_robosysUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE9A6EA3A1B9768D72CB400296353264 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3F98F3E7CFC897DE32AAB98AF947A2 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				B2153B3BB2FAA0118F80251096EEA4E4 /* Sources */,
+				0BDA5A68835E80C00AAE8375C33437E0 /* Frameworks */,
+				AFAB0BEF510F49B842EDEA6816323315 /* Headers */,
+				0D27FF35292989AB5E247BFBA57FE662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 4B4B765D25E60C2F0C8CA3B0EEE9ACD8 /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 20BF22D00C0FD48273A69A6089268F84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				036E08430F1EBA55B84472F1CBCDD64D /* Pods-robosys */,
+				2244110E55C59841B3B8920134E834EF /* Pods-robosysTests */,
+				A6ADA048BD598364963C8F37EADD2E20 /* Pods-robosysUITests */,
+				437D08323757871754A82C1B978340E5 /* SnapKit */,
+				EE9A6EA3A1B9768D72CB400296353264 /* SVProgressHUD */,
+				9DC9413388C05D8396248B99E760D403 /* YYModel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D27FF35292989AB5E247BFBA57FE662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487C5BB0C211F9ABD072B3B6BB867904 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E14EB23437FD4C3332F84AB6760F31F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75630D92B7087E2796B028C992BF97C3 /* Constraint.swift in Sources */,
+				D0316AED64D96AEB8641244B95A2DC14 /* ConstraintAttributes.swift in Sources */,
+				63449410C1C8BFDC3602CDAF7EA0356C /* ConstraintDescription.swift in Sources */,
+				0E28173983C29FD780105373CDDB134C /* ConstraintItem.swift in Sources */,
+				103D4C61BC5B04E02C439B574F621B14 /* ConstraintMaker.swift in Sources */,
+				E3964E67BDD88C242596A3ADBC41EF93 /* ConstraintRelation.swift in Sources */,
+				864C2B46FCDFCF4105CA4DDFD314D84F /* Debugging.swift in Sources */,
+				3CF9C42F4C7E43188A31270C64A1F42F /* EdgeInsets.swift in Sources */,
+				BC24052FD168E584FAA6C545E9B2DD46 /* LayoutConstraint.swift in Sources */,
+				2EC95DB554888B5C10DDD9A3C2BF575B /* SnapKit-dummy.m in Sources */,
+				7AC30DA7B082B4D191F115B2FDE9B5E8 /* SnapKit.swift in Sources */,
+				70C4F2E632669E3DF31023BB1D4A686A /* View+SnapKit.swift in Sources */,
+				49D9F9EA2AC396D949D9C7FC49C6E1B2 /* ViewController+SnapKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560145FCAD3AD82FDD60A6C5FB11F65C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA958BB6BFE5D7BDF50730C548A25E5 /* NSObject+YYModel.m in Sources */,
+				2E3529FF7C1E05941846724DF180DA02 /* YYClassInfo.m in Sources */,
+				513D5435F77CD97E19E7E5B4F6D86B0E /* YYModel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85614AD5491211CCABA60AEFF8E48561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AFC0B1C5EAE0C4AA7D09EAA40D5F91 /* Pods-robosysTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2153B3BB2FAA0118F80251096EEA4E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F024563AC0489D268E1FD5A7CB68387 /* SVIndefiniteAnimatedView.m in Sources */,
+				D66A4E28131922D980711AF4C64678E6 /* SVProgressAnimatedView.m in Sources */,
+				C077D7EA08A7D65A03F60545A124853F /* SVProgressHUD-dummy.m in Sources */,
+				0CFDE64A4C03977D418AC4DDDF42B697 /* SVProgressHUD.m in Sources */,
+				CC72D90C6A453586E021952DAE5DDB8C /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA3B45BFDA474300D096683A4DD2E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9E3D31EC660070C59AB7E9A090878E /* Pods-robosysUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD7746796C0F2274456B2F545B790DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E298F42AB485718539A1097644167F0 /* Pods-robosys-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6643560BFC78146C9538885BA1D142B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = 9DC9413388C05D8396248B99E760D403 /* YYModel */;
+			targetProxy = 59340282915B1BEB2AF15810EDFF8B98 /* PBXContainerItemProxy */;
+		};
+		C3AC897138B88198F0227D7A2AB2B9A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = EE9A6EA3A1B9768D72CB400296353264 /* SVProgressHUD */;
+			targetProxy = A6FCDAC03BF6EE5DB84E36CC40DD6494 /* PBXContainerItemProxy */;
+		};
+		D407F8113D96CB00F7B13AFEEA588D22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 437D08323757871754A82C1B978340E5 /* SnapKit */;
+			targetProxy = 7E1DC7CAD6B5D8B2D527601EA5093D13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		175BB4F4E6171FB163407F11B312B43F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A64D04DA0572EA99ED615F38BC49EBA /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D32C8A4E1DB37C248C6D782EF455383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72B9C60799C55F14819B3D18103651D7 /* Pods-robosys.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-robosys/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-robosys/Pods-robosys.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_robosys;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3346D1B497C6CD810259F1CA7E7840FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A64D04DA0572EA99ED615F38BC49EBA /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44A411B0CC77D78D50D1545CEC001680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7864B6F396A80F48294163304B29ABA /* YYModel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5154B54191FC03FBAB73ADEC3BCD2058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7864B6F396A80F48294163304B29ABA /* YYModel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		710D7F2D561DAE976D1FE4AF7669E7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8578BC7BEE0D26C9599320C0D9CCF594 /* Pods-robosys.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-robosys/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-robosys/Pods-robosys.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_robosys;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71B9C14F0D939F2FBD3CF54386E14A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDEF19D83DA5345F7961588545BAD398 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9AC06268969672EC63F704844BDF9A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDEF19D83DA5345F7961588545BAD398 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F270978694896D978491D0CDCCD7C69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0507BEC4D0BDFE7CD45E8CCF58D3D7C4 /* Pods-robosysUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-robosysUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-robosysUITests/Pods-robosysUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_robosysUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A62792E13749AE2FA4BA7B636472B122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 268F21B5B816F54134E83AA925FD286B /* Pods-robosysTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-robosysTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-robosysTests/Pods-robosysTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_robosysTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDF14B6AC9ED78088D4070027FFF9405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14C4F090443FB1021587BE4EA81CB3D3 /* Pods-robosysUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-robosysUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-robosysUITests/Pods-robosysUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_robosysUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F7EBB84A65BA4060723C7474049C8637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B8194A9A2FC83E666CD33FE881A16EE /* Pods-robosysTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-robosysTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-robosysTests/Pods-robosysTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_robosysTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C5488FEB469FC9997B548403D549D6E /* Build configuration list for PBXNativeTarget "Pods-robosysUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF14B6AC9ED78088D4070027FFF9405 /* Debug */,
+				9F270978694896D978491D0CDCCD7C69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FBCECB88FED1D149DE3278F15674833 /* Build configuration list for PBXNativeTarget "Pods-robosys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				710D7F2D561DAE976D1FE4AF7669E7CE /* Debug */,
+				2D32C8A4E1DB37C248C6D782EF455383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		436536E4A38A41D0D5104430427B1B9E /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3346D1B497C6CD810259F1CA7E7840FD /* Debug */,
+				175BB4F4E6171FB163407F11B312B43F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7147E60B6D3C2F5E5B0DA085050AC087 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5154B54191FC03FBAB73ADEC3BCD2058 /* Debug */,
+				44A411B0CC77D78D50D1545CEC001680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8126DB583A8972DE2CCCF354C598A93F /* Build configuration list for PBXNativeTarget "Pods-robosysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62792E13749AE2FA4BA7B636472B122 /* Debug */,
+				F7EBB84A65BA4060723C7474049C8637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE3F98F3E7CFC897DE32AAB98AF947A2 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC06268969672EC63F704844BDF9A94 /* Debug */,
+				71B9C14F0D939F2FBD3CF54386E14A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

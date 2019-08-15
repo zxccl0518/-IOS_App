@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MotionProgramViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="bSR-rv-p9L" id="FhX-qq-2eg"/>
+            </connections>
+        </placeholder>
+        <view contentMode="scaleToFill" id="bSR-rv-p9L" customClass="MotionProgramView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="316"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="编程背景" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-u7-XSD">
+                    <rect key="frame" x="0.0" y="0.0" width="475" height="316"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6A-FR-mUj" userLabel="保存">
+                    <rect key="frame" x="366" y="6" width="24" height="37"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" backgroundImage="保存">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickSave:" destination="bSR-rv-p9L" eventType="touchUpInside" id="5wx-jR-9be"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dO1-iF-6Tf" userLabel="推送">
+                    <rect key="frame" x="420" y="6" width="25" height="37"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="programNavibarPush">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickPlay:" destination="bSR-rv-p9L" eventType="touchUpInside" id="Lln-Yh-DmE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRL-fG-vP9" userLabel="返回">
+                    <rect key="frame" x="0.0" y="14" width="44" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="eut-1v-e0p"/>
+                    </constraints>
+                    <state key="normal" image="返回"/>
+                    <connections>
+                        <action selector="clickBack:" destination="bSR-rv-p9L" eventType="touchUpInside" id="REf-7c-aRI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC5-RK-qbJ" userLabel="教学">
+                    <rect key="frame" x="74" y="6" width="46" height="37"/>
+                    <state key="normal" image="指导">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickGuide:" destination="bSR-rv-p9L" eventType="touchUpInside" id="CT7-aK-h7K"/>
+                    </connections>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9m-6T-Kqf">
+                    <rect key="frame" x="157" y="5" width="162" height="38"/>
+                    <state key="normal" title="00'00''" backgroundImage="运动模式速度数据">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t9b-O3-Gyd">
+                    <rect key="frame" x="0.0" y="48" width="51" height="193"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="193" id="5gd-zJ-MnF"/>
+                        <constraint firstAttribute="width" constant="51" id="XqO-VS-uFc"/>
+                    </constraints>
+                    <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6S3-LX-fGN">
+                    <rect key="frame" x="51" y="48" width="424" height="193"/>
+                    <connections>
+                        <outlet property="delegate" destination="bSR-rv-p9L" id="3U9-Qf-zxr"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Xcr-u7-XSD" secondAttribute="trailing" id="8rY-VE-gTP"/>
+                <constraint firstItem="a9m-6T-Kqf" firstAttribute="centerY" secondItem="eC5-RK-qbJ" secondAttribute="centerY" id="Amf-9u-6NJ"/>
+                <constraint firstItem="eC5-RK-qbJ" firstAttribute="leading" secondItem="aRL-fG-vP9" secondAttribute="trailing" constant="30" id="DZe-RF-mlO"/>
+                <constraint firstItem="Xcr-u7-XSD" firstAttribute="top" secondItem="bSR-rv-p9L" secondAttribute="top" id="H73-A6-mjb"/>
+                <constraint firstAttribute="trailing" secondItem="6S3-LX-fGN" secondAttribute="trailing" id="I8g-Hj-6J8"/>
+                <constraint firstItem="dO1-iF-6Tf" firstAttribute="leading" secondItem="J6A-FR-mUj" secondAttribute="trailing" constant="30" id="JBv-mZ-pgL"/>
+                <constraint firstAttribute="trailing" secondItem="dO1-iF-6Tf" secondAttribute="trailing" constant="30" id="N7T-jl-M6j"/>
+                <constraint firstItem="Xcr-u7-XSD" firstAttribute="leading" secondItem="bSR-rv-p9L" secondAttribute="leading" id="RXm-Yv-N5x"/>
+                <constraint firstAttribute="bottom" secondItem="Xcr-u7-XSD" secondAttribute="bottom" id="RtD-KV-nzh"/>
+                <constraint firstItem="6S3-LX-fGN" firstAttribute="leading" secondItem="t9b-O3-Gyd" secondAttribute="trailing" id="VXx-xS-Zac"/>
+                <constraint firstItem="a9m-6T-Kqf" firstAttribute="top" secondItem="bSR-rv-p9L" secondAttribute="top" constant="5" id="YlZ-Ep-AqY"/>
+                <constraint firstItem="t9b-O3-Gyd" firstAttribute="leading" secondItem="bSR-rv-p9L" secondAttribute="leading" id="ejd-k0-5b0"/>
+                <constraint firstItem="t9b-O3-Gyd" firstAttribute="top" secondItem="bSR-rv-p9L" secondAttribute="top" constant="48" id="g29-DI-Drk"/>
+                <constraint firstItem="6S3-LX-fGN" firstAttribute="bottom" secondItem="t9b-O3-Gyd" secondAttribute="bottom" id="ksc-JP-8pZ"/>
+                <constraint firstItem="aRL-fG-vP9" firstAttribute="leading" secondItem="bSR-rv-p9L" secondAttribute="leading" id="mp7-X6-CcO"/>
+                <constraint firstItem="6S3-LX-fGN" firstAttribute="top" secondItem="t9b-O3-Gyd" secondAttribute="top" id="nPU-EA-379"/>
+                <constraint firstItem="aRL-fG-vP9" firstAttribute="centerY" secondItem="eC5-RK-qbJ" secondAttribute="centerY" id="olK-bq-tPa"/>
+                <constraint firstItem="J6A-FR-mUj" firstAttribute="centerY" secondItem="a9m-6T-Kqf" secondAttribute="centerY" id="qUF-aW-i69"/>
+                <constraint firstItem="a9m-6T-Kqf" firstAttribute="centerX" secondItem="Xcr-u7-XSD" secondAttribute="centerX" id="uos-sm-NNn"/>
+                <constraint firstAttribute="bottom" secondItem="6S3-LX-fGN" secondAttribute="bottom" constant="75" id="wLi-sy-TyY"/>
+                <constraint firstItem="dO1-iF-6Tf" firstAttribute="centerY" secondItem="J6A-FR-mUj" secondAttribute="centerY" id="wec-0P-HQJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backGroundScrollView" destination="6S3-LX-fGN" id="ke2-Kx-i89"/>
+                <outlet property="leftHeightConstraint" destination="5gd-zJ-MnF" id="pY0-PJ-GWF"/>
+                <outlet property="leftTable" destination="t9b-O3-Gyd" id="Kg6-xz-Roj"/>
+                <outlet property="previewBtn" destination="dO1-iF-6Tf" id="DDQ-lG-6bY"/>
+                <outlet property="saveBtn" destination="J6A-FR-mUj" id="RQZ-vD-EAp"/>
+                <outlet property="timeBtn" destination="a9m-6T-Kqf" id="nq6-EK-nd1"/>
+            </connections>
+            <point key="canvasLocation" x="113.5" y="363"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="programNavibarPush" width="25" height="37"/>
+        <image name="保存" width="24" height="37"/>
+        <image name="指导" width="46" height="37"/>
+        <image name="编程背景" width="667" height="375"/>
+        <image name="运动模式速度数据" width="162" height="38"/>
+        <image name="返回" width="10" height="18"/>
+    </resources>
+</document>

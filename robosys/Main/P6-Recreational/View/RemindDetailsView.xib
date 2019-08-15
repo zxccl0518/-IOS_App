@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RemindDetailsViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="X6U-6n-nCP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RemindDetailsView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-背景" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-k2-x4b">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RH5-tm-Xlu">
+                    <rect key="frame" x="40" y="622" width="295" height="37"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="15"/>
+                    <state key="normal" title="保存" backgroundImage="小蓝按钮">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickSave:" destination="iN0-l3-epB" eventType="touchUpInside" id="vaB-R5-CbP"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xAX-Jf-ec7">
+                    <rect key="frame" x="0.0" y="200" width="375" height="382"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="vWM-Pc-sLn"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="9tP-iF-ET2"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bDq-k2-x4b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3KN-PJ-qd1"/>
+                <constraint firstAttribute="bottom" secondItem="bDq-k2-x4b" secondAttribute="bottom" id="49n-0E-hKY"/>
+                <constraint firstItem="xAX-Jf-ec7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4jD-Bh-ZUy"/>
+                <constraint firstItem="RH5-tm-Xlu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JFL-wy-1Fr"/>
+                <constraint firstItem="RH5-tm-Xlu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="KP0-W9-TpO"/>
+                <constraint firstItem="bDq-k2-x4b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cG5-Ad-5co"/>
+                <constraint firstItem="xAX-Jf-ec7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cSN-Kz-Poo"/>
+                <constraint firstAttribute="trailing" secondItem="bDq-k2-x4b" secondAttribute="trailing" id="kAn-6N-Yxm"/>
+                <constraint firstItem="xAX-Jf-ec7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="200" id="o8Z-u0-7SP"/>
+                <constraint firstItem="RH5-tm-Xlu" firstAttribute="top" secondItem="xAX-Jf-ec7" secondAttribute="bottom" constant="40" id="vsy-Gn-iqX"/>
+                <constraint firstAttribute="bottom" secondItem="RH5-tm-Xlu" secondAttribute="bottom" constant="8" id="zh9-kd-yNe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="table" destination="xAX-Jf-ec7" id="X0q-JR-nlp"/>
+            </connections>
+            <point key="canvasLocation" x="298" y="314"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="小蓝按钮" width="139" height="37"/>
+        <image name="首页-背景" width="375" height="667"/>
+    </resources>
+</document>

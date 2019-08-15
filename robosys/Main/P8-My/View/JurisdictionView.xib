@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JurisdictionViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="DFf-SJ-1O1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JurisdictionView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfb-9w-yGW" userLabel="转移">
+                    <rect key="frame" x="108" y="151" width="159" height="95"/>
+                    <state key="normal" backgroundImage="转移管理员权限"/>
+                    <connections>
+                        <action selector="moveJurisdiction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1BY-El-ZR9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWl-Tb-gyH" userLabel="设置">
+                    <rect key="frame" x="108" y="286" width="159" height="95"/>
+                    <state key="normal" backgroundImage="设置普通用户权限"/>
+                    <connections>
+                        <action selector="setJurisdiction:" destination="iN0-l3-epB" eventType="touchUpInside" id="oZx-tj-xt3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAq-F2-FdW" userLabel="解除">
+                    <rect key="frame" x="108" y="421" width="159" height="95"/>
+                    <state key="normal" backgroundImage="解除管理员权限"/>
+                    <connections>
+                        <action selector="removeJurisdiction:" destination="iN0-l3-epB" eventType="touchUpInside" id="sum-8z-3tw"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-背景" translatesAutoresizingMaskIntoConstraints="NO" id="LQP-8U-vap">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LQP-8U-vap" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5rr-3k-cyR"/>
+                <constraint firstItem="mWl-Tb-gyH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6D2-We-TpL"/>
+                <constraint firstAttribute="trailing" secondItem="LQP-8U-vap" secondAttribute="trailing" id="9il-km-Q6D"/>
+                <constraint firstItem="oAq-F2-FdW" firstAttribute="top" secondItem="mWl-Tb-gyH" secondAttribute="bottom" constant="40" id="EOQ-mQ-iB8"/>
+                <constraint firstItem="mWl-Tb-gyH" firstAttribute="top" secondItem="xfb-9w-yGW" secondAttribute="bottom" constant="40" id="MJN-oF-2VV"/>
+                <constraint firstItem="oAq-F2-FdW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MZH-9q-4la"/>
+                <constraint firstItem="mWl-Tb-gyH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VTi-R7-6D5"/>
+                <constraint firstItem="xfb-9w-yGW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mJm-5m-ulL"/>
+                <constraint firstAttribute="bottom" secondItem="LQP-8U-vap" secondAttribute="bottom" id="tBf-ct-Oq0"/>
+                <constraint firstItem="LQP-8U-vap" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="x3N-jW-TCh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="xfb-9w-yGW"/>
+                    <exclude reference="mWl-Tb-gyH"/>
+                    <exclude reference="oAq-F2-FdW"/>
+                    <exclude reference="LQP-8U-vap"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="6D2-We-TpL"/>
+                    <exclude reference="MJN-oF-2VV"/>
+                    <exclude reference="VTi-R7-6D5"/>
+                    <exclude reference="EOQ-mQ-iB8"/>
+                    <exclude reference="MZH-9q-4la"/>
+                    <exclude reference="mJm-5m-ulL"/>
+                    <exclude reference="5rr-3k-cyR"/>
+                    <exclude reference="9il-km-Q6D"/>
+                    <exclude reference="tBf-ct-Oq0"/>
+                    <exclude reference="x3N-jW-TCh"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="xfb-9w-yGW"/>
+                    <include reference="mWl-Tb-gyH"/>
+                    <include reference="oAq-F2-FdW"/>
+                    <include reference="LQP-8U-vap"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="6D2-We-TpL"/>
+                    <include reference="MJN-oF-2VV"/>
+                    <include reference="VTi-R7-6D5"/>
+                    <include reference="EOQ-mQ-iB8"/>
+                    <include reference="MZH-9q-4la"/>
+                    <include reference="mJm-5m-ulL"/>
+                    <include reference="5rr-3k-cyR"/>
+                    <include reference="9il-km-Q6D"/>
+                    <include reference="tBf-ct-Oq0"/>
+                    <include reference="x3N-jW-TCh"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="解除管理员权限" width="159" height="95"/>
+        <image name="设置普通用户权限" width="159" height="95"/>
+        <image name="转移管理员权限" width="159" height="95"/>
+        <image name="首页-背景" width="375" height="667"/>
+    </resources>
+</document>

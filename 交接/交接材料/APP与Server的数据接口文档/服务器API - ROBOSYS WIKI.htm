@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>服务器API - ROBOSYS WIKI</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"服务器API","wgTitle":"服务器API","wgCurRevisionId":336,"wgRevisionId":336,"wgArticleId":12,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":!1,"wgPageContentLanguage":"zh-cn","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"服务器API","wgRelevantArticleId":12,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":!1,"dialogs":!1,"preview":!1,"publish":!1}});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"zh-cn"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="%E6%9C%8D%E5%8A%A1%E5%99%A8API%20-%20ROBOSYS%20WIKI_files/load.css">
+<style>
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}  .mw-content-ltr .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr .mw-collapsible-toggle{float:right} .mw-content-rtl .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl .mw-collapsible-toggle{float:left}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer} caption .mw-collapsible-toggle,.mw-content-ltr caption .mw-collapsible-toggle,.mw-content-rtl caption .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr caption .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle,.mw-content-ltr li .mw-collapsible-toggle,.mw-content-rtl li .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr li .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(http://192.168.0.111/wiki/resources/src/mediawiki.action/images/green-checkmark.png?9048a)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="%E6%9C%8D%E5%8A%A1%E5%99%A8API%20-%20ROBOSYS%20WIKI_files/load.php"></script>
+<meta name="generator" content="MediaWiki 1.26.0">
+<link rel="alternate" type="application/x-wiki" title="编辑" href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit">
+<link rel="edit" title="编辑" href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit">
+<link rel="shortcut icon" href="http://192.168.0.111/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://192.168.0.111/wiki/opensearch_desc.php" title="ROBOSYS WIKI (zh-cn)">
+<link rel="EditURI" type="application/rsd+xml" href="http://192.168.0.111/wiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="ROBOSYS WIKI的Atom feed" href="http://192.168.0.111/wiki/index.php?title=%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom">
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/wiki/skins/Vector/csshover.min.htc")}</style><![endif]-->
+<script src="%E6%9C%8D%E5%8A%A1%E5%99%A8API%20-%20ROBOSYS%20WIKI_files/load_002.php"></script></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-服务器API skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="zh-CN">服务器API</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">来自ROBOSYS WIKI</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					跳转至：					<a href="#mw-head">导航</a>、					<a href="#p-search">搜索</a>
+				</div>
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="zh-CN"><div id="toc" class="toc"><div id="toctitle"><h2>目录</h2><span class="toctoggle">&nbsp;[<a href="#" id="togglelink">隐藏</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#API.E7.9A.84.E7.BB.9F.E4.B8.80.E6.8E.A5.E5.8F.A3.E5.BD.A2.E5.BC.8F"><span class="tocnumber">1</span> <span class="toctext">API的统一接口形式</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.E5.A4.8D.E6.9D.82.E5.BD.A2.E5.BC.8F"><span class="tocnumber">1.1</span> <span class="toctext">复杂形式</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#.E7.AE.80.E5.8D.95.E5.BD.A2.E5.BC.8F"><span class="tocnumber">1.2</span> <span class="toctext">简单形式</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.E4.B8.8D.E9.9C.80.E8.A6.81.E8.BF.94.E5.9B.9E.E5.86.85.E5.AE.B9.E7.9A.84.E7.BB.93.E6.9E.9C"><span class="tocnumber">1.3</span> <span class="toctext">不需要返回内容的结果</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#.E9.9C.80.E8.A6.81.E8.BF.94.E5.9B.9E.E7.BB.93.E6.9E.9C.E6.95.B0.E6.8D.AE"><span class="tocnumber">1.4</span> <span class="toctext">需要返回结果数据</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#.E6.9C.BA.E5.99.A8.E4.BA.BA.E7.9B.B8.E5.85.B3"><span class="tocnumber">2</span> <span class="toctext">机器人相关</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#.E6.9C.BA.E5.99.A8.E4.BA.BA.E7.99.BB.E5.BD.95"><span class="tocnumber">2.1</span> <span class="toctext">机器人登录</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#.E5.BF.83.E8.B7.B3"><span class="tocnumber">2.2</span> <span class="toctext">心跳</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#.E6.9C.BA.E5.99.A8.E4.BA.BA.E7.99.BB.E5.87.BA"><span class="tocnumber">2.3</span> <span class="toctext">机器人登出</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#.E8.8E.B7.E5.8F.96.E6.9C.BA.E5.99.A8.E4.BA.BA.E5.85.B3.E8.81.94.E7.9A.84.E7.94.A8.E6.88.B7.E5.88.97.E8.A1.A8"><span class="tocnumber">2.4</span> <span class="toctext">获取机器人关联的用户列表</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#.E7.94.A8.E6.88.B7.E7.AE.A1.E7.90.86"><span class="tocnumber">3</span> <span class="toctext">用户管理</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#.E6.B3.A8.E5.86.8C.E7.94.A8.E6.88.B7"><span class="tocnumber">3.1</span> <span class="toctext">注册用户</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#.E8.8E.B7.E5.8F.96.E6.89.8B.E6.9C.BA.E9.AA.8C.E8.AF.81.E7.A0.81"><span class="tocnumber">3.2</span> <span class="toctext">获取手机验证码</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#.E7.94.A8.E6.88.B7.E7.99.BB.E5.BD.95"><span class="tocnumber">3.3</span> <span class="toctext">用户登录</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#.E7.94.A8.E6.88.B7.E7.99.BB.E5.87.BA"><span class="tocnumber">3.4</span> <span class="toctext">用户登出</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#.E7.BB.91.E5.AE.9A.E6.9C.BA.E5.99.A8.E4.BA.BA"><span class="tocnumber">3.5</span> <span class="toctext">绑定机器人</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#.E8.A7.A3.E9.99.A4.E7.BB.91.E5.AE.9A"><span class="tocnumber">3.6</span> <span class="toctext">解除绑定</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#.E7.AE.A1.E7.90.86.E5.91.98.E8.BD.AC.E8.AE.A9"><span class="tocnumber">3.7</span> <span class="toctext">管理员转让</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#.E9.87.8D.E8.AE.BE.E5.AF.86.E7.A0.81"><span class="tocnumber">3.8</span> <span class="toctext">重设密码</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#.E4.BF.AE.E6.94.B9.E5.AF.86.E7.A0.81"><span class="tocnumber">3.9</span> <span class="toctext">修改密码</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#.E7.94.A8.E6.88.B7.E5.8F.8D.E9.A6.88"><span class="tocnumber">3.10</span> <span class="toctext">用户反馈</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#.E7.94.A8.E6.88.B7.E4.BF.A1.E6.81.AF.E8.8E.B7.E5.8F.96"><span class="tocnumber">3.11</span> <span class="toctext">用户信息获取</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#.E7.94.A8.E6.88.B7.E4.BF.A1.E6.81.AF.E8.AE.BE.E7.BD.AE"><span class="tocnumber">3.12</span> <span class="toctext">用户信息设置</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#.E5.B8.B8.E8.A7.81.E9.97.AE.E9.A2.98"><span class="tocnumber">3.13</span> <span class="toctext">常见问题</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-25"><a href="#APP.E5.AE.A2.E6.88.B7.E7.AB.AF.E7.9B.B8.E5.85.B3"><span class="tocnumber">4</span> <span class="toctext">APP客户端相关</span></a>
+<ul>
+<li class="toclevel-2 tocsection-26"><a href="#.E6.B6.88.E6.81.AF.E5.8F.91.E9.80.81"><span class="tocnumber">4.1</span> <span class="toctext">消息发送</span></a>
+<ul>
+<li class="toclevel-3 tocsection-27"><a href="#.E8.8E.B7.E5.8F.96.E7.94.A8.E6.88.B7.E5.85.B3.E8.81.94.E7.9A.84.E6.9C.BA.E5.99.A8.E4.BA.BA.E5.88.97.E8.A1.A8"><span class="tocnumber">4.1.1</span> <span class="toctext">获取用户关联的机器人列表</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="#.E8.8E.B7.E5.8F.96.E6.9C.BA.E5.99.A8.E4.BA.BA.E5.85.B3.E8.81.94.E7.9A.84.E7.94.A8.E6.88.B7.E5.88.97.E8.A1.A8_2"><span class="tocnumber">4.1.2</span> <span class="toctext">获取机器人关联的用户列表</span></a></li>
+<li class="toclevel-3 tocsection-29"><a href="#.E6.9F.A5.E8.AF.A2.E6.9C.BA.E5.99.A8.E4.BA.BA.E7.9A.84.E8.BF.9E.E6.8E.A5.E4.BF.A1.E6.81.AF"><span class="tocnumber">4.1.3</span> <span class="toctext">查询机器人的连接信息</span></a></li>
+<li class="toclevel-3 tocsection-30"><a href="#.E5.AE.9E.E6.97.B6.E6.8E.A7.E5.88.B6.E6.9C.BA.E5.99.A8.E4.BA.BA.EF.BC.88.E9.95.BF.E8.BF.9E.E6.8E.A5.EF.BC.89"><span class="tocnumber">4.1.4</span> <span class="toctext">实时控制机器人（长连接）</span></a></li>
+<li class="toclevel-3 tocsection-31"><a href="#.E5.AE.9E.E6.97.B6.E6.8E.A7.E5.88.B6.E6.9C.BA.E5.99.A8.E4.BA.BA.EF.BC.88.E8.BF.94.E5.9B.9E.EF.BC.89"><span class="tocnumber">4.1.5</span> <span class="toctext">实时控制机器人（返回）</span></a></li>
+<li class="toclevel-3 tocsection-32"><a href="#.E5.AE.9E.E6.97.B6.E6.8E.A7.E5.88.B6.E6.9C.BA.E5.99.A8.E4.BA.BA.E3.80.90.E5.BF.83.E8.B7.B3.E3.80.91.E3.80.90.E7.94.B1.E6.9C.8D.E5.8A.A1.E5.99.A8.E5.8F.91.E9.80.81.E3.80.91"><span class="tocnumber">4.1.6</span> <span class="toctext">实时控制机器人【心跳】【由服务器发送】</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-33"><a href="#.E5.8E.82.E5.95.86.E7.9B.B8.E5.85.B3"><span class="tocnumber">5</span> <span class="toctext">厂商相关</span></a>
+<ul>
+<li class="toclevel-2 tocsection-34"><a href="#.E8.8E.B7.E5.8F.96.E6.9C.BA.E5.99.A8.E4.BA.BA.E7.9A.84.E7.94.9F.E4.BA.A7.E5.8F.82.E6.95.B0"><span class="tocnumber">5.1</span> <span class="toctext">获取机器人的生产参数</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#.E8.8E.B7.E5.8F.96.E6.9C.BA.E5.99.A8.E4.BA.BA.E7.9A.84.E7.89.B9.E6.80.A7.E5.8F.82.E6.95.B0"><span class="tocnumber">5.2</span> <span class="toctext">获取机器人的特性参数</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-36"><a href="#.E8.8E.B7.E5.8F.96.E5.BD.93.E5.89.8D.E6.9C.BA.E5.99.A8.E4.BA.BA.E7.9A.84.E7.8A.B6.E6.80.81"><span class="tocnumber">6</span> <span class="toctext">获取当前机器人的状态</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="#.E8.8E.B7.E5.8F.96.E6.9C.BA.E5.99.A8.E4.BA.BA.E5.8F.91.E6.9D.A5.E7.9A.84.E4.BF.A1.E6.81.AF"><span class="tocnumber">7</span> <span class="toctext">获取机器人发来的信息</span></a></li>
+<li class="toclevel-1 tocsection-38"><a href="#.E6.96.87.E4.BB.B6.E4.B8.8A.E4.BC.A0.E4.B8.8B.E8.BD.BD.EF.BC.88http.EF.BC.89"><span class="tocnumber">8</span> <span class="toctext">文件上传下载（http）</span></a></li>
+<li class="toclevel-1 tocsection-39"><a href="#.E9.94.99.E8.AF.AF.E7.A0.81"><span class="tocnumber">9</span> <span class="toctext">错误码</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="API.E7.9A.84.E7.BB.9F.E4.B8.80.E6.8E.A5.E5.8F.A3.E5.BD.A2.E5.BC.8F">API的统一接口形式</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=1" title="编辑小节：API的统一接口形式">编辑</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id=".E5.A4.8D.E6.9D.82.E5.BD.A2.E5.BC.8F">复杂形式</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=2" title="编辑小节：复杂形式">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>{
+"cmd":"message",
+ "user_name":"username",
+ "token":"token"
+ "content":{
+    "method":"方法",
+    // 接下来是参数
+ }
+}
+</pre>
+<h3><span class="mw-headline" id=".E7.AE.80.E5.8D.95.E5.BD.A2.E5.BC.8F">简单形式</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=3" title="编辑小节：简单形式">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>{
+  "cmd":"命令",
+  "robot_id":"robot_id",
+  "token":"token"
+}
+</pre>
+<h3><span class="mw-headline" id=".E4.B8.8D.E9.9C.80.E8.A6.81.E8.BF.94.E5.9B.9E.E5.86.85.E5.AE.B9.E7.9A.84.E7.BB.93.E6.9E.9C">不需要返回内容的结果</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=4" title="编辑小节：不需要返回内容的结果">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>{
+ "status": 0,
+ "content":｛
+    "msg":"OK"
+   }
+}
+</pre>
+<h3><span class="mw-headline" id=".E9.9C.80.E8.A6.81.E8.BF.94.E5.9B.9E.E7.BB.93.E6.9E.9C.E6.95.B0.E6.8D.AE">需要返回结果数据</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=5" title="编辑小节：需要返回结果数据">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>{
+ "status":0,
+ "content":{
+ // 返回的内容，每个方法调用，都不相同
+ }
+}
+</pre>
+<h2><span class="mw-headline" id=".E6.9C.BA.E5.99.A8.E4.BA.BA.E7.9B.B8.E5.85.B3">机器人相关</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=6" title="编辑小节：机器人相关">编辑</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>因为机器人在出厂时候就会带有唯一的身份识别码，所以机器人的注册过程是厂商管理者进行的。已经注册好的机器人才有登录服务器的权限。 每个出厂的机器人都会在外包装印刷上条形码或者串号，或者二维码。 分别表示机器人的唯一ID，以及对应APP的下载地址。
+</p><p>机器人登录比较简单， 因为机器人的Robotid是事先在云端生成好的。所以机器人和服务器就只有登录，退出登录，以及消息发送接收。
+<b>robot ID：  000100151201000001 ～ 000100151201000020 是测试用的ID。</b>
+</p>
+<h3><span class="mw-headline" id=".E6.9C.BA.E5.99.A8.E4.BA.BA.E7.99.BB.E5.BD.95">机器人登录</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=7" title="编辑小节：机器人登录">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>{
+  "cmd":"login",
+  "robot_id":"robot id"，
+  "apmac":"ap热点的mac"，
+  “ssid":"ap热点的ssid",
+  "ipaddr":"局域网的ipaddr"
+}
+</pre>
+<p><br>
+机器人登录应答--异常
+</p>
+<pre>{
+   "status":非0,
+   "content":{
+       "msg":"机器人不存在"
+   }
+}
+</pre>
+<p>机器人登录应答--正常
+</p>
+<pre>{
+   "status":0,
+   "content":{
+       "is_first":1,
+       "msg":"登录成功"
+   }
+           
+}
+</pre>
+<h3><span class="mw-headline" id=".E5.BF.83.E8.B7.B3">心跳</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=8" title="编辑小节：心跳">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>10秒
+</p>
+<pre>{
+  "cmd":'tick",
+  "robot_id":"robot_id",
+}
+</pre>
+<p>心跳返回
+</p>
+<pre>{
+ "status":0,
+ "cmd":"tick",
+ “content”：｛
+   ”msg“：”OK“
+  ｝
+}
+</pre>
+<h3><span class="mw-headline" id=".E6.9C.BA.E5.99.A8.E4.BA.BA.E7.99.BB.E5.87.BA">机器人登出</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=9" title="编辑小节：机器人登出">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>{
+"cmd":"logout",
+ "robot_id":"robot_id",
+}
+</pre>
+<p>登出返回
+</p>
+<pre>{
+ "status":0,
+ "cmd":"logout",
+ "content":{
+   "msg":"OK"
+ }
+}
+</pre>
+<h3><span class="mw-headline" id=".E8.8E.B7.E5.8F.96.E6.9C.BA.E5.99.A8.E4.BA.BA.E5.85.B3.E8.81.94.E7.9A.84.E7.94.A8.E6.88.B7.E5.88.97.E8.A1.A8">获取机器人关联的用户列表</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=10" title="编辑小节：获取机器人关联的用户列表">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>{
+"cmd":"query_user_bind",
+ "robot_id":"机器人ID",
+"token":"令牌",
+}
+</pre>
+<p>返回
+</p>
+<pre>  {
+    "status":0,
+   "cmd":"query_user_bind",    
+    "content":[
+       {"name":"","flag":"0"}, // flag： 0 － 普通用户， 1 － 管理员用户
+       ...
+    ]
+  }
+</pre>
+<h2><span class="mw-headline" id=".E7.94.A8.E6.88.B7.E7.AE.A1.E7.90.86">用户管理</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=11" title="编辑小节：用户管理">编辑</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>用户需要下载APP，第一次使用，进入注册页面，使用用户名和密码向服务器请求注册。发送到服务器的密码是加密的，不用担心服务器端的密码泄漏。 
+注册成功后，可以进入关联机器人的页面，这里有2种方式可以得到想要关联的机器人为一ID。 其一， 
+手动扫描或者输入外包装上的条码或者数字串号；其二，可以给机器人上电后，进入配置模式，此时APP可以搜索附近的机器人，选择您的目标机器人，进行关
+联。 第一次关联的APP用户将拥有机器人的管理权限。 如果不是第一次管理，用户的关联动作需要得到管理员的授权。
+</p><p><br>
+手机APP上的操作分为几个阶段： 注册， 登录， 退出， 交互
+注册需要提供用户名和密码； 登录同样需要用户名和密码，服务器返回一个token， 时效24小时； 主动退出登录的时候，token同时失效； 交互是和服务器进行通讯的主要途径，APP需要提供的是用户名和token。
+</p>
+<h3><span class="mw-headline" id=".E6.B3.A8.E5.86.8C.E7.94.A8.E6.88.B7">注册用户</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=12" title="编辑小节：注册用户">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>发送
+</p>
+<pre>{
+  "cmd":"register",
+  "user_name":"用户名",
+  "passwd":"密码",
+  "verify_code":"验证码"
+}
+</pre>
+<p>考虑验证码和手机验证
+</p>
+<h3><span class="mw-headline" id=".E8.8E.B7.E5.8F.96.E6.89.8B.E6.9C.BA.E9.AA.8C.E8.AF.81.E7.A0.81">获取手机验证码</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=13" title="编辑小节：获取手机验证码">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>发送
+</p>
+<pre>{
+  "cmd":"get_verification_code",
+  "phone":"手机号码"
+  "type":"请求类型, 0 - 注册， 1 - 找回密码"
+}
+</pre>
+<p>考虑验证码和手机验证
+</p>
+<h3><span class="mw-headline" id=".E7.94.A8.E6.88.B7.E7.99.BB.E5.BD.95">用户登录</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=14" title="编辑小节：用户登录">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>{
+  "cmd":"login",
+  "user_name":"用户名",
+  "passwd":"密码"
+}
+</pre>
+<p>考虑微信，微博，扣扣登
+</p><p>返回
+</p>
+<pre>{
+  "status":0,
+  "content":{
+    "token":"24小时时效的令牌"
+    “robot_count":关联的机器人的个数
+    “robot_id":["","".....] 关联的机器人ID集合，
+    “admin":["1","0",.....] 和robot_id，当前用户是否具备机器人的管理权限
+    "online":["1","0",...] 是否在线
+  }
+}
+</pre>
+<h3><span class="mw-headline" id=".E7.94.A8.E6.88.B7.E7.99.BB.E5.87.BA">用户登出</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=15" title="编辑小节：用户登出">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>{
+  "cmd":"logout",
+  "user_name":"用户名",
+  "token":"令牌"
+}
+</pre>
+<h3><span class="mw-headline" id=".E7.BB.91.E5.AE.9A.E6.9C.BA.E5.99.A8.E4.BA.BA">绑定机器人</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=16" title="编辑小节：绑定机器人">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>  {
+      "cmd":"bind",
+      "user_name":"用户名",
+      "token":"token",
+      "robot_id":"robot_id"
+      "admin":"0/1是否成为管理员"
+  }
+</pre>
+<p>返回
+</p>
+<pre>｛
+    “status":0,
+    "content":{
+        "msg":"绑定成功/绑定失败,已经有管理"     } 
+  }
+</pre>
+<h3><span class="mw-headline" id=".E8.A7.A3.E9.99.A4.E7.BB.91.E5.AE.9A">解除绑定</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=17" title="编辑小节：解除绑定">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>  {
+      "cmd":"unbind",
+      "user_name":"用户名",
+      "token":"token",
+      "robot_id":"robot_id"
+  }
+</pre>
+<h3><span class="mw-headline" id=".E7.AE.A1.E7.90.86.E5.91.98.E8.BD.AC.E8.AE.A9">管理员转让</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=18" title="编辑小节：管理员转让">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>  {
+       "cmd":"transfer",
+       "user_name":"name",
+       "token":"token",
+       "robot_id":"robot_id",
+       "to_user":"user name"
+  }
+</pre>
+<h3><span class="mw-headline" id=".E9.87.8D.E8.AE.BE.E5.AF.86.E7.A0.81">重设密码</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=19" title="编辑小节：重设密码">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>发送
+</p>
+<pre>{
+  "cmd":"reset_pass",
+  "user_name":"用户名",
+  "verify_code":"验证码"
+  "new_pass": "新密码"
+}
+</pre>
+<h3><span class="mw-headline" id=".E4.BF.AE.E6.94.B9.E5.AF.86.E7.A0.81">修改密码</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=20" title="编辑小节：修改密码">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>发送
+</p>
+<pre>{
+  "cmd":"change_pass",
+  "user_name":"用户名",
+  "token":"token",
+  "old_pass":"旧密码", 
+  "new_pass":"新密码"
+}
+</pre>
+<p><br>
+</p>
+<h3><span class="mw-headline" id=".E7.94.A8.E6.88.B7.E5.8F.8D.E9.A6.88">用户反馈</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=21" title="编辑小节：用户反馈">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>{
+</p>
+<pre>  "cmd":"message",
+  "user_name":"用户名"
+  "token":"令牌",
+  "content":{
+     "method":"feedback"
+     "text":"用户反馈的内容"
+ }
+</pre>
+<p><br>
+</p><p>返回
+</p>
+<pre>{
+  "status":0,
+  "content":{
+      "msg":"ok"/"错误信息"
+  }
+}
+</pre>
+<h3><span class="mw-headline" id=".E7.94.A8.E6.88.B7.E4.BF.A1.E6.81.AF.E8.8E.B7.E5.8F.96">用户信息获取</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=22" title="编辑小节：用户信息获取">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>{
+</p>
+<pre>  "cmd":"message",
+  "user_name":"用户名"
+  "token":"令牌",
+  "content":{
+     "method":"get_user_info"
+  }
+</pre>
+<p>}
+</p><p>返回
+</p><p><br>
+</p>
+<pre>{
+  "status":0,
+  "content":{
+      "nick_name":"昵称",
+      "sex":"man/female",
+      "regist_date":"1993-08-05",
+      "birthday"："1993-08-05"
+  }
+}
+</pre>
+<h3><span class="mw-headline" id=".E7.94.A8.E6.88.B7.E4.BF.A1.E6.81.AF.E8.AE.BE.E7.BD.AE">用户信息设置</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=23" title="编辑小节：用户信息设置">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>{
+</p>
+<pre>"cmd":"message",
+"user_name":"用户名"
+"token":"令牌",
+"content":{
+     "method":"set_user_info",
+     "info_type":（String）"nick_name" / "sex" / "birthday"
+     "info_value":（String）"xxxxxx" / "man/female" / "1993-08-05"
+ }
+</pre>
+<p>}
+</p><p>返回
+</p>
+<pre>{
+  "status":0,
+  "content":{
+      "msg":"ok"/"错误信息"
+  }
+}
+</pre>
+<p><br>
+</p>
+<h3><span class="mw-headline" id=".E5.B8.B8.E8.A7.81.E9.97.AE.E9.A2.98">常见问题</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=24" title="编辑小节：常见问题">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>{
+</p>
+<pre> "cmd":"message",
+ "user_name":"用户名"
+ "token":"令牌",
+ "content":{
+    "method":"get_faq"
+ }
+</pre>
+<p>}
+</p><p>返回
+</p><p><br>
+{
+</p>
+<pre> "status":0,
+ "content":{
+     "question_list":
+     [
+         {
+             "question":"xxxxxxxxxxxx?",
+             "answer":"xxxxxxxxxxxxxx"
+         }
+         {
+             "question":"xxxxxxxxxxxx?",
+             "answer":"xxxxxxxxxxxxxx"
+         }
+         {
+             "question":"xxxxxxxxxxxx?",
+             "answer":"xxxxxxxxxxxxxx"
+         }
+     ]
+ }
+</pre>
+<p>}
+</p>
+<h2><span class="mw-headline" id="APP.E5.AE.A2.E6.88.B7.E7.AB.AF.E7.9B.B8.E5.85.B3">APP客户端相关</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=25" title="编辑小节：APP客户端相关">编辑</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id=".E6.B6.88.E6.81.AF.E5.8F.91.E9.80.81">消息发送</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=26" title="编辑小节：消息发送">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>{
+  "cmd":"message",
+  “user_name":"用户名"
+  "token":"令牌",
+  "content":{
+     消息可能是非常复杂的JSON数据结构
+  }
+}
+</pre>
+<p>返回
+</p>
+<pre> {
+   "status":0,
+   "content":{
+     根据不同的消息，返回的数据可能是非常复杂的JSON数据结构
+  }
+ }
+</pre>
+<h4><span class="mw-headline" id=".E8.8E.B7.E5.8F.96.E7.94.A8.E6.88.B7.E5.85.B3.E8.81.94.E7.9A.84.E6.9C.BA.E5.99.A8.E4.BA.BA.E5.88.97.E8.A1.A8">获取用户关联的机器人列表</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=27" title="编辑小节：获取用户关联的机器人列表">编辑</a><span class="mw-editsection-bracket">]</span></span></h4>
+<pre>{
+ "cmd":"message",
+ "user_name":"用户名"
+ "token":"令牌",
+ "content":{
+      "method":"query",
+      "param":"robot_bind"
+ }
+}
+</pre>
+<p><br>
+返回
+</p>
+<pre>   {
+     "status":0,
+     "content":{
+       "count":关联的机器人个数,
+       "robots":[关联的机器人ID数组]
+       "admin":[对应于上面的机器人ID，具有管理员权限的机器人id是？ 如果没有就是0](Note:admin为字符串类型的数组)
+       "online":["1","0",...] 是否在线
+     }
+   }
+</pre>
+<h4><span class="mw-headline" id=".E8.8E.B7.E5.8F.96.E6.9C.BA.E5.99.A8.E4.BA.BA.E5.85.B3.E8.81.94.E7.9A.84.E7.94.A8.E6.88.B7.E5.88.97.E8.A1.A8_2">获取机器人关联的用户列表</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=28" title="编辑小节：获取机器人关联的用户列表">编辑</a><span class="mw-editsection-bracket">]</span></span></h4>
+<pre>{
+ "cmd":"message",
+ "user_name":"用户名"
+ "token":"令牌",
+ "content":{
+      "method":"query",
+      "param":"user_bind", 
+     "robot_id":"机器人ID" // 需要查询和此机器人相关联的用户列表
+ }
+}
+</pre>
+<p><br>
+返回
+</p>
+<pre>   {
+     "status":0,
+     "content":{
+       "count":关联的用户个数,
+       "admin_count":$admin_count, // 管理员的个数
+       "users":[关联的用户name数组]
+       "admin":[对应于上面的用户Account，是否为机器人管理员，只能有一个管理员，如果是管理员则为1, 如果没有就是0](Note:admin为字符串类型的数组)
+     }
+   }
+</pre>
+<p>注意：
+如果用户没有绑定机器人，是没有权限获取具体的用户列表的。 所以，返回的列表为空，但是用户的个数，以及管理员的个数都正常返回。
+</p>
+<h4><span class="mw-headline" id=".E6.9F.A5.E8.AF.A2.E6.9C.BA.E5.99.A8.E4.BA.BA.E7.9A.84.E8.BF.9E.E6.8E.A5.E4.BF.A1.E6.81.AF">查询机器人的连接信息</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=29" title="编辑小节：查询机器人的连接信息">编辑</a><span class="mw-editsection-bracket">]</span></span></h4>
+<pre> ｛
+    "cmd":"message",
+    "user_name":"用戶名",
+    "token":"令牌",
+    "content":{
+      "method":"connect_info",
+      "robot_id":"机器人ID"
+    }
+  ｝
+</pre>
+<p>返回:
+</p>
+<pre>{
+   "status":0,
+   "content":{
+       "ap":"机器人所连接的热点的mac地址",
+       "ssid":"机器人所连接的热点",
+       "ipaddr":"机器人的局域网IP地址"
+   }
+ }
+</pre>
+<h4><span class="mw-headline" id=".E5.AE.9E.E6.97.B6.E6.8E.A7.E5.88.B6.E6.9C.BA.E5.99.A8.E4.BA.BA.EF.BC.88.E9.95.BF.E8.BF.9E.E6.8E.A5.EF.BC.89">实时控制机器人（长连接）</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=30" title="编辑小节：实时控制机器人（长连接）">编辑</a><span class="mw-editsection-bracket">]</span></span></h4>
+<pre>{
+"cmd":"message",
+ "user_name":"用户名"
+ "token":"令牌",
+ "content":{
+    "method":"control",
+    "robot_id":"机器人ID", // 当前用户有权限需要对应权限
+    "sequence":"命令序列" // 将会被肢解发送给机器人
+    "wait_result":0 //需要等机器人返回值
+ }
+}
+</pre>
+<h4><span class="mw-headline" id=".E5.AE.9E.E6.97.B6.E6.8E.A7.E5.88.B6.E6.9C.BA.E5.99.A8.E4.BA.BA.EF.BC.88.E8.BF.94.E5.9B.9E.EF.BC.89">实时控制机器人（返回）</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=31" title="编辑小节：实时控制机器人（返回）">编辑</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>｛
+</p>
+<pre>   "status":"0"
+    "user_name":""
+    "content":""
+ ｝
+</pre>
+<p><br>
+</p><p><br>
+</p>
+<h4><span class="mw-headline" id=".E5.AE.9E.E6.97.B6.E6.8E.A7.E5.88.B6.E6.9C.BA.E5.99.A8.E4.BA.BA.E3.80.90.E5.BF.83.E8.B7.B3.E3.80.91.E3.80.90.E7.94.B1.E6.9C.8D.E5.8A.A1.E5.99.A8.E5.8F.91.E9.80.81.E3.80.91">实时控制机器人【心跳】【由服务器发送】</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=32" title="编辑小节：实时控制机器人【心跳】【由服务器发送】">编辑</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>（每隔5秒发送一次）
+</p>
+<pre>｛
+    "conn_status":0
+ ｝
+</pre>
+<h2><span class="mw-headline" id=".E5.8E.82.E5.95.86.E7.9B.B8.E5.85.B3">厂商相关</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=33" title="编辑小节：厂商相关">编辑</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>厂商通过特殊接口进入后台，为即将出厂销售的机器人进行统一编号，初始设置等。不在这里阐述。
+</p><p>和服务器的通讯协议： 所有来往协议使用json文本。
+</p><p><br>
+</p>
+<h3><span class="mw-headline" id=".E8.8E.B7.E5.8F.96.E6.9C.BA.E5.99.A8.E4.BA.BA.E7.9A.84.E7.94.9F.E4.BA.A7.E5.8F.82.E6.95.B0">获取机器人的生产参数</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=34" title="编辑小节：获取机器人的生产参数">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>｛
+    "method":"query",
+    "param":"product_info",
+    "robot_id":"robot id"
+  ｝
+</pre>
+<pre> 返回
+  {
+   "status":0,
+   "content":{
+      "create_time": 生产日期，
+      "create_addr": 产地,
+      "height":高度,
+      "weight": 重量,
+      // 传感器信息
+   }
+  }
+</pre>
+<h3><span class="mw-headline" id=".E8.8E.B7.E5.8F.96.E6.9C.BA.E5.99.A8.E4.BA.BA.E7.9A.84.E7.89.B9.E6.80.A7.E5.8F.82.E6.95.B0">获取机器人的特性参数</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=35" title="编辑小节：获取机器人的特性参数">编辑</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>  ｛
+      "method":"query",
+      "param":"robot_info",
+      "robot_id":"robot id"
+   ｝
+</pre>
+<p>返回
+</p>
+<pre>   {
+      "status":0,
+      "content":{
+           "brithday":生日,
+           "gender":性别,
+           "name":姓名,
+           "master":主人名字,
+           "character":性格,
+           "height":身高,
+           "weight":体重
+       }
+   }
+</pre>
+<h2><span class="mw-headline" id=".E8.8E.B7.E5.8F.96.E5.BD.93.E5.89.8D.E6.9C.BA.E5.99.A8.E4.BA.BA.E7.9A.84.E7.8A.B6.E6.80.81">获取当前机器人的状态</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=36" title="编辑小节：获取当前机器人的状态">编辑</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h2><span class="mw-headline" id=".E8.8E.B7.E5.8F.96.E6.9C.BA.E5.99.A8.E4.BA.BA.E5.8F.91.E6.9D.A5.E7.9A.84.E4.BF.A1.E6.81.AF">获取机器人发来的信息</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=37" title="编辑小节：获取机器人发来的信息">编辑</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h2><span class="mw-headline" id=".E6.96.87.E4.BB.B6.E4.B8.8A.E4.BC.A0.E4.B8.8B.E8.BD.BD.EF.BC.88http.EF.BC.89">文件上传下载（http）</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=38" title="编辑小节：文件上传下载（http）">编辑</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>文件上传：
+</p><p>地址：
+robosys.cc:6789/upload.php
+</p><p>模拟表单上传
+</p><p>表单file元素的name属性：file
+（另外新加了三个参数：fromUser、toUser、token）
+</p><p>表单代码（用以参考）：
+</p>
+<pre>   &lt;html&gt;
+   &lt;body&gt;
+       &lt;form action="upload.php" method="post" enctype="multipart/form-data"&gt;
+       &lt;label for="file"&gt;Filename:&lt;/label&gt;
+       &lt;input type="hidden" name="fromUser" value="app_13800337234"&gt;   
+       &lt;input type="hidden" name="toUser" value="rbt_B13CXXXXXXXXXX"&gt;   
+       &lt;input type="hidden" name="token" value="token值"&gt;
+       &lt;input type="file" name="file" id="file" /&gt;
+       &lt;input type="submit" name="submit" value="Submit" /&gt;
+       &lt;/form&gt;
+   &lt;/body&gt;
+   &lt;/html&gt;
+</pre>
+<p><br>
+</p><p><br>
+文件下载：
+robosys.cc:6789/fetch?id=xxx&amp;from="app_13800000000"&amp;token="xxxxxxx"
+</p><p>其中from参数也可能：from="rbt_CB001xxxxxx"
+分别表示从机器人还是APP
+</p>
+<h2><span class="mw-headline" id=".E9.94.99.E8.AF.AF.E7.A0.81">错误码</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;section=39" title="编辑小节：错误码">编辑</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>如果正确， 服务器返回
+</p>
+<pre>{
+ "status":0,
+ "content":｛
+    "msg":"OK"
+  ｝
+}
+</pre>
+<p>如果出错
+status字段不为0，content字段为错误的文本内容
+</p><p>100开始的错误是命令相关的：
+</p>
+<ul><li> 100: 格式错误</li>
+<li> 101: 非法命令</li></ul>
+<p>200开始的错误是注册相关的：
+</p>
+<ul><li> 200: 用户名已存在</li>
+<li> 201:  用户名包含非法字符</li>
+<li> 202: 密码错误</li></ul>
+<p>300开始的错误是其他相关：
+</p>
+<ul><li> 300: 用户不存在</li>
+<li> 301: token非法</li>
+<li> 302: token已过期</li>
+<li> 303:不能重复绑定</li>
+<li> 304: 机器人不存在</li>
+<li> 305: 没有绑定的机器人</li>
+<li> 306: 请先转让管理权限</li>
+<li> 307: 您没有此权限</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20170228074629
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.025 seconds
+Real time usage: 0.035 seconds
+Preprocessor visited node count: 159/1000000
+Preprocessor generated node count: 168/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key my_wiki:pcache:idhash:12-0!*!*!!zh-cn!*!* and timestamp 20170228074629 and revision id 336
+ -->
+</div>					<div class="printfooter">
+						取自“<a dir="ltr" href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;oldid=336">http://192.168.0.111/wiki/index.php?title=服务器API&amp;oldid=336</a>”					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>导航菜单</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">个人工具</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="http://192.168.0.111/wiki/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;type=signup" title="建议您创建一个账户并登录，但这不是强制的">创建账户</a></li><li id="pt-login"><a href="http://192.168.0.111/wiki/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=%E6%9C%8D%E5%8A%A1%E5%99%A8API" title="我们鼓励您登录；然而，这不是强制性的[Alt+Shift+o]" accesskey="o">登录</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">命名空间</h3>
+						<ul>
+															<li id="ca-nstab-main" class="selected"><span><a href="http://192.168.0.111/wiki/index.php/%E6%9C%8D%E5%8A%A1%E5%99%A8API" title="查看内容页面[Alt+Shift+c]" accesskey="c">页面</a></span></li>
+															<li id="ca-talk" class="new"><span><a href="http://192.168.0.111/wiki/index.php?title=%E8%AE%A8%E8%AE%BA:%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit&amp;redlink=1" title="关于内容页面的讨论[Alt+Shift+t]" accesskey="t" rel="discussion">讨论</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label" tabindex="0">
+							<span>变种</span><a href="#" tabindex="-1"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">视图</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="http://192.168.0.111/wiki/index.php/%E6%9C%8D%E5%8A%A1%E5%99%A8API">阅读</a></span></li>
+															<li id="ca-edit"><span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=edit" title="编辑本页[Alt+Shift+e]" accesskey="e">编辑</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=history" title="本页面过去的版本[Alt+Shift+h]" accesskey="h">查看历史</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label" style="">
+						<h3 id="p-cactions-label" tabindex="0"><span>更多</span><a href="#" tabindex="-1"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">搜索</label>
+						</h3>
+
+						<form action="/wiki/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input name="search" placeholder="搜索" title="搜索ROBOSYS WIKI[Alt+Shift+f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off" type="search"><input value="特殊:搜索" name="title" type="hidden"><input name="go" value="前往" title="若相同标题存在，则直接前往该页面" id="searchButton" class="searchButton" type="submit">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="http://192.168.0.111/wiki/index.php/%E9%A6%96%E9%A1%B5" title="访问首页"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">导航</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="http://192.168.0.111/wiki/index.php/%E9%A6%96%E9%A1%B5" title="访问首页[Alt+Shift+z]" accesskey="z">首页</a></li><li id="n-recentchanges"><a href="http://192.168.0.111/wiki/index.php/%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9" title="本wiki最近更改的列表[Alt+Shift+r]" accesskey="r">最近更改</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-.E5.BC.80.E5.8F.91.E7.9B.B8.E5.85.B3" aria-labelledby="p-.E5.BC.80.E5.8F.91.E7.9B.B8.E5.85.B3-label">
+			<h3 id="p-.E5.BC.80.E5.8F.91.E7.9B.B8.E5.85.B3-label">开发相关</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-.E6.9C.8D.E5.8A.A1.E5.99.A8.E7.9B.B8.E5.85.B3"><a href="http://192.168.0.111/wiki/index.php/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9B%B8%E5%85%B3">服务器相关</a></li><li id="n-.E5.BA.95.E7.9B.98.E7.9B.B8.E5.85.B3"><a href="http://192.168.0.111/wiki/index.php/%E5%BA%95%E7%9B%98%E7%9B%B8%E5%85%B3">底盘相关</a></li><li id="n-.E8.BD.AF.E4.BB.B6.E5.8F.91.E5.B8.83"><a href="http://192.168.0.111/wiki/index.php/%E8%BD%AF%E4%BB%B6%E5%8F%91%E5%B8%83">软件发布</a></li><li id="n-Linux.E7.9B.B8.E5.85.B3"><a href="http://192.168.0.111/wiki/index.php/Linux">Linux相关</a></li><li id="n-Android.E7.9B.B8.E5.85.B3"><a href="http://192.168.0.111/wiki/index.php/Android">Android相关</a></li><li id="n-Robosys-Framework"><a href="http://192.168.0.111/wiki/index.php/RoboSYS_Framework">Robosys Framework</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-.E7.A1.AC.E4.BB.B6.E7.9B.B8.E5.85.B3" aria-labelledby="p-.E7.A1.AC.E4.BB.B6.E7.9B.B8.E5.85.B3-label">
+			<h3 id="p-.E7.A1.AC.E4.BB.B6.E7.9B.B8.E5.85.B3-label">硬件相关</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-.E7.94.9F.E4.BA.A7.E7.9B.B8.E5.85.B3" aria-labelledby="p-.E7.94.9F.E4.BA.A7.E7.9B.B8.E5.85.B3-label">
+			<h3 id="p-.E7.94.9F.E4.BA.A7.E7.9B.B8.E5.85.B3-label">生产相关</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-.E6.B5.8B.E8.AF.95.E7.9B.B8.E5.85.B3" aria-labelledby="p-.E6.B5.8B.E8.AF.95.E7.9B.B8.E5.85.B3-label">
+			<h3 id="p-.E6.B5.8B.E8.AF.95.E7.9B.B8.E5.85.B3-label">测试相关</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-.E5.BC.A0.E5.B0.8F.E7.9B.92.E6.B5.8B.E8.AF.95"><a href="http://192.168.0.111/wiki/index.php/%E5%BC%A0%E5%B0%8F%E7%9B%92%E6%B5%8B%E8%AF%95">张小盒测试</a></li><li id="n-.E5.A4.A7.E7.99.BD.E6.B5.8B.E8.AF.95"><a href="http://192.168.0.111/wiki/index.php/%E5%A4%A7%E7%99%BD%E6%B5%8B%E8%AF%95">大白测试</a></li><li id="n-.E7.BE.A4.E7.BB.84.E6.9C.BA.E5.99.A8.E4.BA.BA.E6.B5.8B.E8.AF.95"><a href="http://192.168.0.111/wiki/index.php/%E7%BE%A4%E7%BB%84%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%B5%8B%E8%AF%95">群组机器人测试</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">工具</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="http://192.168.0.111/wiki/index.php/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%85%A5%E9%A1%B5%E9%9D%A2/%E6%9C%8D%E5%8A%A1%E5%99%A8API" title="所有链接至本页面的wiki页面的列表[Alt+Shift+j]" accesskey="j">链入页面</a></li><li id="t-recentchangeslinked"><a href="http://192.168.0.111/wiki/index.php/%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E9%93%BE%E5%87%BA%E6%9B%B4%E6%94%B9/%E6%9C%8D%E5%8A%A1%E5%99%A8API" title="链自本页的页面的最近更改[Alt+Shift+k]" accesskey="k">相关更改</a></li><li id="t-specialpages"><a href="http://192.168.0.111/wiki/index.php/%E7%89%B9%E6%AE%8A:%E7%89%B9%E6%AE%8A%E9%A1%B5%E9%9D%A2" title="所有特殊页面的列表[Alt+Shift+q]" accesskey="q">特殊页面</a></li><li id="t-print"><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;printable=yes" rel="alternate" title="本页面的可打印版本[Alt+Shift+p]" accesskey="p">打印版本</a></li><li id="t-permalink"><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;oldid=336" title="本页面该版本的固定链接">固定链接</a></li><li id="t-info"><a href="http://192.168.0.111/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8API&amp;action=info" title="关于此页面的更多信息">页面信息</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> 本页面最后修改于2016年10月8日 (星期六) 14:28。</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://192.168.0.111/wiki/index.php/ROBOSYS_WIKI:%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96" title="ROBOSYS WIKI:隐私政策">隐私政策</a></li>
+											<li id="footer-places-about"><a href="http://192.168.0.111/wiki/index.php/ROBOSYS_WIKI:%E5%85%B3%E4%BA%8E" title="ROBOSYS WIKI:关于">关于ROBOSYS WIKI</a></li>
+											<li id="footer-places-disclaimer"><a href="http://192.168.0.111/wiki/index.php/ROBOSYS_WIKI:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E" title="ROBOSYS WIKI:免责声明">免责声明</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-poweredbyico">
+							<a href="http://www.mediawiki.org/"><img src="%E6%9C%8D%E5%8A%A1%E5%99%A8API%20-%20ROBOSYS%20WIKI_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" height="31" width="88"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":533});
+} );</script>
+	
+
+<div style="display: none; font-size: 13px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>

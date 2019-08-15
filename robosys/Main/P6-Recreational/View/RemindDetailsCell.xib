@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RemindDetailsCell" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eee-IL-e7Q">
+                    <rect key="frame" x="66" y="35" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="选择框2" highlightedImage="选择框" translatesAutoresizingMaskIntoConstraints="NO" id="9aL-9R-2t3">
+                    <rect key="frame" x="40" y="27" width="16" height="16"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9aL-9R-2t3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="aQs-QE-8Ib"/>
+                <constraint firstItem="Eee-IL-e7Q" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hA3-f2-m7A"/>
+                <constraint firstItem="Eee-IL-e7Q" firstAttribute="leading" secondItem="9aL-9R-2t3" secondAttribute="trailing" constant="10" id="lI4-Fa-0jn"/>
+                <constraint firstItem="9aL-9R-2t3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="p0T-ID-lGg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgView" destination="9aL-9R-2t3" id="ppE-k2-TK4"/>
+                <outlet property="label" destination="Eee-IL-e7Q" id="DW1-dh-CqG"/>
+            </connections>
+            <point key="canvasLocation" x="-64" y="278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="选择框" width="17" height="17"/>
+        <image name="选择框2" width="16" height="16"/>
+    </resources>
+</document>

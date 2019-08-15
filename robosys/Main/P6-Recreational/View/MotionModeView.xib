@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MotionModeViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="CgP-Mj-kzV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MotionModeView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-背景" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-fx-CvY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDw-Ok-rNb" userLabel="自由漫步">
+                    <rect key="frame" x="104" y="227.5" width="167" height="84"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="15"/>
+                    <state key="normal" backgroundImage="自由漫步">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="freedom:" destination="iN0-l3-epB" eventType="touchUpInside" id="93E-ct-CzY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXj-r7-AM5" userLabel="停止运动">
+                    <rect key="frame" x="104" y="435.5" width="167" height="84"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="15"/>
+                    <state key="normal" backgroundImage="停止运动">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="stop:" destination="iN0-l3-epB" eventType="touchUpInside" id="frK-LI-j8U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1x8-jo-Gh4">
+                    <rect key="frame" x="333" y="625" width="32" height="32"/>
+                    <state key="normal" image="设置"/>
+                    <connections>
+                        <action selector="setMotion:" destination="iN0-l3-epB" eventType="touchUpInside" id="AmL-Is-ZF4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKr-ib-RbT" userLabel="跟随模式">
+                    <rect key="frame" x="104" y="331.5" width="167" height="84"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="15"/>
+                    <state key="normal" backgroundImage="跟随模式">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="follow:" destination="iN0-l3-epB" eventType="touchUpInside" id="3ZF-5s-wwE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SXj-r7-AM5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1kx-C2-Raf"/>
+                <constraint firstAttribute="trailing" secondItem="1x8-jo-Gh4" secondAttribute="trailing" constant="10" id="IcT-W0-HhC"/>
+                <constraint firstAttribute="bottom" secondItem="TAP-fx-CvY" secondAttribute="bottom" id="KYc-vK-r2t"/>
+                <constraint firstAttribute="trailing" secondItem="TAP-fx-CvY" secondAttribute="trailing" id="VtH-Mi-pgO"/>
+                <constraint firstItem="SXj-r7-AM5" firstAttribute="top" secondItem="QKr-ib-RbT" secondAttribute="bottom" constant="20" id="X0S-hA-Wuc"/>
+                <constraint firstAttribute="bottom" secondItem="1x8-jo-Gh4" secondAttribute="bottom" constant="10" id="Yxo-T6-qyx"/>
+                <constraint firstItem="TAP-fx-CvY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aje-xA-zIG"/>
+                <constraint firstItem="QKr-ib-RbT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="40" id="bNl-Xm-t77"/>
+                <constraint firstItem="QKr-ib-RbT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="byP-tH-rpt"/>
+                <constraint firstItem="IDw-Ok-rNb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iiY-Hh-oNb"/>
+                <constraint firstItem="TAP-fx-CvY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ilz-7z-IFF"/>
+                <constraint firstItem="QKr-ib-RbT" firstAttribute="top" secondItem="IDw-Ok-rNb" secondAttribute="bottom" constant="20" id="xEB-Uc-Jee"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="TAP-fx-CvY"/>
+                    <exclude reference="IDw-Ok-rNb"/>
+                    <exclude reference="SXj-r7-AM5"/>
+                    <exclude reference="1x8-jo-Gh4"/>
+                    <exclude reference="QKr-ib-RbT"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="iiY-Hh-oNb"/>
+                    <exclude reference="bNl-Xm-t77"/>
+                    <exclude reference="byP-tH-rpt"/>
+                    <exclude reference="xEB-Uc-Jee"/>
+                    <exclude reference="1kx-C2-Raf"/>
+                    <exclude reference="X0S-hA-Wuc"/>
+                    <exclude reference="KYc-vK-r2t"/>
+                    <exclude reference="VtH-Mi-pgO"/>
+                    <exclude reference="aje-xA-zIG"/>
+                    <exclude reference="ilz-7z-IFF"/>
+                    <exclude reference="IcT-W0-HhC"/>
+                    <exclude reference="Yxo-T6-qyx"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="TAP-fx-CvY"/>
+                    <include reference="IDw-Ok-rNb"/>
+                    <include reference="SXj-r7-AM5"/>
+                    <include reference="1x8-jo-Gh4"/>
+                    <include reference="QKr-ib-RbT"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="iiY-Hh-oNb"/>
+                    <include reference="bNl-Xm-t77"/>
+                    <include reference="byP-tH-rpt"/>
+                    <include reference="xEB-Uc-Jee"/>
+                    <include reference="1kx-C2-Raf"/>
+                    <include reference="X0S-hA-Wuc"/>
+                    <include reference="KYc-vK-r2t"/>
+                    <include reference="VtH-Mi-pgO"/>
+                    <include reference="aje-xA-zIG"/>
+                    <include reference="ilz-7z-IFF"/>
+                    <include reference="IcT-W0-HhC"/>
+                    <include reference="Yxo-T6-qyx"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="followBtn" destination="QKr-ib-RbT" id="vBe-Re-Kul"/>
+                <outlet property="freedomBtn" destination="IDw-Ok-rNb" id="e6V-wL-fks"/>
+                <outlet property="stopBtn" destination="SXj-r7-AM5" id="DBj-6z-Lme"/>
+            </connections>
+            <point key="canvasLocation" x="409" y="412"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="停止运动" width="167" height="84"/>
+        <image name="自由漫步" width="167" height="84"/>
+        <image name="设置" width="32" height="32"/>
+        <image name="跟随模式" width="167" height="84"/>
+        <image name="首页-背景" width="375" height="667"/>
+    </resources>
+</document>

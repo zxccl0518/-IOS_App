@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyProgramViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Qvf-zT-neW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyProgramView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZe-1Z-lvq">
+                    <rect key="frame" x="10" y="639" width="54" height="18"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="18"/>
+                    <state key="normal" title="全选" image="性别选择底">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="取消全选" image="性别选择"/>
+                    <connections>
+                        <action selector="allSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="U2p-zm-pVY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltS-MA-iwP">
+                    <rect key="frame" x="335" y="635" width="30" height="27"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="15"/>
+                    <state key="normal" title="删除">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteprogramV:" destination="iN0-l3-epB" eventType="touchUpInside" id="Kld-vV-R0o"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X8O-MY-JRa">
+                    <rect key="frame" x="0.0" y="180" width="375" height="429"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="VbK-2c-It3"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="NFe-zv-fbQ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JZe-1Z-lvq" secondAttribute="bottom" constant="10" id="1eu-7S-UiM"/>
+                <constraint firstItem="JZe-1Z-lvq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="X9b-Kd-KDd"/>
+                <constraint firstItem="X8O-MY-JRa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="adi-b2-5Nw"/>
+                <constraint firstItem="ltS-MA-iwP" firstAttribute="centerY" secondItem="JZe-1Z-lvq" secondAttribute="centerY" id="gGC-lF-VaM"/>
+                <constraint firstItem="X8O-MY-JRa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gfa-Nf-6e3"/>
+                <constraint firstItem="X8O-MY-JRa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="180" id="ift-f8-jpE"/>
+                <constraint firstItem="JZe-1Z-lvq" firstAttribute="top" secondItem="X8O-MY-JRa" secondAttribute="bottom" constant="30" id="pIb-iM-cGa"/>
+                <constraint firstAttribute="trailing" secondItem="ltS-MA-iwP" secondAttribute="trailing" constant="10" id="rLs-0L-lDZ"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="JZe-1Z-lvq"/>
+                    <exclude reference="ltS-MA-iwP"/>
+                    <exclude reference="X8O-MY-JRa"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="adi-b2-5Nw"/>
+                    <exclude reference="gfa-Nf-6e3"/>
+                    <exclude reference="ift-f8-jpE"/>
+                    <exclude reference="1eu-7S-UiM"/>
+                    <exclude reference="X9b-Kd-KDd"/>
+                    <exclude reference="pIb-iM-cGa"/>
+                    <exclude reference="gGC-lF-VaM"/>
+                    <exclude reference="rLs-0L-lDZ"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="JZe-1Z-lvq"/>
+                    <include reference="ltS-MA-iwP"/>
+                    <include reference="X8O-MY-JRa"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="adi-b2-5Nw"/>
+                    <include reference="gfa-Nf-6e3"/>
+                    <include reference="ift-f8-jpE"/>
+                    <include reference="1eu-7S-UiM"/>
+                    <include reference="X9b-Kd-KDd"/>
+                    <include reference="pIb-iM-cGa"/>
+                    <include reference="gGC-lF-VaM"/>
+                    <include reference="rLs-0L-lDZ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="allSelectBtn" destination="JZe-1Z-lvq" id="MJC-Pd-k5p"/>
+                <outlet property="deleteBtn" destination="ltS-MA-iwP" id="gt2-jZ-5or"/>
+                <outlet property="tableView" destination="X8O-MY-JRa" id="uB1-pk-fav"/>
+            </connections>
+            <point key="canvasLocation" x="250" y="302"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="性别选择" width="17" height="17"/>
+        <image name="性别选择底" width="17" height="17"/>
+    </resources>
+</document>

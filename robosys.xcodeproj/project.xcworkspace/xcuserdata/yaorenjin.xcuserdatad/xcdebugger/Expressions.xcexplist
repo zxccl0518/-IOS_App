@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MotionProgramView.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cellArr">
+            </PersistentString>
+            <PersistentString
+               value = "musicArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramView.awakeFromNib() -&gt; ():MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.rightTable">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramView.(play() -&gt; ()).(closure #1):MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.alertView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramView.createCollectionCell(Int, index : Int, width : CGFloat, param : [String?]) -&gt; ():MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tableViewCellDic">
+            </PersistentString>
+            <PersistentString
+               value = "imgDic">
+            </PersistentString>
+            <PersistentString
+               value = "cell.funcArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramView.configerCollectionCell(Int) -&gt; ():MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imgDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RobotManager.addRobotModel(Robot) -&gt; ():RobotManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.robotConnectedDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppView.dismiss() -&gt; ():AppView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.classForCoder">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PushScript:RobotCtrl.c">
+      </ContextState>
+      <ContextState
+         contextName = "MyViewCell.setUp(Robot) -&gt; ():MyViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.currentRobot">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramView.(createCollectionCell(Int, index : Int, width : CGFloat, param : [String?]) -&gt; ()).(closure #1):MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.imgDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static Programming.toFrameDictionary(NSMutableDictionary) -&gt; [Int : [CGRect]]?:Programming.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[FileUpload upload:filename:data:parmas:]:FileUpload.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "control.buf">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyProgramView.(click(UIButton) -&gt; ()).(closure #1):MyProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RobotManager.unarchiveObjectRobotDic() -&gt; NSMutableDictionary:RobotManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ProgramViewTableViewCell.handleProgressView() -&gt; ():ProgramViewTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "previewAction.(doAction() -&gt; Int32).(closure #1):MotionProgramView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "APPDatePicker1.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:APPDatePicker1.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tableView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyView.connectRobotId(String) -&gt; ():MyView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tableView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.(login(UIButton) -&gt; ()).(closure #1):HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.alert">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "previewAction.(doAction() -&gt; Int32).(closure #1).(closure #1):MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.alertView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Robot.encodeWithCoder(NSCoder) -&gt; ():Robot.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "robotId">
+            </PersistentString>
+            <PersistentString
+               value = "name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Robot.init(coder : NSCoder) -&gt; Robot?:Robot.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gender">
+            </PersistentString>
+            <PersistentString
+               value = "robotId">
+            </PersistentString>
+            <PersistentString
+               value = "connect">
+            </PersistentString>
+            <PersistentString
+               value = "admin">
+            </PersistentString>
+            <PersistentString
+               value = "name">
+            </PersistentString>
+            <PersistentString
+               value = "online">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramCell.collectionView(UICollectionView, cellForItemAtIndexPath : NSIndexPath) -&gt; UICollectionViewCell:MotionProgramCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static Programming.createProgramming([Int : [(String, [String?], Int, Int)?]], frameDic : [Int : [CGRect]], totalTime : Int!, saveName : String) -&gt; Programming:Programming.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramCell.dataArr.didset:MotionProgramCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.imgDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GetRobotAttr:RobotCtrl.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "attr-&gt;masterName">
+            </PersistentString>
+            <PersistentString
+               value = "attr-&gt;masterNameLen">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static Programming.becomeFrameDictionary([Int : [CGRect]]) -&gt; NSMutableDictionary?:Programming.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramView.totalTime.didset:MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LocationProgramTableViewCell.reloadData(Programming) -&gt; ():LocationProgramTableViewCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramCell.handleAlertClick(UIButton) -&gt; ():MotionProgramCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tempIndexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "indexArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramCell.delete() -&gt; ():MotionProgramCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramView.setUpCell(UITableView, indexPath : NSIndexPath) -&gt; UITableViewCell:MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tableViewCellDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppAlert.dismiss() -&gt; ():AppAlert.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramView.clickSave(UIButton) -&gt; ():MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "alert">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramView.saveOkBtnClick(UIButton) -&gt; ():MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "alert">
+            </PersistentString>
+            <PersistentString
+               value = "alertView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RobotManager.archiveRootObjectRobotDic() -&gt; ():RobotManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "RobotManager.getRobotInfo() -&gt; ():RobotManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MotionProgramView.saveData(String) -&gt; ():MotionProgramView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.frameDic">
+            </PersistentString>
+            <PersistentString
+               value = "self.programming">
+            </PersistentString>
+            <PersistentString
+               value = "self.functionDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.login() -&gt; ():HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "loginM.robotCount">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "specialized FindView.(webView(UIWebView, shouldStartLoadWithRequest : NSURLRequest, navigationType : UIWebViewNavigationType) -&gt; Bool).(closure #1):FindView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.control">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DeleteScriptMulti:RobotCtrl.c">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

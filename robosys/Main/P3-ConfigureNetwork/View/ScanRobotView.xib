@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanRobotViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="GL2-zn-tZo" id="wlT-Mp-M6t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GL2-zn-tZo" customClass="ScanRobotView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-背景" translatesAutoresizingMaskIntoConstraints="NO" id="7LY-RP-0bR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step1 将机器人背后的电源键拨至ON" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXA-Jk-Ldg">
+                    <rect key="frame" x="15" y="160" width="226" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="yuY-U9-XXp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step2 按下机器人背后的WiFi配置按钮" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhH-r3-a4x">
+                    <rect key="frame" x="15" y="319" width="344" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="qNr-Kt-thg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  提示:如果机器人已经联网，则无需按下WIFI按钮" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhX-FW-aTk">
+                    <rect key="frame" x="15" y="343" width="344" height="43"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="gj1-Xw-KAO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="视频区" translatesAutoresizingMaskIntoConstraints="NO" id="WYg-pE-1SY">
+                    <rect key="frame" x="15" y="184" width="344" height="105"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="105" id="MMS-N0-3TD"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="视频区" translatesAutoresizingMaskIntoConstraints="NO" id="cNR-ko-9sH">
+                    <rect key="frame" x="15" y="391" width="344" height="105"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="105" id="L2P-2H-s9D"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NEt-dK-vAz">
+                    <rect key="frame" x="27" y="189" width="321" height="95"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tWw-bd-SJC">
+                    <rect key="frame" x="27" y="396" width="321" height="95"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSQ-lW-H4B">
+                    <rect key="frame" x="61" y="615" width="254" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="GgM-el-pxH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="15"/>
+                    <state key="normal" title="下一步" backgroundImage="圆角矩形-1">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickConnect:" destination="GL2-zn-tZo" eventType="touchUpInside" id="p0o-HS-qie"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZXA-Jk-Ldg" firstAttribute="top" secondItem="GL2-zn-tZo" secondAttribute="top" constant="160" id="0fO-p4-fXC"/>
+                <constraint firstAttribute="bottom" secondItem="BSQ-lW-H4B" secondAttribute="bottom" constant="15" id="1Jk-BR-FuW"/>
+                <constraint firstItem="WYg-pE-1SY" firstAttribute="trailing" secondItem="hhH-r3-a4x" secondAttribute="trailing" id="1u3-FF-9Nd"/>
+                <constraint firstItem="nhX-FW-aTk" firstAttribute="top" secondItem="hhH-r3-a4x" secondAttribute="bottom" constant="10" id="2uw-oP-DTN"/>
+                <constraint firstItem="7LY-RP-0bR" firstAttribute="centerX" secondItem="tWw-bd-SJC" secondAttribute="centerX" id="3Ds-jw-0aj"/>
+                <constraint firstItem="WYg-pE-1SY" firstAttribute="top" secondItem="ZXA-Jk-Ldg" secondAttribute="bottom" constant="10" id="3Et-Wb-Arq"/>
+                <constraint firstAttribute="trailing" secondItem="7LY-RP-0bR" secondAttribute="trailing" id="4N4-vH-HUl"/>
+                <constraint firstItem="NEt-dK-vAz" firstAttribute="leading" secondItem="tWw-bd-SJC" secondAttribute="leading" id="4Z5-AM-BEy"/>
+                <constraint firstItem="tWw-bd-SJC" firstAttribute="top" secondItem="nhX-FW-aTk" secondAttribute="bottom" constant="10" id="6bG-c2-nAa"/>
+                <constraint firstItem="nhX-FW-aTk" firstAttribute="trailing" secondItem="cNR-ko-9sH" secondAttribute="trailing" id="8DS-QM-QrA"/>
+                <constraint firstItem="WYg-pE-1SY" firstAttribute="centerX" secondItem="NEt-dK-vAz" secondAttribute="centerX" id="8bE-9V-IGl"/>
+                <constraint firstItem="BSQ-lW-H4B" firstAttribute="centerX" secondItem="GL2-zn-tZo" secondAttribute="centerX" id="Bjq-oR-4Uu"/>
+                <constraint firstItem="cNR-ko-9sH" firstAttribute="top" secondItem="nhX-FW-aTk" secondAttribute="bottom" constant="5" id="CMU-Bp-c4U"/>
+                <constraint firstItem="hhH-r3-a4x" firstAttribute="trailing" secondItem="nhX-FW-aTk" secondAttribute="trailing" id="DSb-qc-gBx"/>
+                <constraint firstItem="nhX-FW-aTk" firstAttribute="leading" secondItem="cNR-ko-9sH" secondAttribute="leading" id="HSe-Di-3e8"/>
+                <constraint firstAttribute="bottom" secondItem="7LY-RP-0bR" secondAttribute="bottom" id="Jon-BN-bQ2"/>
+                <constraint firstItem="tWw-bd-SJC" firstAttribute="height" secondItem="NEt-dK-vAz" secondAttribute="height" id="LN0-Yc-USz"/>
+                <constraint firstItem="NEt-dK-vAz" firstAttribute="trailing" secondItem="tWw-bd-SJC" secondAttribute="trailing" id="Mfh-We-cga"/>
+                <constraint firstItem="WYg-pE-1SY" firstAttribute="centerY" secondItem="NEt-dK-vAz" secondAttribute="centerY" id="O03-6b-5p0"/>
+                <constraint firstItem="hhH-r3-a4x" firstAttribute="leading" secondItem="nhX-FW-aTk" secondAttribute="leading" id="VeW-c9-dg6"/>
+                <constraint firstItem="ZXA-Jk-Ldg" firstAttribute="leading" secondItem="GL2-zn-tZo" secondAttribute="leading" constant="15" id="WGI-Us-ZLN"/>
+                <constraint firstItem="NEt-dK-vAz" firstAttribute="leading" secondItem="GL2-zn-tZo" secondAttribute="leading" constant="27" id="Ygk-0d-sno"/>
+                <constraint firstItem="WYg-pE-1SY" firstAttribute="leading" secondItem="hhH-r3-a4x" secondAttribute="leading" id="cal-dm-O8l"/>
+                <constraint firstItem="7LY-RP-0bR" firstAttribute="top" secondItem="GL2-zn-tZo" secondAttribute="top" id="cu6-Ah-GIq"/>
+                <constraint firstItem="tWw-bd-SJC" firstAttribute="centerX" secondItem="BSQ-lW-H4B" secondAttribute="centerX" id="fc0-Uc-HSz"/>
+                <constraint firstItem="NEt-dK-vAz" firstAttribute="top" secondItem="ZXA-Jk-Ldg" secondAttribute="bottom" constant="15" id="lZl-iR-5a4"/>
+                <constraint firstItem="hhH-r3-a4x" firstAttribute="top" secondItem="WYg-pE-1SY" secondAttribute="bottom" constant="30" id="qqS-hi-XMB"/>
+                <constraint firstItem="ZXA-Jk-Ldg" firstAttribute="leading" secondItem="WYg-pE-1SY" secondAttribute="leading" id="sN3-SH-hcV"/>
+                <constraint firstItem="7LY-RP-0bR" firstAttribute="leading" secondItem="GL2-zn-tZo" secondAttribute="leading" id="xdx-hP-rKx"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="LN0-Yc-USz"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="LN0-Yc-USz"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="connectBtn" destination="BSQ-lW-H4B" id="352-Wp-cVV"/>
+                <outlet property="step1" destination="NEt-dK-vAz" id="n9Y-jF-9KY"/>
+                <outlet property="step2" destination="tWw-bd-SJC" id="wFz-BJ-ilz"/>
+            </connections>
+            <point key="canvasLocation" x="-219" y="286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="圆角矩形-1" width="254" height="37"/>
+        <image name="视频区" width="355" height="221"/>
+        <image name="首页-背景" width="375" height="667"/>
+    </resources>
+</document>

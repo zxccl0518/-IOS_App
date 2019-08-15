@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AppAlertView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="255"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="大弹框底板" translatesAutoresizingMaskIntoConstraints="NO" id="1JR-UQ-THc">
+                    <rect key="frame" x="0.0" y="0.0" width="376" height="255"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="什么是离线控制？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="145" translatesAutoresizingMaskIntoConstraints="NO" id="t1u-Zu-fd4">
+                    <rect key="frame" x="120" y="36" width="136" height="17"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYi-pr-ihe">
+                    <rect key="frame" x="61" y="171" width="254" height="37"/>
+                    <state key="normal" title="知道了" backgroundImage="圆角矩形-1">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="click:" destination="iN0-l3-epB" eventType="touchUpInside" id="1fx-gZ-C4m"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指用手机控制处于离线模式的机器人。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="leH-7q-4Mv">
+                    <rect key="frame" x="44" y="70" width="289" height="17"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="离线模式中的机器人无法只能聊天或播放合成音，但可以用手机连接操控。" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="A9o-6o-i8o">
+                    <rect key="frame" x="43" y="111" width="289" height="34"/>
+                    <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1JR-UQ-THc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0xD-JU-VVD"/>
+                <constraint firstItem="t1u-Zu-fd4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6vc-jP-bSP"/>
+                <constraint firstItem="1JR-UQ-THc" firstAttribute="top" secondItem="t1u-Zu-fd4" secondAttribute="bottom" constant="-53" id="9fK-f2-Y7a"/>
+                <constraint firstAttribute="bottom" secondItem="1JR-UQ-THc" secondAttribute="bottom" id="GX0-tm-g9e"/>
+                <constraint firstItem="leH-7q-4Mv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Gl9-iI-TBe"/>
+                <constraint firstItem="A9o-6o-i8o" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WK4-Da-76U"/>
+                <constraint firstItem="1JR-UQ-THc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YDB-ym-9fd"/>
+                <constraint firstItem="FYi-pr-ihe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="buy-aa-WMM"/>
+                <constraint firstItem="A9o-6o-i8o" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eef-II-zRH"/>
+                <constraint firstAttribute="trailing" secondItem="1JR-UQ-THc" secondAttribute="trailing" id="fR0-9A-49J"/>
+                <constraint firstItem="leH-7q-4Mv" firstAttribute="top" secondItem="t1u-Zu-fd4" secondAttribute="bottom" constant="17" id="sgn-fb-qD7"/>
+                <constraint firstItem="FYi-pr-ihe" firstAttribute="top" secondItem="A9o-6o-i8o" secondAttribute="bottom" constant="26" id="zHp-1z-vpT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backBtn" destination="FYi-pr-ihe" id="oXW-bd-kwG"/>
+                <outlet property="contentLabel" destination="A9o-6o-i8o" id="uhC-LN-HOl"/>
+                <outlet property="subTitleLabel" destination="leH-7q-4Mv" id="NDk-Wg-bMR"/>
+                <outlet property="titleLabel" destination="t1u-Zu-fd4" id="dEj-gp-ZwL"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="328.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="圆角矩形-1" width="254" height="37"/>
+        <image name="大弹框底板" width="330" height="204"/>
+    </resources>
+</document>

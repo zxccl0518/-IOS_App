@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qMt-99-b5o">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="robosys" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-背景" translatesAutoresizingMaskIntoConstraints="NO" id="y4F-JG-7mY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="张小盒家教机器人" translatesAutoresizingMaskIntoConstraints="NO" id="gR1-HN-hGS">
+                                <rect key="frame" x="106.5" y="75" width="162" height="19"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="注册时填写的手机号" textAlignment="natural" minimumFontSize="17" background="输入框" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="F8U-hX-c9O" userLabel="用户名" customClass="AppTextField" customModule="robosys" customModuleProvider="target">
+                                <rect key="frame" x="47" y="359.5" width="281" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="ObX-EP-h7I"/>
+                                </constraints>
+                                <color key="textColor" red="0.99479166666666663" green="0.99479166666666663" blue="0.99479166666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ObX-EP-h7I"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ObX-EP-h7I"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="TxtFieldStatus:" destination="BYZ-38-t0r" eventType="editingChanged" id="Oym-pj-cvq"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb5-2B-5qF">
+                                <rect key="frame" x="47" y="475.5" width="281" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uuB-TX-n89"/>
+                                </constraints>
+                                <state key="normal" title="登录" backgroundImage="圆角矩形-1"/>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gY7-cl-I4G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRg-Wx-cMw">
+                                <rect key="frame" x="275" y="525.5" width="53" height="66.5"/>
+                                <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="13"/>
+                                <state key="normal" title="忘记密码">
+                                    <color key="titleColor" red="0.66274509800000003" green="0.72549019609999998" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBr-lo-r9a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqH-dx-cqB">
+                                <rect key="frame" x="47" y="546.5" width="53" height="25"/>
+                                <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="13"/>
+                                <state key="normal" title="快速注册">
+                                    <color key="titleColor" red="0.66274509800000003" green="0.72549019609999998" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="regist:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ZH-5y-LOo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="输入分割线" translatesAutoresizingMaskIntoConstraints="NO" id="AMr-8H-MRG">
+                                <rect key="frame" x="187" y="549.5" width="1" height="19"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6~16位任意组合" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nRP-VX-cN7" userLabel="密码" customClass="AppTextField" customModule="robosys" customModuleProvider="target">
+                                <rect key="frame" x="47" y="417.5" width="281" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="TxtFieldStatus:" destination="BYZ-38-t0r" eventType="editingChanged" id="mfm-Nv-fHi"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小盒机器人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klR-uQ-qlB">
+                                <rect key="frame" x="106.5" y="75" width="162" height="21"/>
+                                <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y4F-JG-7mY" secondAttribute="bottom" id="0vY-c8-Fkf"/>
+                            <constraint firstItem="nRP-VX-cN7" firstAttribute="height" secondItem="F8U-hX-c9O" secondAttribute="height" id="375-J0-Eoc"/>
+                            <constraint firstItem="y4F-JG-7mY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4L3-2K-o6j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nRg-Wx-cMw" secondAttribute="bottom" constant="75" id="5XP-Yx-y3Y"/>
+                            <constraint firstItem="AMr-8H-MRG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Ym-4Z-HR3"/>
+                            <constraint firstItem="klR-uQ-qlB" firstAttribute="top" secondItem="gR1-HN-hGS" secondAttribute="top" id="Axy-dG-8NK"/>
+                            <constraint firstItem="gR1-HN-hGS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DOE-av-8iN"/>
+                            <constraint firstItem="F8U-hX-c9O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="45" id="E43-ep-FLi"/>
+                            <constraint firstItem="gR1-HN-hGS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="80" id="FX0-He-blf">
+                                <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                            </constraint>
+                            <constraint firstItem="F8U-hX-c9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="47" id="Gl4-iT-E1Y"/>
+                            <constraint firstItem="AMr-8H-MRG" firstAttribute="centerY" secondItem="kqH-dx-cqB" secondAttribute="centerY" id="Jci-Wd-3rB"/>
+                            <constraint firstItem="hb5-2B-5qF" firstAttribute="leading" secondItem="nRP-VX-cN7" secondAttribute="leading" id="Q8m-AB-bK8"/>
+                            <constraint firstItem="kqH-dx-cqB" firstAttribute="leading" secondItem="hb5-2B-5qF" secondAttribute="leading" id="TvP-d5-J7n"/>
+                            <constraint firstItem="nRP-VX-cN7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XrC-Eb-k9Q"/>
+                            <constraint firstItem="klR-uQ-qlB" firstAttribute="centerX" secondItem="y4F-JG-7mY" secondAttribute="centerX" id="Y8h-oD-qD6"/>
+                            <constraint firstItem="nRP-VX-cN7" firstAttribute="top" secondItem="F8U-hX-c9O" secondAttribute="bottom" constant="20" id="aO8-MX-oMB"/>
+                            <constraint firstItem="F8U-hX-c9O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cDQ-e9-O8t"/>
+                            <constraint firstItem="y4F-JG-7mY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cnf-aW-y8b"/>
+                            <constraint firstItem="nRg-Wx-cMw" firstAttribute="top" secondItem="hb5-2B-5qF" secondAttribute="bottom" constant="20" id="gGd-xL-52L"/>
+                            <constraint firstItem="hb5-2B-5qF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jgN-ZN-nom"/>
+                            <constraint firstAttribute="trailing" secondItem="y4F-JG-7mY" secondAttribute="trailing" id="kwF-Zx-5hp"/>
+                            <constraint firstItem="nRg-Wx-cMw" firstAttribute="centerY" secondItem="kqH-dx-cqB" secondAttribute="centerY" id="m9e-dj-QN5"/>
+                            <constraint firstItem="hb5-2B-5qF" firstAttribute="top" secondItem="nRP-VX-cN7" secondAttribute="bottom" constant="20" id="na8-C6-sty"/>
+                            <constraint firstItem="klR-uQ-qlB" firstAttribute="leading" secondItem="gR1-HN-hGS" secondAttribute="leading" id="rcg-Oz-TZ2"/>
+                            <constraint firstItem="nRg-Wx-cMw" firstAttribute="trailing" secondItem="hb5-2B-5qF" secondAttribute="trailing" id="vCX-6R-xLm"/>
+                            <constraint firstItem="nRP-VX-cN7" firstAttribute="leading" secondItem="F8U-hX-c9O" secondAttribute="leading" id="x8x-Sx-ZLD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="klR-uQ-qlB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Axy-dG-8NK"/>
+                                <exclude reference="Y8h-oD-qD6"/>
+                                <exclude reference="rcg-Oz-TZ2"/>
+                                <exclude reference="Gl4-iT-E1Y"/>
+                                <exclude reference="375-J0-Eoc"/>
+                                <exclude reference="5XP-Yx-y3Y"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="klR-uQ-qlB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Axy-dG-8NK"/>
+                                <include reference="Y8h-oD-qD6"/>
+                                <include reference="rcg-Oz-TZ2"/>
+                                <include reference="Gl4-iT-E1Y"/>
+                                <include reference="375-J0-Eoc"/>
+                                <include reference="5XP-Yx-y3Y"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="nwl-HP-u1a"/>
+                    <connections>
+                        <outlet property="forgotPswBtn" destination="nRg-Wx-cMw" id="u5C-9e-6cR"/>
+                        <outlet property="loginBtn" destination="hb5-2B-5qF" id="fxU-tT-dsT"/>
+                        <outlet property="pswTxtField" destination="nRP-VX-cN7" id="rgr-dx-b2I"/>
+                        <outlet property="registerBtn" destination="kqH-dx-cqB" id="5t7-Cg-rKB"/>
+                        <outlet property="userNameTxtField" destination="F8U-hX-c9O" id="crf-6k-omf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="358"/>
+        </scene>
+        <!--App Navgation Controller-->
+        <scene sceneID="22h-8q-aZ8">
+            <objects>
+                <navigationController id="qMt-99-b5o" customClass="AppNavgationController" customModule="robosys" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HMl-qv-H9o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bri-je-IlN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6na-TI-UmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-353" y="358"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="圆角矩形-1" width="254" height="37"/>
+        <image name="张小盒家教机器人" width="162" height="19"/>
+        <image name="输入分割线" width="1" height="19"/>
+        <image name="输入框" width="255" height="39"/>
+        <image name="首页-背景" width="375" height="667"/>
+    </resources>
+</document>

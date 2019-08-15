@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="造字工房悦黑体验版常规体.OTF">
+            <string>RTWSYueGoTrial-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScheduleRemindCell" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="123"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7B5-Wf-O8O">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="103"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="查看" translatesAutoresizingMaskIntoConstraints="NO" id="ikX-vL-RJx">
+                            <rect key="frame" x="262" y="10" width="8" height="14"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTb-8A-cbe">
+                            <rect key="frame" x="270" y="93" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAl-eS-Lnt">
+                            <rect key="frame" x="10" y="10" width="210" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="210" id="Q8I-Nn-W0R"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSM-bU-4kA">
+                            <rect key="frame" x="150" y="93" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpU-is-sM3">
+                            <rect key="frame" x="10" y="93" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="RTWSYueGoTrial-Regular" family="RTWS YueGothic Trial" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="MSM-bU-4kA" firstAttribute="centerY" secondItem="dpU-is-sM3" secondAttribute="centerY" id="2t5-ng-mlh"/>
+                        <constraint firstItem="mAl-eS-Lnt" firstAttribute="top" secondItem="7B5-Wf-O8O" secondAttribute="top" constant="10" id="9BM-Vk-beU"/>
+                        <constraint firstItem="LTb-8A-cbe" firstAttribute="centerY" secondItem="MSM-bU-4kA" secondAttribute="centerY" id="Maq-UX-n7j"/>
+                        <constraint firstItem="dpU-is-sM3" firstAttribute="leading" secondItem="mAl-eS-Lnt" secondAttribute="leading" id="W71-mq-5jg"/>
+                        <constraint firstAttribute="bottom" secondItem="dpU-is-sM3" secondAttribute="bottom" constant="10" id="cPe-zL-tnx"/>
+                        <constraint firstItem="MSM-bU-4kA" firstAttribute="centerX" secondItem="7B5-Wf-O8O" secondAttribute="centerX" constant="10" id="gTt-m8-wGp"/>
+                        <constraint firstItem="LTb-8A-cbe" firstAttribute="trailing" secondItem="ikX-vL-RJx" secondAttribute="trailing" id="k7k-9g-Q58"/>
+                        <constraint firstItem="ikX-vL-RJx" firstAttribute="top" secondItem="mAl-eS-Lnt" secondAttribute="top" id="ke3-im-XMq"/>
+                        <constraint firstItem="mAl-eS-Lnt" firstAttribute="leading" secondItem="7B5-Wf-O8O" secondAttribute="leading" constant="10" id="pqG-l8-wv0"/>
+                        <constraint firstAttribute="trailing" secondItem="ikX-vL-RJx" secondAttribute="trailing" constant="10" id="tH5-3M-vx6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSZ-V0-9Kl">
+                    <rect key="frame" x="0.0" y="103" width="280" height="20"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="yrz-w1-wzT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7B5-Wf-O8O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="07D-9i-IU1"/>
+                <constraint firstItem="JSZ-V0-9Kl" firstAttribute="top" secondItem="7B5-Wf-O8O" secondAttribute="bottom" id="2dZ-eQ-YW5"/>
+                <constraint firstItem="7B5-Wf-O8O" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="592-oQ-Q5B"/>
+                <constraint firstItem="JSZ-V0-9Kl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Edn-ct-pwf"/>
+                <constraint firstItem="JSZ-V0-9Kl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RBj-gN-hMH"/>
+                <constraint firstItem="7B5-Wf-O8O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UpR-Xg-Hgm"/>
+                <constraint firstAttribute="bottom" secondItem="JSZ-V0-9Kl" secondAttribute="bottom" id="x8H-hM-NnB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="dpU-is-sM3" id="l4z-PE-WeB"/>
+                <outlet property="footerView" destination="JSZ-V0-9Kl" id="gLw-di-fj5"/>
+                <outlet property="headView" destination="7B5-Wf-O8O" id="XPi-1o-nsH"/>
+                <outlet property="nameLabel" destination="mAl-eS-Lnt" id="0F8-Ot-bNi"/>
+                <outlet property="repeatLabel" destination="MSM-bU-4kA" id="i7H-He-wYT"/>
+                <outlet property="timeLabel" destination="LTb-8A-cbe" id="sl0-cJ-3qZ"/>
+            </connections>
+            <point key="canvasLocation" x="152.5" y="-107.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="查看" width="8" height="14"/>
+    </resources>
+</document>

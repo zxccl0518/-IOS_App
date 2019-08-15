@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PermissionViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="9M4-5b-OMp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PermissionView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="首页-背景" translatesAutoresizingMaskIntoConstraints="NO" id="8nh-4u-HvJ">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnV-Mv-kya" userLabel="transfer">
+                    <rect key="frame" x="221" y="167.5" width="159" height="95"/>
+                    <state key="normal" image="转移管理员权限"/>
+                    <connections>
+                        <action selector="transferPermission:" destination="iN0-l3-epB" eventType="touchUpInside" id="fIh-5z-cGQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwd-eL-lPY" userLabel="normal">
+                    <rect key="frame" x="221" y="292.5" width="159" height="95"/>
+                    <state key="normal" image="设置普通用户权限"/>
+                    <connections>
+                        <action selector="normalPermission:" destination="iN0-l3-epB" eventType="touchUpInside" id="7QQ-by-cMw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIe-oc-mDL" userLabel="delete">
+                    <rect key="frame" x="221" y="417.5" width="159" height="95"/>
+                    <state key="normal" image="解除管理员权限"/>
+                    <connections>
+                        <action selector="deletePermission:" destination="iN0-l3-epB" eventType="touchUpInside" id="iLx-E4-Khr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8nh-4u-HvJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="02M-QJ-nK2"/>
+                <constraint firstItem="8nh-4u-HvJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0zz-GU-amV"/>
+                <constraint firstItem="DIe-oc-mDL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8nM-OT-Mq6"/>
+                <constraint firstItem="8nh-4u-HvJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FKu-LX-Dzd"/>
+                <constraint firstItem="lwd-eL-lPY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IeO-Xw-Ach"/>
+                <constraint firstItem="lwd-eL-lPY" firstAttribute="top" secondItem="JnV-Mv-kya" secondAttribute="bottom" constant="30" id="MoM-CT-A0V"/>
+                <constraint firstItem="JnV-Mv-kya" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NRm-TO-N0v"/>
+                <constraint firstItem="DIe-oc-mDL" firstAttribute="top" secondItem="lwd-eL-lPY" secondAttribute="bottom" constant="30" id="cgr-sT-Nif"/>
+                <constraint firstItem="8nh-4u-HvJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sEe-ju-qEG"/>
+                <constraint firstItem="lwd-eL-lPY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="40" id="uOM-xd-fmg"/>
+            </constraints>
+            <point key="canvasLocation" x="359" y="171"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="解除管理员权限" width="159" height="95"/>
+        <image name="设置普通用户权限" width="159" height="95"/>
+        <image name="转移管理员权限" width="159" height="95"/>
+        <image name="首页-背景" width="375" height="667"/>
+    </resources>
+</document>

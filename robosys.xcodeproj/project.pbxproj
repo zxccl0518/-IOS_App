@@ -1,0 +1,1963 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		541E3B711EA84781008F252A /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E3B701EA84781008F252A /* PlayViewController.swift */; };
+		541E3B7F1EA85D20008F252A /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E3B7E1EA85D20008F252A /* UIBarButtonItem+Extension.swift */; };
+		542A0DCD1F2AD3CE006A9DDA /* LYLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542A0DCC1F2AD3CE006A9DDA /* LYLog.swift */; };
+		545DDAF91EA9AE6C00569191 /* MidSoundFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545DDAF81EA9AE6C00569191 /* MidSoundFlowLayout.swift */; };
+		547B01AB1EA9E71D00B19643 /* BotmTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B01AA1EA9E71D00B19643 /* BotmTabView.swift */; };
+		54B2E02C1E9C441400686F6C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B2E02B1E9C441400686F6C /* CoreTelephony.framework */; };
+		54B2E0301E9C443500686F6C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B2E02F1E9C443500686F6C /* libsqlite3.tbd */; };
+		54B2E0321E9C446800686F6C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B2E0311E9C446800686F6C /* Security.framework */; };
+		54B2E0361E9C641600686F6C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B2E0351E9C641600686F6C /* libz.tbd */; };
+		54B2E0591E9C66A100686F6C /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B2E0581E9C66A100686F6C /* UMMobClick.framework */; };
+		54C53CCA1EA8886A00399D5C /* TopImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C53CC91EA8886A00399D5C /* TopImageView.swift */; };
+		54CF70231ECBE53B00F41CD9 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CF70221ECBE53B00F41CD9 /* ConnectView.swift */; };
+		54F1B9871F32B49E003C2040 /* ProgramControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F1B9851F32B49E003C2040 /* ProgramControlView.swift */; };
+		54F1B9881F32B49E003C2040 /* ProgramControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F1B9861F32B49E003C2040 /* ProgramControlView.xib */; };
+		54F2752E1EA8AAEB00F049E8 /* TopPictureFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F2752D1EA8AAEB00F049E8 /* TopPictureFlowLayout.swift */; };
+		54F275301EA8D19100F049E8 /* MidSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F2752F1EA8D19100F049E8 /* MidSoundView.swift */; };
+		6AECC0D822A03147A3010D21 /* Pods_robosysUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAFBC4C64043C1709842C43 /* Pods_robosysUITests.framework */; };
+		7A31359C1EBC5CBB004B623E /* ConfigurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31359B1EBC5CBB004B623E /* ConfigurationVC.swift */; };
+		7A3171431EC4016F006B2DAA /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3171421EC4016F006B2DAA /* SwitchTableViewCell.swift */; };
+		7A7E37311EC1A67D00FBCB2B /* SwitchWifiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E37301EC1A67D00FBCB2B /* SwitchWifiVC.swift */; };
+		7AB362C11EC54C4F009DBF0F /* WifiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB362C01EC54C4F009DBF0F /* WifiModel.swift */; };
+		7AB362C31EC551B2009DBF0F /* CellWifiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB362C21EC551B2009DBF0F /* CellWifiModel.swift */; };
+		7ACB19321EC9A75900AE4EEB /* InputPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB19311EC9A75900AE4EEB /* InputPasswordViewController.swift */; };
+		ABE803C3CD8D51A5ED325F8F /* Pods_robosys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57E99A2FEC4D16E49DB3B81 /* Pods_robosys.framework */; };
+		E102F44F1D110DA50071F2E7 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = E102F44E1D110DA50071F2E7 /* Entitlements.plist */; };
+		E1064EE71D2F444300C2907B /* BindAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1064EE51D2F444300C2907B /* BindAlertView.swift */; };
+		E1064EE81D2F444300C2907B /* BindAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1064EE61D2F444300C2907B /* BindAlertView.xib */; };
+		E1064EEA1D2F446500C2907B /* MotionProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1064EE91D2F446500C2907B /* MotionProgramCell.swift */; };
+		E1064EEE1D2F449000C2907B /* APPWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1064EEB1D2F449000C2907B /* APPWaveView.swift */; };
+		E1064EEF1D2F449000C2907B /* MainHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1064EEC1D2F449000C2907B /* MainHeadView.swift */; };
+		E1064EF31D2F44A200C2907B /* APPDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1064EF11D2F44A200C2907B /* APPDatePicker.swift */; };
+		E1064EF41D2F44A200C2907B /* APPDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1064EF21D2F44A200C2907B /* APPDatePicker.xib */; };
+		E1064EF71D2F44B500C2907B /* MySettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1064EF51D2F44B500C2907B /* MySettingView.swift */; };
+		E1064EF81D2F44B500C2907B /* MySettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1064EF61D2F44B500C2907B /* MySettingView.xib */; };
+		E1064EFA1D2F460B00C2907B /* MySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1064EF91D2F460B00C2907B /* MySettingViewController.swift */; };
+		E10952D21CEEBC6E0047AD53 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10952D11CEEBC6E0047AD53 /* AppModel.swift */; };
+		E10A088F1D9133D0007C49BE /* Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = E10A088E1D9133D0007C49BE /* Convert.m */; };
+		E11982771D3CB80000239DDE /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11982751D3CB80000239DDE /* HelpView.swift */; };
+		E11982781D3CB80000239DDE /* HelpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11982761D3CB80000239DDE /* HelpView.xib */; };
+		E11A69561CEC0BBA00F58A6C /* robosysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11A69551CEC0BBA00F58A6C /* robosysTests.swift */; };
+		E11A69611CEC0BBA00F58A6C /* robosysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11A69601CEC0BBA00F58A6C /* robosysUITests.swift */; };
+		E11A69721CEC31C600F58A6C /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11A69711CEC31C600F58A6C /* AppExtension.swift */; };
+		E11A69781CEC4A6800F58A6C /* AppNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11A69771CEC4A6800F58A6C /* AppNavgationController.swift */; };
+		E11A69821CEC75C700F58A6C /* AppStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11A69811CEC75C700F58A6C /* AppStruct.swift */; };
+		E15703EC1DEC3886006EC183 /* RobotConn.c in Sources */ = {isa = PBXBuildFile; fileRef = E15703E81DEC3886006EC183 /* RobotConn.c */; };
+		E1789FF81D12CCB20070CD63 /* ProgramSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1789FF41D12CCB20070CD63 /* ProgramSliderView.swift */; };
+		E1789FF91D12CCB20070CD63 /* ProgramSliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1789FF51D12CCB20070CD63 /* ProgramSliderView.xib */; };
+		E1789FFB1D12CD180070CD63 /* ControlInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1789FFA1D12CD180070CD63 /* ControlInterfaceViewController.swift */; };
+		E1789FFE1D12CD240070CD63 /* ControlInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1789FFC1D12CD240070CD63 /* ControlInterfaceView.swift */; };
+		E1789FFF1D12CD240070CD63 /* ControlInterfaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1789FFD1D12CD240070CD63 /* ControlInterfaceView.xib */; };
+		E17DFFB11D5C1BCC008F6E20 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = E17DFFA81D5C1BCC008F6E20 /* base64.c */; };
+		E17DFFB21D5C1BCC008F6E20 /* cJSON_Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = E17DFFA91D5C1BCC008F6E20 /* cJSON_Utils.c */; };
+		E17DFFB31D5C1BCC008F6E20 /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = E17DFFAB1D5C1BCC008F6E20 /* cJSON.c */; };
+		E188D6211DDC222700011982 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188D6201DDC222700011982 /* AppTextField.swift */; };
+		E18F4D0F1D41FF550049DCDF /* AppHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D0E1D41FF550049DCDF /* AppHUD.swift */; };
+		E18F4D351D4219270049DCDF /* APPDatePicker1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D331D4219270049DCDF /* APPDatePicker1.swift */; };
+		E18F4D361D4219270049DCDF /* APPDatePicker1.xib in Resources */ = {isa = PBXBuildFile; fileRef = E18F4D341D4219270049DCDF /* APPDatePicker1.xib */; };
+		E18F4D3C1D42197B0049DCDF /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D3B1D42197B0049DCDF /* AboutViewController.swift */; };
+		E18F4D3F1D42198A0049DCDF /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D3D1D42198A0049DCDF /* About.swift */; };
+		E18F4D401D42198A0049DCDF /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = E18F4D3E1D42198A0049DCDF /* About.xib */; };
+		E18F4D4B1D421A470049DCDF /* NewScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D411D421A470049DCDF /* NewScheduleView.swift */; };
+		E18F4D4C1D421A470049DCDF /* NewScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E18F4D421D421A470049DCDF /* NewScheduleView.xib */; };
+		E18F4D4D1D421A470049DCDF /* RemindDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D431D421A470049DCDF /* RemindDetailsCell.swift */; };
+		E18F4D4E1D421A470049DCDF /* RemindDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E18F4D441D421A470049DCDF /* RemindDetailsCell.xib */; };
+		E18F4D4F1D421A470049DCDF /* RemindDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D451D421A470049DCDF /* RemindDetailsView.swift */; };
+		E18F4D501D421A470049DCDF /* RemindDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E18F4D461D421A470049DCDF /* RemindDetailsView.xib */; };
+		E18F4D511D421A470049DCDF /* ScheduleRemindCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D471D421A470049DCDF /* ScheduleRemindCell.swift */; };
+		E18F4D521D421A470049DCDF /* ScheduleRemindCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E18F4D481D421A470049DCDF /* ScheduleRemindCell.xib */; };
+		E18F4D531D421A470049DCDF /* ScheduleRemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D491D421A470049DCDF /* ScheduleRemindView.swift */; };
+		E18F4D541D421A470049DCDF /* ScheduleRemindView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E18F4D4A1D421A470049DCDF /* ScheduleRemindView.xib */; };
+		E18F4D581D421B290049DCDF /* NewScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D551D421B290049DCDF /* NewScheduleViewController.swift */; };
+		E18F4D591D421B290049DCDF /* RemindDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D561D421B290049DCDF /* RemindDetailsViewController.swift */; };
+		E18F4D5A1D421B290049DCDF /* ScheduleRemindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4D571D421B290049DCDF /* ScheduleRemindViewController.swift */; };
+		E190DC1B1D07F922001D2CA2 /* RobotConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = E190DC121D07F922001D2CA2 /* RobotConnect.m */; };
+		E190DC1C1D07F922001D2CA2 /* RobotControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E190DC141D07F922001D2CA2 /* RobotControl.m */; };
+		E192047A1D07FA7B00931774 /* 造字工房悦黑体验版常规体.OTF in Resources */ = {isa = PBXBuildFile; fileRef = E190DC201D07FA11001D2CA2 /* 造字工房悦黑体验版常规体.OTF */; };
+		E19204A81D07FD1400931774 /* AppAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19204A11D07FD1400931774 /* AppAlertView.swift */; };
+		E19204A91D07FD1400931774 /* AppAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19204A21D07FD1400931774 /* AppAlertView.xib */; };
+		E19204AA1D07FD1400931774 /* AppCaptchaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19204A31D07FD1400931774 /* AppCaptchaView.swift */; };
+		E19204AB1D07FD1400931774 /* AppCaptchaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19204A41D07FD1400931774 /* AppCaptchaView.xib */; };
+		E19204AC1D07FD1400931774 /* AppDropButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19204A51D07FD1400931774 /* AppDropButton.swift */; };
+		E19204AD1D07FD1400931774 /* AppHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19204A61D07FD1400931774 /* AppHeadView.swift */; };
+		E19204FE1D08013A00931774 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19204F51D08013A00931774 /* ForgotPasswordView.swift */; };
+		E19204FF1D08013A00931774 /* ForgotPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19204F61D08013A00931774 /* ForgotPasswordView.xib */; };
+		E19205001D08013A00931774 /* registAndForgotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19204F71D08013A00931774 /* registAndForgotView.swift */; };
+		E19205011D08013A00931774 /* RegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19204F81D08013A00931774 /* RegistView.swift */; };
+		E19205021D08013A00931774 /* RegistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19204F91D08013A00931774 /* RegistView.xib */; };
+		E19205051D08013A00931774 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19204FC1D08013A00931774 /* SettingView.swift */; };
+		E19205061D08013A00931774 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19204FD1D08013A00931774 /* SettingView.xib */; };
+		E192050C1D08014A00931774 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205071D08014A00931774 /* ForgotPasswordViewController.swift */; };
+		E192050D1D08014A00931774 /* ProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205081D08014A00931774 /* ProtocolViewController.swift */; };
+		E192050E1D08014A00931774 /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205091D08014A00931774 /* RegistViewController.swift */; };
+		E192050F1D08014A00931774 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192050A1D08014A00931774 /* ResetPasswordViewController.swift */; };
+		E19205101D08014A00931774 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192050B1D08014A00931774 /* SettingViewController.swift */; };
+		E19205171D08015A00931774 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205111D08015A00931774 /* ConfigurationView.swift */; };
+		E19205181D08015A00931774 /* ConfigurationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205121D08015A00931774 /* ConfigurationView.xib */; };
+		E19205191D08015A00931774 /* ConnectWiFiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205131D08015A00931774 /* ConnectWiFiView.swift */; };
+		E192051A1D08015A00931774 /* ConnectWiFiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205141D08015A00931774 /* ConnectWiFiView.xib */; };
+		E192051B1D08015A00931774 /* ScanRobotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205151D08015A00931774 /* ScanRobotView.swift */; };
+		E192051C1D08015A00931774 /* ScanRobotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205161D08015A00931774 /* ScanRobotView.xib */; };
+		E19205211D08016800931774 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192051D1D08016800931774 /* ConfigurationViewController.swift */; };
+		E19205221D08016800931774 /* ConnectWiFiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192051E1D08016800931774 /* ConnectWiFiViewController.swift */; };
+		E19205231D08016800931774 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192051F1D08016800931774 /* QRCodeViewController.swift */; };
+		E19205241D08016800931774 /* ScanRobotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205201D08016800931774 /* ScanRobotViewController.swift */; };
+		E19205261D08017B00931774 /* BindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205251D08017B00931774 /* BindViewController.swift */; };
+		E19205291D08018100931774 /* BindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205271D08018100931774 /* BindView.swift */; };
+		E192052A1D08018100931774 /* BindView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205281D08018100931774 /* BindView.xib */; };
+		E192052C1D08019100931774 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192052B1D08019100931774 /* LearnViewController.swift */; };
+		E19205391D0801DF00931774 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205311D0801DF00931774 /* MainViewController.swift */; };
+		E192053A1D0801DF00931774 /* MotionModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205321D0801DF00931774 /* MotionModeViewController.swift */; };
+		E192053B1D0801DF00931774 /* MotionProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205331D0801DF00931774 /* MotionProgramViewController.swift */; };
+		E192053C1D0801DF00931774 /* MotionSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205341D0801DF00931774 /* MotionSettingViewController.swift */; };
+		E192053E1D0801DF00931774 /* MyProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205361D0801DF00931774 /* MyProgramViewController.swift */; };
+		E192053F1D0801DF00931774 /* ProgramControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205371D0801DF00931774 /* ProgramControlViewController.swift */; };
+		E19205401D0801DF00931774 /* RecreationalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205381D0801DF00931774 /* RecreationalViewController.swift */; };
+		E19205701D0801FF00931774 /* MotionModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192055F1D0801FF00931774 /* MotionModeView.swift */; };
+		E19205711D0801FF00931774 /* MotionModeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205601D0801FF00931774 /* MotionModeView.xib */; };
+		E19205731D0801FF00931774 /* MotionProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205621D0801FF00931774 /* MotionProgramView.swift */; };
+		E19205741D0801FF00931774 /* MotionProgramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205631D0801FF00931774 /* MotionProgramView.xib */; };
+		E19205751D0801FF00931774 /* MotionSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205641D0801FF00931774 /* MotionSettingView.swift */; };
+		E19205761D0801FF00931774 /* MotionSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205651D0801FF00931774 /* MotionSettingView.xib */; };
+		E19205791D0801FF00931774 /* MyProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205681D0801FF00931774 /* MyProgramView.swift */; };
+		E192057A1D0801FF00931774 /* MyProgramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205691D0801FF00931774 /* MyProgramView.xib */; };
+		E192057D1D0801FF00931774 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192056C1D0801FF00931774 /* ProgramView.swift */; };
+		E192057E1D0801FF00931774 /* ProgramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E192056D1D0801FF00931774 /* ProgramView.xib */; };
+		E192057F1D0801FF00931774 /* RecreationalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192056E1D0801FF00931774 /* RecreationalView.swift */; };
+		E19205801D0801FF00931774 /* RecreationalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E192056F1D0801FF00931774 /* RecreationalView.xib */; };
+		E19205821D08021B00931774 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205811D08021B00931774 /* FindViewController.swift */; };
+		E19205851D08022000931774 /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205831D08022000931774 /* FindView.swift */; };
+		E19205931D08023300931774 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205871D08023300931774 /* ChangePasswordView.swift */; };
+		E19205941D08023300931774 /* ChangePasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205881D08023300931774 /* ChangePasswordView.xib */; };
+		E19205951D08023300931774 /* JurisdictionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205891D08023300931774 /* JurisdictionView.swift */; };
+		E19205961D08023300931774 /* JurisdictionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E192058A1D08023300931774 /* JurisdictionView.xib */; };
+		E19205971D08023300931774 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192058B1D08023300931774 /* MyView.swift */; };
+		E19205981D08023300931774 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E192058C1D08023300931774 /* MyView.xib */; };
+		E19205991D08023300931774 /* MyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192058D1D08023300931774 /* MyViewCell.swift */; };
+		E192059A1D08023300931774 /* MyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E192058E1D08023300931774 /* MyViewCell.xib */; };
+		E192059B1D08023300931774 /* PersonalInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192058F1D08023300931774 /* PersonalInformationView.swift */; };
+		E192059C1D08023300931774 /* PersonalInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205901D08023300931774 /* PersonalInformationView.xib */; };
+		E192059D1D08023300931774 /* RobotDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205911D08023300931774 /* RobotDetailsView.swift */; };
+		E192059E1D08023300931774 /* RobotDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205921D08023300931774 /* RobotDetailsView.xib */; };
+		E19205A41D08023E00931774 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192059F1D08023E00931774 /* ChangePasswordViewController.swift */; };
+		E19205A51D08023E00931774 /* JurisdictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205A01D08023E00931774 /* JurisdictionViewController.swift */; };
+		E19205A61D08023E00931774 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205A11D08023E00931774 /* MyViewController.swift */; };
+		E19205A71D08023E00931774 /* PersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205A21D08023E00931774 /* PersonalInformationViewController.swift */; };
+		E19205A81D08023E00931774 /* RobotDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205A31D08023E00931774 /* RobotDetailsViewController.swift */; };
+		E19205AB1D08024A00931774 /* LeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19205A91D08024A00931774 /* LeftView.swift */; };
+		E19205AC1D08024A00931774 /* LeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19205AA1D08024A00931774 /* LeftView.xib */; };
+		E195BDBD1D38D7A800E922B2 /* TimeScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195BDBB1D38D7A800E922B2 /* TimeScale.swift */; };
+		E195BDBE1D38D7A800E922B2 /* TimeScale.xib in Resources */ = {isa = PBXBuildFile; fileRef = E195BDBC1D38D7A800E922B2 /* TimeScale.xib */; };
+		E195BDC31D38D7C600E922B2 /* FeedBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195BDBF1D38D7C600E922B2 /* FeedBackView.swift */; };
+		E195BDC41D38D7C600E922B2 /* FeedBackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E195BDC01D38D7C600E922B2 /* FeedBackView.xib */; };
+		E195BDC91D38D7D800E922B2 /* FeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195BDC71D38D7D800E922B2 /* FeedBackViewController.swift */; };
+		E195BDCA1D38D7D800E922B2 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195BDC81D38D7D800E922B2 /* HelpViewController.swift */; };
+		E199F5731D36482500CAD508 /* KeychainOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E199F5711D36482500CAD508 /* KeychainOptions.swift */; };
+		E199F5741D36482500CAD508 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E199F5721D36482500CAD508 /* KeychainWrapper.swift */; };
+		E19CA8F01D2127E4001C103A /* DPMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E19CA8ED1D2127E4001C103A /* DPMeterView.m */; };
+		E19CA8F11D2127E4001C103A /* UIBezierPath+BasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = E19CA8EF1D2127E4001C103A /* UIBezierPath+BasicShapes.m */; };
+		E1B395D11D12CE8300E9BD62 /* ProgramAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B395CF1D12CE8300E9BD62 /* ProgramAlertView.swift */; };
+		E1B395D21D12CE8300E9BD62 /* ProgramAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B395D01D12CE8300E9BD62 /* ProgramAlertView.xib */; };
+		E1BB21351D9131670021F661 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BB21341D9131670021F661 /* libmp3lame.a */; };
+		E1BF71031D64105B00F64F02 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF71021D64105B00F64F02 /* AppViewController.swift */; };
+		E1C768911CF2A551005E9162 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C768901CF2A551005E9162 /* AppView.swift */; };
+		E1C7689B1CF2C721005E9162 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C7689A1CF2C720005E9162 /* HomeViewController.swift */; };
+		E1C7689E1CF2C750005E9162 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C7689C1CF2C750005E9162 /* HomeViewController.storyboard */; };
+		E1C768C01CF2C7E5005E9162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C768BF1CF2C7E5005E9162 /* AppDelegate.swift */; };
+		E1C768C71CF2C817005E9162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C768C51CF2C817005E9162 /* LaunchScreen.storyboard */; };
+		E1D15E611DE41D1C00C7F23A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D15E601DE41D1C00C7F23A /* Color.swift */; };
+		E1D69E181DAE18690061C736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D69E171DAE18690061C736 /* Assets.xcassets */; };
+		E1D69E1A1DAE243A0061C736 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D69E191DAE243A0061C736 /* PermissionView.swift */; };
+		E1D69E1C1DAE24510061C736 /* PermissionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D69E1B1DAE24510061C736 /* PermissionView.xib */; };
+		E1D69E1E1DAE24670061C736 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D69E1D1DAE24670061C736 /* PermissionViewController.swift */; };
+		E1D69E241DAE29240061C736 /* FileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D69E231DAE29240061C736 /* FileUpload.m */; };
+		E1E335771D251B1800D26128 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E335761D251B1800D26128 /* Reachability.m */; };
+		E1F08DBF1D33831A00AA80AF /* AppAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F08DBE1D33831A00AA80AF /* AppAlert.swift */; };
+		E7972AC41F8EF77B0001C8E8 /* MusicListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7972ABA1F8EF77B0001C8E8 /* MusicListController.swift */; };
+		E7972AC51F8EF77B0001C8E8 /* MusicListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7972ABB1F8EF77B0001C8E8 /* MusicListController.xib */; };
+		E7972AC61F8EF77B0001C8E8 /* MusicLocationListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7972ABC1F8EF77B0001C8E8 /* MusicLocationListController.swift */; };
+		E7972AC71F8EF77B0001C8E8 /* MusicLocationListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7972ABD1F8EF77B0001C8E8 /* MusicLocationListController.xib */; };
+		E7972AC81F8EF77B0001C8E8 /* MusicPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7972ABE1F8EF77B0001C8E8 /* MusicPlayViewController.swift */; };
+		E7972AC91F8EF77B0001C8E8 /* MusicPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7972ABF1F8EF77B0001C8E8 /* MusicPlayViewController.xib */; };
+		E7972ACA1F8EF77B0001C8E8 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7972AC01F8EF77B0001C8E8 /* MusicViewController.swift */; };
+		E7972ACB1F8EF77B0001C8E8 /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7972AC11F8EF77B0001C8E8 /* MusicViewController.xib */; };
+		E7972ACC1F8EF77B0001C8E8 /* RobotPlayHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7972AC21F8EF77B0001C8E8 /* RobotPlayHistoryController.swift */; };
+		E7972ACD1F8EF77B0001C8E8 /* RobotPlayHistoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7972AC31F8EF77B0001C8E8 /* RobotPlayHistoryController.xib */; };
+		E79CB4381F5F91D600E79FA5 /* CompactSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79CB4361F5F91D600E79FA5 /* CompactSoundViewController.swift */; };
+		E79CB4391F5F91D600E79FA5 /* CompactSoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E79CB4371F5F91D600E79FA5 /* CompactSoundViewController.xib */; };
+		E7A28D0F1F666132000A4481 /* LeftConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A28D0D1F666132000A4481 /* LeftConnectViewController.swift */; };
+		E7A28D101F666132000A4481 /* LeftConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A28D0E1F666132000A4481 /* LeftConnectViewController.xib */; };
+		E7BDE89B1F7CCA000013B70F /* RobotCtrl.c in Sources */ = {isa = PBXBuildFile; fileRef = E7BDE8991F7CCA000013B70F /* RobotCtrl.c */; };
+		F892A0E8CD9B896BCD556E44 /* Pods_robosysTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F98FE49A0F0C84959231A8 /* Pods_robosysTests.framework */; };
+		FD18286F1E6E898700DD2EE6 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD18286E1E6E898700DD2EE6 /* Robot.swift */; };
+		FD5C26A71E7FB32100D39CA4 /* MyProgramHeaderViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C26A51E7FB32100D39CA4 /* MyProgramHeaderViewTableViewCell.swift */; };
+		FD5C26A81E7FB32100D39CA4 /* MyProgramHeaderViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD5C26A61E7FB32100D39CA4 /* MyProgramHeaderViewTableViewCell.xib */; };
+		FD5E18541E6D4B66008ABD6B /* RobotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E18531E6D4B66008ABD6B /* RobotManager.swift */; };
+		FDC447881E855801005848E2 /* ProgramGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC447871E855801005848E2 /* ProgramGuideView.swift */; };
+		FDDD4F991E7A6B6400CD56BF /* ProgrammingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD4F981E7A6B6400CD56BF /* ProgrammingManager.swift */; };
+		FDDD4F9B1E7A72FD00CD56BF /* Programming.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD4F9A1E7A72FD00CD56BF /* Programming.swift */; };
+		FDF293E31E7BC5B30044DF95 /* MyProgramHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF293E21E7BC5B30044DF95 /* MyProgramHeaderView.swift */; };
+		FDF293E51E7BC5BE0044DF95 /* MyProgramHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF293E41E7BC5BE0044DF95 /* MyProgramHeaderView.xib */; };
+		FDF293F01E7BD4910044DF95 /* LocationProgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF293EE1E7BD4910044DF95 /* LocationProgramTableViewCell.swift */; };
+		FDF293F11E7BD4910044DF95 /* LocationProgramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF293EF1E7BD4910044DF95 /* LocationProgramTableViewCell.xib */; };
+		FDF293F41E7BE7810044DF95 /* ProgramViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF293F21E7BE7810044DF95 /* ProgramViewTableViewCell.swift */; };
+		FDF293F51E7BE7810044DF95 /* ProgramViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF293F31E7BE7810044DF95 /* ProgramViewTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E11A69521CEC0BBA00F58A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E11A69351CEC0BBA00F58A6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E11A693C1CEC0BBA00F58A6C;
+			remoteInfo = robosys;
+		};
+		E11A695D1CEC0BBA00F58A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E11A69351CEC0BBA00F58A6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E11A693C1CEC0BBA00F58A6C;
+			remoteInfo = robosys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54FC93071E8CFC0000224851 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		21B84CA04679B55A75BE215B /* Pods-robosys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robosys.release.xcconfig"; path = "Pods/Target Support Files/Pods-robosys/Pods-robosys.release.xcconfig"; sourceTree = "<group>"; };
+		26F98FE49A0F0C84959231A8 /* Pods_robosysTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_robosysTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		324FBD21279AB1E22B8B5FF8 /* Pods-robosysUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robosysUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-robosysUITests/Pods-robosysUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F2B088E27F3F5633E58DB22 /* Pods-robosysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robosysTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-robosysTests/Pods-robosysTests.debug.xcconfig"; sourceTree = "<group>"; };
+		541E3B701EA84781008F252A /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		541E3B7E1EA85D20008F252A /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		542A0DCC1F2AD3CE006A9DDA /* LYLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYLog.swift; sourceTree = "<group>"; };
+		545DDAF81EA9AE6C00569191 /* MidSoundFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidSoundFlowLayout.swift; sourceTree = "<group>"; };
+		547B01AA1EA9E71D00B19643 /* BotmTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BotmTabView.swift; path = "Main/P6-Recreational/View/BotmTabView.swift"; sourceTree = "<group>"; };
+		54B2E02B1E9C441400686F6C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		54B2E02D1E9C442200686F6C /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		54B2E02F1E9C443500686F6C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		54B2E0311E9C446800686F6C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		54B2E0351E9C641600686F6C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		54B2E0391E9C64A600686F6C /* ._.DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = ._.DS_Store; sourceTree = "<group>"; };
+		54B2E03A1E9C64A600686F6C /* ._base64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ._base64.c; sourceTree = "<group>"; };
+		54B2E03B1E9C64A600686F6C /* ._cJSON.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ._cJSON.c; sourceTree = "<group>"; };
+		54B2E03C1E9C64A600686F6C /* ._cJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ._cJSON.h; sourceTree = "<group>"; };
+		54B2E03D1E9C64A600686F6C /* ._cJSON_Utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ._cJSON_Utils.c; sourceTree = "<group>"; };
+		54B2E03E1E9C64A600686F6C /* ._cJSON_Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ._cJSON_Utils.h; sourceTree = "<group>"; };
+		54B2E03F1E9C64A600686F6C /* ._FileUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ._FileUpload.h; sourceTree = "<group>"; };
+		54B2E0401E9C64A600686F6C /* ._FileUpload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ._FileUpload.m; sourceTree = "<group>"; };
+		54B2E0411E9C64A600686F6C /* ._KeychainOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ._KeychainOptions.swift; sourceTree = "<group>"; };
+		54B2E0421E9C64A600686F6C /* ._KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ._KeychainWrapper.swift; sourceTree = "<group>"; };
+		54B2E0431E9C64A600686F6C /* ._libcJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = ._libcJSON.a; sourceTree = "<group>"; };
+		54B2E0441E9C64A600686F6C /* ._RobotConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ._RobotConnect.h; sourceTree = "<group>"; };
+		54B2E0451E9C64A600686F6C /* ._RobotConnect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ._RobotConnect.m; sourceTree = "<group>"; };
+		54B2E0461E9C64A600686F6C /* ._RobotControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ._RobotControl.h; sourceTree = "<group>"; };
+		54B2E0471E9C64A600686F6C /* ._RobotControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ._RobotControl.m; sourceTree = "<group>"; };
+		54B2E0481E9C64A600686F6C /* base64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		54B2E0491E9C64A600686F6C /* cJSON.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cJSON.c; sourceTree = "<group>"; };
+		54B2E04A1E9C64A600686F6C /* cJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
+		54B2E04B1E9C64A600686F6C /* cJSON_Utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cJSON_Utils.c; sourceTree = "<group>"; };
+		54B2E04C1E9C64A600686F6C /* cJSON_Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cJSON_Utils.h; sourceTree = "<group>"; };
+		54B2E04D1E9C64A600686F6C /* FileUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUpload.h; sourceTree = "<group>"; };
+		54B2E04E1E9C64A600686F6C /* FileUpload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUpload.m; sourceTree = "<group>"; };
+		54B2E04F1E9C64A600686F6C /* KeychainOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainOptions.swift; sourceTree = "<group>"; };
+		54B2E0501E9C64A600686F6C /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		54B2E0511E9C64A600686F6C /* libcJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcJSON.a; sourceTree = "<group>"; };
+		54B2E0521E9C64A600686F6C /* RobotConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RobotConnect.h; sourceTree = "<group>"; };
+		54B2E0531E9C64A600686F6C /* RobotConnect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RobotConnect.m; sourceTree = "<group>"; };
+		54B2E0541E9C64A600686F6C /* RobotControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RobotControl.h; sourceTree = "<group>"; };
+		54B2E0551E9C64A600686F6C /* RobotControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RobotControl.m; sourceTree = "<group>"; };
+		54B2E0561E9C64A600686F6C /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		54B2E0581E9C66A100686F6C /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		54C53CC91EA8886A00399D5C /* TopImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopImageView.swift; sourceTree = "<group>"; };
+		54CF70221ECBE53B00F41CD9 /* ConnectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectView.swift; path = "Main/P3-ConfigureNetwork/View/ConnectView.swift"; sourceTree = "<group>"; };
+		54F1B9851F32B49E003C2040 /* ProgramControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramControlView.swift; path = "Main/P6-Recreational/View/ProgramControlView.swift"; sourceTree = "<group>"; };
+		54F1B9861F32B49E003C2040 /* ProgramControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramControlView.xib; path = "Main/P6-Recreational/View/ProgramControlView.xib"; sourceTree = "<group>"; };
+		54F2752D1EA8AAEB00F049E8 /* TopPictureFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPictureFlowLayout.swift; sourceTree = "<group>"; };
+		54F2752F1EA8D19100F049E8 /* MidSoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidSoundView.swift; sourceTree = "<group>"; };
+		5B4AE85B6D65691A60CEB7C1 /* Pods-robosysUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robosysUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-robosysUITests/Pods-robosysUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7A31359B1EBC5CBB004B623E /* ConfigurationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurationVC.swift; path = "Main/P3-ConfigureNetwork/Controller/ConfigurationVC.swift"; sourceTree = "<group>"; };
+		7A3171421EC4016F006B2DAA /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		7A7E37301EC1A67D00FBCB2B /* SwitchWifiVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchWifiVC.swift; path = "Main/P3-ConfigureNetwork/Controller/SwitchWifiVC.swift"; sourceTree = "<group>"; };
+		7AB362C01EC54C4F009DBF0F /* WifiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiModel.swift; sourceTree = "<group>"; };
+		7AB362C21EC551B2009DBF0F /* CellWifiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellWifiModel.swift; sourceTree = "<group>"; };
+		7ACB19311EC9A75900AE4EEB /* InputPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputPasswordViewController.swift; sourceTree = "<group>"; };
+		8CAFBC4C64043C1709842C43 /* Pods_robosysUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_robosysUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		918AC18C8A31A286A1B7ED61 /* Pods-robosysTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robosysTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-robosysTests/Pods-robosysTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4D26D691161C958974E96A8 /* Pods-robosys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robosys.debug.xcconfig"; path = "Pods/Target Support Files/Pods-robosys/Pods-robosys.debug.xcconfig"; sourceTree = "<group>"; };
+		D57E99A2FEC4D16E49DB3B81 /* Pods_robosys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_robosys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E102F44E1D110DA50071F2E7 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		E1064EE51D2F444300C2907B /* BindAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BindAlertView.swift; path = "Main/P4-Bind/View/BindAlertView.swift"; sourceTree = "<group>"; };
+		E1064EE61D2F444300C2907B /* BindAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BindAlertView.xib; path = "Main/P4-Bind/View/BindAlertView.xib"; sourceTree = "<group>"; };
+		E1064EE91D2F446500C2907B /* MotionProgramCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionProgramCell.swift; path = "Main/P6-Recreational/View/MotionProgramCell.swift"; sourceTree = "<group>"; };
+		E1064EEB1D2F449000C2907B /* APPWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APPWaveView.swift; path = View/APPWaveView.swift; sourceTree = "<group>"; };
+		E1064EEC1D2F449000C2907B /* MainHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainHeadView.swift; path = View/MainHeadView.swift; sourceTree = "<group>"; };
+		E1064EF11D2F44A200C2907B /* APPDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APPDatePicker.swift; path = View/APPDatePicker.swift; sourceTree = "<group>"; };
+		E1064EF21D2F44A200C2907B /* APPDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = APPDatePicker.xib; path = View/APPDatePicker.xib; sourceTree = "<group>"; };
+		E1064EF51D2F44B500C2907B /* MySettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MySettingView.swift; path = "Main/P8-My/View/MySettingView.swift"; sourceTree = "<group>"; };
+		E1064EF61D2F44B500C2907B /* MySettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MySettingView.xib; path = "Main/P8-My/View/MySettingView.xib"; sourceTree = "<group>"; };
+		E1064EF91D2F460B00C2907B /* MySettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MySettingViewController.swift; path = "Main/P8-My/Controller/MySettingViewController.swift"; sourceTree = "<group>"; };
+		E10952D11CEEBC6E0047AD53 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		E10A088D1D9133D0007C49BE /* Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Convert.h; sourceTree = "<group>"; };
+		E10A088E1D9133D0007C49BE /* Convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Convert.m; sourceTree = "<group>"; };
+		E11982751D3CB80000239DDE /* HelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpView.swift; path = "Main/P8-My/View/HelpView.swift"; sourceTree = "<group>"; };
+		E11982761D3CB80000239DDE /* HelpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HelpView.xib; path = "Main/P8-My/View/HelpView.xib"; sourceTree = "<group>"; };
+		E11A693D1CEC0BBA00F58A6C /* robosys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = robosys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11A69511CEC0BBA00F58A6C /* robosysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = robosysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11A69551CEC0BBA00F58A6C /* robosysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = robosysTests.swift; sourceTree = "<group>"; };
+		E11A69571CEC0BBA00F58A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11A695C1CEC0BBA00F58A6C /* robosysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = robosysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11A69601CEC0BBA00F58A6C /* robosysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = robosysUITests.swift; sourceTree = "<group>"; };
+		E11A69621CEC0BBA00F58A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11A69711CEC31C600F58A6C /* AppExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtension.swift; sourceTree = "<group>"; };
+		E11A69771CEC4A6800F58A6C /* AppNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavgationController.swift; sourceTree = "<group>"; };
+		E11A69811CEC75C700F58A6C /* AppStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStruct.swift; sourceTree = "<group>"; };
+		E15703E81DEC3886006EC183 /* RobotConn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RobotConn.c; sourceTree = "<group>"; };
+		E15703E91DEC3886006EC183 /* RobotConn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotConn.h; sourceTree = "<group>"; };
+		E1789FF41D12CCB20070CD63 /* ProgramSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramSliderView.swift; path = "Main/P6-Recreational/View/ProgramSliderView.swift"; sourceTree = "<group>"; };
+		E1789FF51D12CCB20070CD63 /* ProgramSliderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramSliderView.xib; path = "Main/P6-Recreational/View/ProgramSliderView.xib"; sourceTree = "<group>"; };
+		E1789FFA1D12CD180070CD63 /* ControlInterfaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlInterfaceViewController.swift; path = "Main/P6-Recreational/Controller/ControlInterfaceViewController.swift"; sourceTree = "<group>"; };
+		E1789FFC1D12CD240070CD63 /* ControlInterfaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlInterfaceView.swift; path = "Main/P6-Recreational/View/ControlInterfaceView.swift"; sourceTree = "<group>"; };
+		E1789FFD1D12CD240070CD63 /* ControlInterfaceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ControlInterfaceView.xib; path = "Main/P6-Recreational/View/ControlInterfaceView.xib"; sourceTree = "<group>"; };
+		E17DFFA81D5C1BCC008F6E20 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = base64.c; path = "3rd part/base64.c"; sourceTree = "<group>"; };
+		E17DFFA91D5C1BCC008F6E20 /* cJSON_Utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cJSON_Utils.c; path = "3rd part/cJSON_Utils.c"; sourceTree = "<group>"; };
+		E17DFFAA1D5C1BCC008F6E20 /* cJSON_Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cJSON_Utils.h; path = "3rd part/cJSON_Utils.h"; sourceTree = "<group>"; };
+		E17DFFAB1D5C1BCC008F6E20 /* cJSON.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cJSON.c; path = "3rd part/cJSON.c"; sourceTree = "<group>"; };
+		E17DFFAC1D5C1BCC008F6E20 /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cJSON.h; path = "3rd part/cJSON.h"; sourceTree = "<group>"; };
+		E188D6201DDC222700011982 /* AppTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		E18F4D0E1D41FF550049DCDF /* AppHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHUD.swift; sourceTree = "<group>"; };
+		E18F4D331D4219270049DCDF /* APPDatePicker1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APPDatePicker1.swift; path = View/APPDatePicker1.swift; sourceTree = "<group>"; };
+		E18F4D341D4219270049DCDF /* APPDatePicker1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = APPDatePicker1.xib; path = View/APPDatePicker1.xib; sourceTree = "<group>"; };
+		E18F4D3B1D42197B0049DCDF /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = "Main/P8-My/Controller/AboutViewController.swift"; sourceTree = "<group>"; };
+		E18F4D3D1D42198A0049DCDF /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = About.swift; path = "Main/P8-My/View/About.swift"; sourceTree = "<group>"; };
+		E18F4D3E1D42198A0049DCDF /* About.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = About.xib; path = "Main/P8-My/View/About.xib"; sourceTree = "<group>"; };
+		E18F4D411D421A470049DCDF /* NewScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewScheduleView.swift; path = "Main/P6-Recreational/View/NewScheduleView.swift"; sourceTree = "<group>"; };
+		E18F4D421D421A470049DCDF /* NewScheduleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewScheduleView.xib; path = "Main/P6-Recreational/View/NewScheduleView.xib"; sourceTree = "<group>"; };
+		E18F4D431D421A470049DCDF /* RemindDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemindDetailsCell.swift; path = "Main/P6-Recreational/View/RemindDetailsCell.swift"; sourceTree = "<group>"; };
+		E18F4D441D421A470049DCDF /* RemindDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RemindDetailsCell.xib; path = "Main/P6-Recreational/View/RemindDetailsCell.xib"; sourceTree = "<group>"; };
+		E18F4D451D421A470049DCDF /* RemindDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemindDetailsView.swift; path = "Main/P6-Recreational/View/RemindDetailsView.swift"; sourceTree = "<group>"; };
+		E18F4D461D421A470049DCDF /* RemindDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RemindDetailsView.xib; path = "Main/P6-Recreational/View/RemindDetailsView.xib"; sourceTree = "<group>"; };
+		E18F4D471D421A470049DCDF /* ScheduleRemindCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleRemindCell.swift; path = "Main/P6-Recreational/View/ScheduleRemindCell.swift"; sourceTree = "<group>"; };
+		E18F4D481D421A470049DCDF /* ScheduleRemindCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleRemindCell.xib; path = "Main/P6-Recreational/View/ScheduleRemindCell.xib"; sourceTree = "<group>"; };
+		E18F4D491D421A470049DCDF /* ScheduleRemindView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleRemindView.swift; path = "Main/P6-Recreational/View/ScheduleRemindView.swift"; sourceTree = "<group>"; };
+		E18F4D4A1D421A470049DCDF /* ScheduleRemindView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleRemindView.xib; path = "Main/P6-Recreational/View/ScheduleRemindView.xib"; sourceTree = "<group>"; };
+		E18F4D551D421B290049DCDF /* NewScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewScheduleViewController.swift; path = "Main/P6-Recreational/Controller/NewScheduleViewController.swift"; sourceTree = "<group>"; };
+		E18F4D561D421B290049DCDF /* RemindDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemindDetailsViewController.swift; path = "Main/P6-Recreational/Controller/RemindDetailsViewController.swift"; sourceTree = "<group>"; };
+		E18F4D571D421B290049DCDF /* ScheduleRemindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleRemindViewController.swift; path = "Main/P6-Recreational/Controller/ScheduleRemindViewController.swift"; sourceTree = "<group>"; };
+		E190DC0E1D07F922001D2CA2 /* libcJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcJSON.a; path = "3rd part/libcJSON.a"; sourceTree = "<group>"; };
+		E190DC111D07F922001D2CA2 /* RobotConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RobotConnect.h; path = "3rd part/RobotConnect.h"; sourceTree = "<group>"; };
+		E190DC121D07F922001D2CA2 /* RobotConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RobotConnect.m; path = "3rd part/RobotConnect.m"; sourceTree = "<group>"; };
+		E190DC131D07F922001D2CA2 /* RobotControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RobotControl.h; path = "3rd part/RobotControl.h"; sourceTree = "<group>"; };
+		E190DC141D07F922001D2CA2 /* RobotControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RobotControl.m; path = "3rd part/RobotControl.m"; sourceTree = "<group>"; };
+		E190DC201D07FA11001D2CA2 /* 造字工房悦黑体验版常规体.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "造字工房悦黑体验版常规体.OTF"; path = "Other/造字工房悦黑体验版常规体.OTF"; sourceTree = "<group>"; };
+		E19204A11D07FD1400931774 /* AppAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppAlertView.swift; path = View/AppAlertView.swift; sourceTree = "<group>"; };
+		E19204A21D07FD1400931774 /* AppAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppAlertView.xib; path = View/AppAlertView.xib; sourceTree = "<group>"; };
+		E19204A31D07FD1400931774 /* AppCaptchaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCaptchaView.swift; path = View/AppCaptchaView.swift; sourceTree = "<group>"; };
+		E19204A41D07FD1400931774 /* AppCaptchaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppCaptchaView.xib; path = View/AppCaptchaView.xib; sourceTree = "<group>"; };
+		E19204A51D07FD1400931774 /* AppDropButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDropButton.swift; path = View/AppDropButton.swift; sourceTree = "<group>"; };
+		E19204A61D07FD1400931774 /* AppHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppHeadView.swift; path = View/AppHeadView.swift; sourceTree = "<group>"; };
+		E19204F51D08013A00931774 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgotPasswordView.swift; path = "Main/P2-Regist/View/ForgotPasswordView.swift"; sourceTree = "<group>"; };
+		E19204F61D08013A00931774 /* ForgotPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ForgotPasswordView.xib; path = "Main/P2-Regist/View/ForgotPasswordView.xib"; sourceTree = "<group>"; };
+		E19204F71D08013A00931774 /* registAndForgotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = registAndForgotView.swift; path = "Main/P2-Regist/View/registAndForgotView.swift"; sourceTree = "<group>"; };
+		E19204F81D08013A00931774 /* RegistView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistView.swift; path = "Main/P2-Regist/View/RegistView.swift"; sourceTree = "<group>"; };
+		E19204F91D08013A00931774 /* RegistView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegistView.xib; path = "Main/P2-Regist/View/RegistView.xib"; sourceTree = "<group>"; };
+		E19204FC1D08013A00931774 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingView.swift; path = "Main/P2-Regist/View/SettingView.swift"; sourceTree = "<group>"; };
+		E19204FD1D08013A00931774 /* SettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingView.xib; path = "Main/P2-Regist/View/SettingView.xib"; sourceTree = "<group>"; };
+		E19205071D08014A00931774 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = "Main/P2-Regist/Controller/ForgotPasswordViewController.swift"; sourceTree = "<group>"; };
+		E19205081D08014A00931774 /* ProtocolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProtocolViewController.swift; path = "Main/P2-Regist/Controller/ProtocolViewController.swift"; sourceTree = "<group>"; };
+		E19205091D08014A00931774 /* RegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistViewController.swift; path = "Main/P2-Regist/Controller/RegistViewController.swift"; sourceTree = "<group>"; };
+		E192050A1D08014A00931774 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResetPasswordViewController.swift; path = "Main/P2-Regist/Controller/ResetPasswordViewController.swift"; sourceTree = "<group>"; };
+		E192050B1D08014A00931774 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = "Main/P2-Regist/Controller/SettingViewController.swift"; sourceTree = "<group>"; };
+		E19205111D08015A00931774 /* ConfigurationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurationView.swift; path = "Main/P3-ConfigureNetwork/View/ConfigurationView.swift"; sourceTree = "<group>"; };
+		E19205121D08015A00931774 /* ConfigurationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConfigurationView.xib; path = "Main/P3-ConfigureNetwork/View/ConfigurationView.xib"; sourceTree = "<group>"; };
+		E19205131D08015A00931774 /* ConnectWiFiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectWiFiView.swift; path = "Main/P3-ConfigureNetwork/View/ConnectWiFiView.swift"; sourceTree = "<group>"; };
+		E19205141D08015A00931774 /* ConnectWiFiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConnectWiFiView.xib; path = "Main/P3-ConfigureNetwork/View/ConnectWiFiView.xib"; sourceTree = "<group>"; };
+		E19205151D08015A00931774 /* ScanRobotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanRobotView.swift; path = "Main/P3-ConfigureNetwork/View/ScanRobotView.swift"; sourceTree = "<group>"; };
+		E19205161D08015A00931774 /* ScanRobotView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScanRobotView.xib; path = "Main/P3-ConfigureNetwork/View/ScanRobotView.xib"; sourceTree = "<group>"; };
+		E192051D1D08016800931774 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurationViewController.swift; path = "Main/P3-ConfigureNetwork/Controller/ConfigurationViewController.swift"; sourceTree = "<group>"; };
+		E192051E1D08016800931774 /* ConnectWiFiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectWiFiViewController.swift; path = "Main/P3-ConfigureNetwork/Controller/ConnectWiFiViewController.swift"; sourceTree = "<group>"; };
+		E192051F1D08016800931774 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeViewController.swift; path = "Main/P3-ConfigureNetwork/Controller/QRCodeViewController.swift"; sourceTree = "<group>"; };
+		E19205201D08016800931774 /* ScanRobotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanRobotViewController.swift; path = "Main/P3-ConfigureNetwork/Controller/ScanRobotViewController.swift"; sourceTree = "<group>"; };
+		E19205251D08017B00931774 /* BindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BindViewController.swift; path = "Main/P4-Bind/Controller/BindViewController.swift"; sourceTree = "<group>"; };
+		E19205271D08018100931774 /* BindView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BindView.swift; path = "Main/P4-Bind/View/BindView.swift"; sourceTree = "<group>"; };
+		E19205281D08018100931774 /* BindView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BindView.xib; path = "Main/P4-Bind/View/BindView.xib"; sourceTree = "<group>"; };
+		E192052B1D08019100931774 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnViewController.swift; path = "Main/P5-Learn/Controller/LearnViewController.swift"; sourceTree = "<group>"; };
+		E19205311D0801DF00931774 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "Main/P6-Recreational/Controller/MainViewController.swift"; sourceTree = "<group>"; };
+		E19205321D0801DF00931774 /* MotionModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionModeViewController.swift; path = "Main/P6-Recreational/Controller/MotionModeViewController.swift"; sourceTree = "<group>"; };
+		E19205331D0801DF00931774 /* MotionProgramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionProgramViewController.swift; path = "Main/P6-Recreational/Controller/MotionProgramViewController.swift"; sourceTree = "<group>"; };
+		E19205341D0801DF00931774 /* MotionSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionSettingViewController.swift; path = "Main/P6-Recreational/Controller/MotionSettingViewController.swift"; sourceTree = "<group>"; };
+		E19205361D0801DF00931774 /* MyProgramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyProgramViewController.swift; path = "Main/P6-Recreational/Controller/MyProgramViewController.swift"; sourceTree = "<group>"; };
+		E19205371D0801DF00931774 /* ProgramControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramControlViewController.swift; path = "Main/P6-Recreational/Controller/ProgramControlViewController.swift"; sourceTree = "<group>"; };
+		E19205381D0801DF00931774 /* RecreationalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecreationalViewController.swift; path = "Main/P6-Recreational/Controller/RecreationalViewController.swift"; sourceTree = "<group>"; };
+		E192055F1D0801FF00931774 /* MotionModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionModeView.swift; path = "Main/P6-Recreational/View/MotionModeView.swift"; sourceTree = "<group>"; };
+		E19205601D0801FF00931774 /* MotionModeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MotionModeView.xib; path = "Main/P6-Recreational/View/MotionModeView.xib"; sourceTree = "<group>"; };
+		E19205621D0801FF00931774 /* MotionProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionProgramView.swift; path = "Main/P6-Recreational/View/MotionProgramView.swift"; sourceTree = "<group>"; };
+		E19205631D0801FF00931774 /* MotionProgramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MotionProgramView.xib; path = "Main/P6-Recreational/View/MotionProgramView.xib"; sourceTree = "<group>"; };
+		E19205641D0801FF00931774 /* MotionSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionSettingView.swift; path = "Main/P6-Recreational/View/MotionSettingView.swift"; sourceTree = "<group>"; };
+		E19205651D0801FF00931774 /* MotionSettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MotionSettingView.xib; path = "Main/P6-Recreational/View/MotionSettingView.xib"; sourceTree = "<group>"; };
+		E19205681D0801FF00931774 /* MyProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyProgramView.swift; path = "Main/P6-Recreational/View/MyProgramView.swift"; sourceTree = "<group>"; };
+		E19205691D0801FF00931774 /* MyProgramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyProgramView.xib; path = "Main/P6-Recreational/View/MyProgramView.xib"; sourceTree = "<group>"; };
+		E192056C1D0801FF00931774 /* ProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramView.swift; path = "Main/P6-Recreational/View/ProgramView.swift"; sourceTree = "<group>"; };
+		E192056D1D0801FF00931774 /* ProgramView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramView.xib; path = "Main/P6-Recreational/View/ProgramView.xib"; sourceTree = "<group>"; };
+		E192056E1D0801FF00931774 /* RecreationalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecreationalView.swift; path = "Main/P6-Recreational/View/RecreationalView.swift"; sourceTree = "<group>"; };
+		E192056F1D0801FF00931774 /* RecreationalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RecreationalView.xib; path = "Main/P6-Recreational/View/RecreationalView.xib"; sourceTree = "<group>"; };
+		E19205811D08021B00931774 /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindViewController.swift; path = "Main/P7-Find/Controller/FindViewController.swift"; sourceTree = "<group>"; };
+		E19205831D08022000931774 /* FindView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindView.swift; path = "Main/P7-Find/View/FindView.swift"; sourceTree = "<group>"; };
+		E19205871D08023300931774 /* ChangePasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangePasswordView.swift; path = "Main/P8-My/View/ChangePasswordView.swift"; sourceTree = "<group>"; };
+		E19205881D08023300931774 /* ChangePasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChangePasswordView.xib; path = "Main/P8-My/View/ChangePasswordView.xib"; sourceTree = "<group>"; };
+		E19205891D08023300931774 /* JurisdictionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JurisdictionView.swift; path = "Main/P8-My/View/JurisdictionView.swift"; sourceTree = "<group>"; };
+		E192058A1D08023300931774 /* JurisdictionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JurisdictionView.xib; path = "Main/P8-My/View/JurisdictionView.xib"; sourceTree = "<group>"; };
+		E192058B1D08023300931774 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyView.swift; path = "Main/P8-My/View/MyView.swift"; sourceTree = "<group>"; };
+		E192058C1D08023300931774 /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyView.xib; path = "Main/P8-My/View/MyView.xib"; sourceTree = "<group>"; };
+		E192058D1D08023300931774 /* MyViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyViewCell.swift; path = "Main/P8-My/View/MyViewCell.swift"; sourceTree = "<group>"; };
+		E192058E1D08023300931774 /* MyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyViewCell.xib; path = "Main/P8-My/View/MyViewCell.xib"; sourceTree = "<group>"; };
+		E192058F1D08023300931774 /* PersonalInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInformationView.swift; path = "Main/P8-My/View/PersonalInformationView.swift"; sourceTree = "<group>"; };
+		E19205901D08023300931774 /* PersonalInformationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PersonalInformationView.xib; path = "Main/P8-My/View/PersonalInformationView.xib"; sourceTree = "<group>"; };
+		E19205911D08023300931774 /* RobotDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotDetailsView.swift; path = "Main/P8-My/View/RobotDetailsView.swift"; sourceTree = "<group>"; };
+		E19205921D08023300931774 /* RobotDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RobotDetailsView.xib; path = "Main/P8-My/View/RobotDetailsView.xib"; sourceTree = "<group>"; };
+		E192059F1D08023E00931774 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangePasswordViewController.swift; path = "Main/P8-My/Controller/ChangePasswordViewController.swift"; sourceTree = "<group>"; };
+		E19205A01D08023E00931774 /* JurisdictionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JurisdictionViewController.swift; path = "Main/P8-My/Controller/JurisdictionViewController.swift"; sourceTree = "<group>"; };
+		E19205A11D08023E00931774 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyViewController.swift; path = "Main/P8-My/Controller/MyViewController.swift"; sourceTree = "<group>"; };
+		E19205A21D08023E00931774 /* PersonalInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalInformationViewController.swift; path = "Main/P8-My/Controller/PersonalInformationViewController.swift"; sourceTree = "<group>"; };
+		E19205A31D08023E00931774 /* RobotDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotDetailsViewController.swift; path = "Main/P8-My/Controller/RobotDetailsViewController.swift"; sourceTree = "<group>"; };
+		E19205A91D08024A00931774 /* LeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftView.swift; path = "Main/P9-Sidebar/View/LeftView.swift"; sourceTree = "<group>"; };
+		E19205AA1D08024A00931774 /* LeftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeftView.xib; path = "Main/P9-Sidebar/View/LeftView.xib"; sourceTree = "<group>"; };
+		E195BDBB1D38D7A800E922B2 /* TimeScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeScale.swift; path = "Main/P6-Recreational/View/TimeScale.swift"; sourceTree = "<group>"; };
+		E195BDBC1D38D7A800E922B2 /* TimeScale.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimeScale.xib; path = "Main/P6-Recreational/View/TimeScale.xib"; sourceTree = "<group>"; };
+		E195BDBF1D38D7C600E922B2 /* FeedBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedBackView.swift; path = "Main/P8-My/View/FeedBackView.swift"; sourceTree = "<group>"; };
+		E195BDC01D38D7C600E922B2 /* FeedBackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedBackView.xib; path = "Main/P8-My/View/FeedBackView.xib"; sourceTree = "<group>"; };
+		E195BDC71D38D7D800E922B2 /* FeedBackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedBackViewController.swift; path = "Main/P8-My/Controller/FeedBackViewController.swift"; sourceTree = "<group>"; };
+		E195BDC81D38D7D800E922B2 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpViewController.swift; path = "Main/P8-My/Controller/HelpViewController.swift"; sourceTree = "<group>"; };
+		E199F5711D36482500CAD508 /* KeychainOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainOptions.swift; path = "3rd part/KeychainOptions.swift"; sourceTree = "<group>"; };
+		E199F5721D36482500CAD508 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = "3rd part/KeychainWrapper.swift"; sourceTree = "<group>"; };
+		E19CA8EC1D2127E4001C103A /* DPMeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeterView.h; sourceTree = "<group>"; };
+		E19CA8ED1D2127E4001C103A /* DPMeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeterView.m; sourceTree = "<group>"; };
+		E19CA8EE1D2127E4001C103A /* UIBezierPath+BasicShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+BasicShapes.h"; sourceTree = "<group>"; };
+		E19CA8EF1D2127E4001C103A /* UIBezierPath+BasicShapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+BasicShapes.m"; sourceTree = "<group>"; };
+		E1B395CF1D12CE8300E9BD62 /* ProgramAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramAlertView.swift; path = "Main/P6-Recreational/View/ProgramAlertView.swift"; sourceTree = "<group>"; };
+		E1B395D01D12CE8300E9BD62 /* ProgramAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgramAlertView.xib; path = "Main/P6-Recreational/View/ProgramAlertView.xib"; sourceTree = "<group>"; };
+		E1BB21331D9131670021F661 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		E1BB21341D9131670021F661 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		E1BF71021D64105B00F64F02 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		E1C768901CF2A551005E9162 /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		E1C7689A1CF2C720005E9162 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Main/HomeViewController.swift; sourceTree = "<group>"; };
+		E1C7689D1CF2C750005E9162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Other/Base.lproj/HomeViewController.storyboard; sourceTree = "<group>"; };
+		E1C768BF1CF2C7E5005E9162 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Other/AppDelegate.swift; sourceTree = "<group>"; };
+		E1C768C11CF2C7EA005E9162 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Other/Info.plist; sourceTree = "<group>"; };
+		E1C768C61CF2C817005E9162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Other/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1D15E601DE41D1C00C7F23A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E1D69E171DAE18690061C736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1D69E191DAE243A0061C736 /* PermissionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
+		E1D69E1B1DAE24510061C736 /* PermissionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PermissionView.xib; sourceTree = "<group>"; };
+		E1D69E1D1DAE24670061C736 /* PermissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
+		E1D69E221DAE29240061C736 /* FileUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileUpload.h; path = "3rd part/FileUpload.h"; sourceTree = "<group>"; };
+		E1D69E231DAE29240061C736 /* FileUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileUpload.m; path = "3rd part/FileUpload.m"; sourceTree = "<group>"; };
+		E1E335751D251B1800D26128 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E1E335761D251B1800D26128 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E1F08DBE1D33831A00AA80AF /* AppAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAlert.swift; sourceTree = "<group>"; };
+		E1FAEF421CF5938000D26B0A /* robosys-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "robosys-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7972ABA1F8EF77B0001C8E8 /* MusicListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicListController.swift; path = "Main/P6-Recreational/Controller/MusicListController.swift"; sourceTree = "<group>"; };
+		E7972ABB1F8EF77B0001C8E8 /* MusicListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MusicListController.xib; path = "Main/P6-Recreational/Controller/MusicListController.xib"; sourceTree = "<group>"; };
+		E7972ABC1F8EF77B0001C8E8 /* MusicLocationListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicLocationListController.swift; path = "Main/P6-Recreational/Controller/MusicLocationListController.swift"; sourceTree = "<group>"; };
+		E7972ABD1F8EF77B0001C8E8 /* MusicLocationListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MusicLocationListController.xib; path = "Main/P6-Recreational/Controller/MusicLocationListController.xib"; sourceTree = "<group>"; };
+		E7972ABE1F8EF77B0001C8E8 /* MusicPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicPlayViewController.swift; path = "Main/P6-Recreational/Controller/MusicPlayViewController.swift"; sourceTree = "<group>"; };
+		E7972ABF1F8EF77B0001C8E8 /* MusicPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MusicPlayViewController.xib; path = "Main/P6-Recreational/Controller/MusicPlayViewController.xib"; sourceTree = "<group>"; };
+		E7972AC01F8EF77B0001C8E8 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicViewController.swift; path = "Main/P6-Recreational/Controller/MusicViewController.swift"; sourceTree = "<group>"; };
+		E7972AC11F8EF77B0001C8E8 /* MusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MusicViewController.xib; path = "Main/P6-Recreational/Controller/MusicViewController.xib"; sourceTree = "<group>"; };
+		E7972AC21F8EF77B0001C8E8 /* RobotPlayHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotPlayHistoryController.swift; path = "Main/P6-Recreational/Controller/RobotPlayHistoryController.swift"; sourceTree = "<group>"; };
+		E7972AC31F8EF77B0001C8E8 /* RobotPlayHistoryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RobotPlayHistoryController.xib; path = "Main/P6-Recreational/Controller/RobotPlayHistoryController.xib"; sourceTree = "<group>"; };
+		E79CB4361F5F91D600E79FA5 /* CompactSoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompactSoundViewController.swift; sourceTree = "<group>"; };
+		E79CB4371F5F91D600E79FA5 /* CompactSoundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompactSoundViewController.xib; sourceTree = "<group>"; };
+		E7A28D0D1F666132000A4481 /* LeftConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftConnectViewController.swift; sourceTree = "<group>"; };
+		E7A28D0E1F666132000A4481 /* LeftConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftConnectViewController.xib; sourceTree = "<group>"; };
+		E7BDE8991F7CCA000013B70F /* RobotCtrl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RobotCtrl.c; sourceTree = "<group>"; };
+		E7BDE89A1F7CCA000013B70F /* RobotCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotCtrl.h; sourceTree = "<group>"; };
+		FD18286E1E6E898700DD2EE6 /* Robot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
+		FD5C26A51E7FB32100D39CA4 /* MyProgramHeaderViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProgramHeaderViewTableViewCell.swift; sourceTree = "<group>"; };
+		FD5C26A61E7FB32100D39CA4 /* MyProgramHeaderViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProgramHeaderViewTableViewCell.xib; sourceTree = "<group>"; };
+		FD5E18531E6D4B66008ABD6B /* RobotManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotManager.swift; sourceTree = "<group>"; };
+		FDC447871E855801005848E2 /* ProgramGuideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramGuideView.swift; sourceTree = "<group>"; };
+		FDDD4F981E7A6B6400CD56BF /* ProgrammingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammingManager.swift; sourceTree = "<group>"; };
+		FDDD4F9A1E7A72FD00CD56BF /* Programming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Programming.swift; sourceTree = "<group>"; };
+		FDF293E21E7BC5B30044DF95 /* MyProgramHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProgramHeaderView.swift; sourceTree = "<group>"; };
+		FDF293E41E7BC5BE0044DF95 /* MyProgramHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProgramHeaderView.xib; sourceTree = "<group>"; };
+		FDF293EE1E7BD4910044DF95 /* LocationProgramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationProgramTableViewCell.swift; sourceTree = "<group>"; };
+		FDF293EF1E7BD4910044DF95 /* LocationProgramTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationProgramTableViewCell.xib; sourceTree = "<group>"; };
+		FDF293F21E7BE7810044DF95 /* ProgramViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramViewTableViewCell.swift; sourceTree = "<group>"; };
+		FDF293F31E7BE7810044DF95 /* ProgramViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgramViewTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E11A693A1CEC0BBA00F58A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B2E0591E9C66A100686F6C /* UMMobClick.framework in Frameworks */,
+				54B2E0361E9C641600686F6C /* libz.tbd in Frameworks */,
+				54B2E0321E9C446800686F6C /* Security.framework in Frameworks */,
+				54B2E0301E9C443500686F6C /* libsqlite3.tbd in Frameworks */,
+				54B2E02C1E9C441400686F6C /* CoreTelephony.framework in Frameworks */,
+				E1BB21351D9131670021F661 /* libmp3lame.a in Frameworks */,
+				ABE803C3CD8D51A5ED325F8F /* Pods_robosys.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11A694E1CEC0BBA00F58A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F892A0E8CD9B896BCD556E44 /* Pods_robosysTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11A69591CEC0BBA00F58A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AECC0D822A03147A3010D21 /* Pods_robosysUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		541E3B741EA8572B008F252A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				541E3B751EA8572B008F252A /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		541E3B751EA8572B008F252A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				541E3B7E1EA85D20008F252A /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		54B2E0381E9C64A600686F6C /* 3rd part */ = {
+			isa = PBXGroup;
+			children = (
+				54B2E0391E9C64A600686F6C /* ._.DS_Store */,
+				54B2E03A1E9C64A600686F6C /* ._base64.c */,
+				54B2E03B1E9C64A600686F6C /* ._cJSON.c */,
+				54B2E03C1E9C64A600686F6C /* ._cJSON.h */,
+				54B2E03D1E9C64A600686F6C /* ._cJSON_Utils.c */,
+				54B2E03E1E9C64A600686F6C /* ._cJSON_Utils.h */,
+				54B2E03F1E9C64A600686F6C /* ._FileUpload.h */,
+				54B2E0401E9C64A600686F6C /* ._FileUpload.m */,
+				54B2E0411E9C64A600686F6C /* ._KeychainOptions.swift */,
+				54B2E0421E9C64A600686F6C /* ._KeychainWrapper.swift */,
+				54B2E0431E9C64A600686F6C /* ._libcJSON.a */,
+				54B2E0441E9C64A600686F6C /* ._RobotConnect.h */,
+				54B2E0451E9C64A600686F6C /* ._RobotConnect.m */,
+				54B2E0461E9C64A600686F6C /* ._RobotControl.h */,
+				54B2E0471E9C64A600686F6C /* ._RobotControl.m */,
+				54B2E0481E9C64A600686F6C /* base64.c */,
+				54B2E0491E9C64A600686F6C /* cJSON.c */,
+				54B2E04A1E9C64A600686F6C /* cJSON.h */,
+				54B2E04B1E9C64A600686F6C /* cJSON_Utils.c */,
+				54B2E04C1E9C64A600686F6C /* cJSON_Utils.h */,
+				54B2E04D1E9C64A600686F6C /* FileUpload.h */,
+				54B2E04E1E9C64A600686F6C /* FileUpload.m */,
+				54B2E04F1E9C64A600686F6C /* KeychainOptions.swift */,
+				54B2E0501E9C64A600686F6C /* KeychainWrapper.swift */,
+				54B2E0511E9C64A600686F6C /* libcJSON.a */,
+				54B2E0521E9C64A600686F6C /* RobotConnect.h */,
+				54B2E0531E9C64A600686F6C /* RobotConnect.m */,
+				54B2E0541E9C64A600686F6C /* RobotControl.h */,
+				54B2E0551E9C64A600686F6C /* RobotControl.m */,
+				54B2E0561E9C64A600686F6C /* UMMobClick.framework */,
+			);
+			path = "3rd part";
+			sourceTree = "<group>";
+		};
+		7AB362BF1EC54C27009DBF0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AB362C01EC54C4F009DBF0F /* WifiModel.swift */,
+				7AB362C21EC551B2009DBF0F /* CellWifiModel.swift */,
+			);
+			name = Model;
+			path = "Main/P6-Recreational/Model";
+			sourceTree = "<group>";
+		};
+		9F9C8355E710D2E074CE585C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4D26D691161C958974E96A8 /* Pods-robosys.debug.xcconfig */,
+				21B84CA04679B55A75BE215B /* Pods-robosys.release.xcconfig */,
+				3F2B088E27F3F5633E58DB22 /* Pods-robosysTests.debug.xcconfig */,
+				918AC18C8A31A286A1B7ED61 /* Pods-robosysTests.release.xcconfig */,
+				324FBD21279AB1E22B8B5FF8 /* Pods-robosysUITests.debug.xcconfig */,
+				5B4AE85B6D65691A60CEB7C1 /* Pods-robosysUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD2303D8DAB76D72A85E990A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54B2E0581E9C66A100686F6C /* UMMobClick.framework */,
+				54B2E0381E9C64A600686F6C /* 3rd part */,
+				54B2E0351E9C641600686F6C /* libz.tbd */,
+				54B2E0311E9C446800686F6C /* Security.framework */,
+				54B2E02F1E9C443500686F6C /* libsqlite3.tbd */,
+				54B2E02D1E9C442200686F6C /* libz.1.tbd */,
+				54B2E02B1E9C441400686F6C /* CoreTelephony.framework */,
+				D57E99A2FEC4D16E49DB3B81 /* Pods_robosys.framework */,
+				26F98FE49A0F0C84959231A8 /* Pods_robosysTests.framework */,
+				8CAFBC4C64043C1709842C43 /* Pods_robosysUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E10952C71CEEAF430047AD53 /* 休闲P6 */ = {
+			isa = PBXGroup;
+			children = (
+				7AB362BF1EC54C27009DBF0F /* Model */,
+				E1F785FA1CF321BA00DC4536 /* View */,
+				E1F785FB1CF321C100DC4536 /* Controller */,
+			);
+			name = "休闲P6";
+			sourceTree = "<group>";
+		};
+		E10952CA1CEEB06B0047AD53 /* 绑定P4 */ = {
+			isa = PBXGroup;
+			children = (
+				E1F785F41CF31E9C00DC4536 /* View */,
+				E1F785F51CF31EA100DC4536 /* Controller */,
+			);
+			name = "绑定P4";
+			sourceTree = "<group>";
+		};
+		E11A69341CEC0BBA00F58A6C = {
+			isa = PBXGroup;
+			children = (
+				E1FAEF3E1CF56BD700D26B0A /* 3rd part */,
+				E11A693F1CEC0BBA00F58A6C /* robosys */,
+				E11A69541CEC0BBA00F58A6C /* robosysTests */,
+				E11A695F1CEC0BBA00F58A6C /* robosysUITests */,
+				E11A693E1CEC0BBA00F58A6C /* Products */,
+				DD2303D8DAB76D72A85E990A /* Frameworks */,
+				9F9C8355E710D2E074CE585C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E11A693E1CEC0BBA00F58A6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E11A693D1CEC0BBA00F58A6C /* robosys.app */,
+				E11A69511CEC0BBA00F58A6C /* robosysTests.xctest */,
+				E11A695C1CEC0BBA00F58A6C /* robosysUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E11A693F1CEC0BBA00F58A6C /* robosys */ = {
+			isa = PBXGroup;
+			children = (
+				541E3B741EA8572B008F252A /* Tools */,
+				E10952D11CEEBC6E0047AD53 /* AppModel.swift */,
+				E11A69811CEC75C700F58A6C /* AppStruct.swift */,
+				E11A69711CEC31C600F58A6C /* AppExtension.swift */,
+				E18F4D0E1D41FF550049DCDF /* AppHUD.swift */,
+				E11A69771CEC4A6800F58A6C /* AppNavgationController.swift */,
+				E1BF71021D64105B00F64F02 /* AppViewController.swift */,
+				E1C768901CF2A551005E9162 /* AppView.swift */,
+				E188D6201DDC222700011982 /* AppTextField.swift */,
+				FD5E18531E6D4B66008ABD6B /* RobotManager.swift */,
+				FDDD4F981E7A6B6400CD56BF /* ProgrammingManager.swift */,
+				FDDD4F9A1E7A72FD00CD56BF /* Programming.swift */,
+				FD18286E1E6E898700DD2EE6 /* Robot.swift */,
+				542A0DCC1F2AD3CE006A9DDA /* LYLog.swift */,
+				E11A696E1CEC0CDC00F58A6C /* Main */,
+				E11A697B1CEC4D3000F58A6C /* View */,
+				E11A697C1CEC4D5300F58A6C /* Other */,
+			);
+			path = robosys;
+			sourceTree = "<group>";
+		};
+		E11A69541CEC0BBA00F58A6C /* robosysTests */ = {
+			isa = PBXGroup;
+			children = (
+				E11A69551CEC0BBA00F58A6C /* robosysTests.swift */,
+				E11A69571CEC0BBA00F58A6C /* Info.plist */,
+			);
+			path = robosysTests;
+			sourceTree = "<group>";
+		};
+		E11A695F1CEC0BBA00F58A6C /* robosysUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E11A69601CEC0BBA00F58A6C /* robosysUITests.swift */,
+				E11A69621CEC0BBA00F58A6C /* Info.plist */,
+			);
+			path = robosysUITests;
+			sourceTree = "<group>";
+		};
+		E11A696E1CEC0CDC00F58A6C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E1C7689A1CF2C720005E9162 /* HomeViewController.swift */,
+				E1C7689C1CF2C750005E9162 /* HomeViewController.storyboard */,
+				E1DB84281CEDAB7D00196594 /* 注册部分P2 */,
+				E1DB84291CEDAB9100196594 /* 配置网络P3 */,
+				E10952CA1CEEB06B0047AD53 /* 绑定P4 */,
+				E190DC041D07B920001D2CA2 /* 学习P5 */,
+				E10952C71CEEAF430047AD53 /* 休闲P6 */,
+				E190DC071D07B969001D2CA2 /* 发现P7 */,
+				E12158781CFD53A2005EFCA1 /* 我的P8 */,
+				E1AA90461CF46A8400A842B6 /* 侧边栏P9 */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		E11A697B1CEC4D3000F58A6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1064EEB1D2F449000C2907B /* APPWaveView.swift */,
+				E1064EF11D2F44A200C2907B /* APPDatePicker.swift */,
+				E1064EF21D2F44A200C2907B /* APPDatePicker.xib */,
+				E1F08DBE1D33831A00AA80AF /* AppAlert.swift */,
+				E18F4D331D4219270049DCDF /* APPDatePicker1.swift */,
+				E18F4D341D4219270049DCDF /* APPDatePicker1.xib */,
+				E1064EEC1D2F449000C2907B /* MainHeadView.swift */,
+				E19204A11D07FD1400931774 /* AppAlertView.swift */,
+				E19204A21D07FD1400931774 /* AppAlertView.xib */,
+				E19204A31D07FD1400931774 /* AppCaptchaView.swift */,
+				E19204A41D07FD1400931774 /* AppCaptchaView.xib */,
+				E19204A51D07FD1400931774 /* AppDropButton.swift */,
+				E19204A61D07FD1400931774 /* AppHeadView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E11A697C1CEC4D5300F58A6C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E190DC201D07FA11001D2CA2 /* 造字工房悦黑体验版常规体.OTF */,
+				E1C768BF1CF2C7E5005E9162 /* AppDelegate.swift */,
+				E1C768C11CF2C7EA005E9162 /* Info.plist */,
+				E1D69E171DAE18690061C736 /* Assets.xcassets */,
+				E1C768C51CF2C817005E9162 /* LaunchScreen.storyboard */,
+				E102F44E1D110DA50071F2E7 /* Entitlements.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		E12158781CFD53A2005EFCA1 /* 我的P8 */ = {
+			isa = PBXGroup;
+			children = (
+				E1F795DC1CFE8C92007AD026 /* View */,
+				E1F795DD1CFE8CA2007AD026 /* Controller */,
+			);
+			name = "我的P8";
+			sourceTree = "<group>";
+		};
+		E190DC041D07B920001D2CA2 /* 学习P5 */ = {
+			isa = PBXGroup;
+			children = (
+				E190DC061D07B941001D2CA2 /* Controller */,
+			);
+			name = "学习P5";
+			sourceTree = "<group>";
+		};
+		E190DC051D07B93A001D2CA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E190DC061D07B941001D2CA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E192052B1D08019100931774 /* LearnViewController.swift */,
+				E190DC051D07B93A001D2CA2 /* View */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E190DC071D07B969001D2CA2 /* 发现P7 */ = {
+			isa = PBXGroup;
+			children = (
+				E190DC081D07B983001D2CA2 /* View */,
+				E190DC091D07B988001D2CA2 /* Controller */,
+			);
+			name = "发现P7";
+			sourceTree = "<group>";
+		};
+		E190DC081D07B983001D2CA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E19205831D08022000931774 /* FindView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E190DC091D07B988001D2CA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E19205811D08021B00931774 /* FindViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E19CA8EB1D2127E4001C103A /* DPMeterView */ = {
+			isa = PBXGroup;
+			children = (
+				E19CA8EC1D2127E4001C103A /* DPMeterView.h */,
+				E19CA8ED1D2127E4001C103A /* DPMeterView.m */,
+				E19CA8EE1D2127E4001C103A /* UIBezierPath+BasicShapes.h */,
+				E19CA8EF1D2127E4001C103A /* UIBezierPath+BasicShapes.m */,
+			);
+			path = DPMeterView;
+			sourceTree = "<group>";
+		};
+		E1AA90461CF46A8400A842B6 /* 侧边栏P9 */ = {
+			isa = PBXGroup;
+			children = (
+				E19205A91D08024A00931774 /* LeftView.swift */,
+				E19205AA1D08024A00931774 /* LeftView.xib */,
+				E7A28D0D1F666132000A4481 /* LeftConnectViewController.swift */,
+				E7A28D0E1F666132000A4481 /* LeftConnectViewController.xib */,
+			);
+			name = "侧边栏P9";
+			sourceTree = "<group>";
+		};
+		E1C7688A1CF2A18F005E9162 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E19205081D08014A00931774 /* ProtocolViewController.swift */,
+				E19205071D08014A00931774 /* ForgotPasswordViewController.swift */,
+				E19205091D08014A00931774 /* RegistViewController.swift */,
+				E192050A1D08014A00931774 /* ResetPasswordViewController.swift */,
+				E192050B1D08014A00931774 /* SettingViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E1C7688B1CF2A19B005E9162 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E19204F71D08013A00931774 /* registAndForgotView.swift */,
+				E19204F81D08013A00931774 /* RegistView.swift */,
+				E19204F91D08013A00931774 /* RegistView.xib */,
+				E19204F51D08013A00931774 /* ForgotPasswordView.swift */,
+				E19204F61D08013A00931774 /* ForgotPasswordView.xib */,
+				E19204FC1D08013A00931774 /* SettingView.swift */,
+				E19204FD1D08013A00931774 /* SettingView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E1DB84281CEDAB7D00196594 /* 注册部分P2 */ = {
+			isa = PBXGroup;
+			children = (
+				E1C7688B1CF2A19B005E9162 /* View */,
+				E1C7688A1CF2A18F005E9162 /* Controller */,
+			);
+			name = "注册部分P2";
+			sourceTree = "<group>";
+		};
+		E1DB84291CEDAB9100196594 /* 配置网络P3 */ = {
+			isa = PBXGroup;
+			children = (
+				E1F785F21CF31DD200DC4536 /* View */,
+				E1F785F31CF31DDD00DC4536 /* Controller */,
+			);
+			name = "配置网络P3";
+			sourceTree = "<group>";
+		};
+		E1F785F21CF31DD200DC4536 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E19205111D08015A00931774 /* ConfigurationView.swift */,
+				E19205121D08015A00931774 /* ConfigurationView.xib */,
+				E19205131D08015A00931774 /* ConnectWiFiView.swift */,
+				E19205141D08015A00931774 /* ConnectWiFiView.xib */,
+				E19205151D08015A00931774 /* ScanRobotView.swift */,
+				E19205161D08015A00931774 /* ScanRobotView.xib */,
+				7A3171421EC4016F006B2DAA /* SwitchTableViewCell.swift */,
+				54CF70221ECBE53B00F41CD9 /* ConnectView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E1F785F31CF31DDD00DC4536 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E192051D1D08016800931774 /* ConfigurationViewController.swift */,
+				E192051E1D08016800931774 /* ConnectWiFiViewController.swift */,
+				E19205201D08016800931774 /* ScanRobotViewController.swift */,
+				E192051F1D08016800931774 /* QRCodeViewController.swift */,
+				7A31359B1EBC5CBB004B623E /* ConfigurationVC.swift */,
+				7A7E37301EC1A67D00FBCB2B /* SwitchWifiVC.swift */,
+				7ACB19311EC9A75900AE4EEB /* InputPasswordViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E1F785F41CF31E9C00DC4536 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1064EE51D2F444300C2907B /* BindAlertView.swift */,
+				E1064EE61D2F444300C2907B /* BindAlertView.xib */,
+				E19205271D08018100931774 /* BindView.swift */,
+				E19205281D08018100931774 /* BindView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E1F785F51CF31EA100DC4536 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E19205251D08017B00931774 /* BindViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E1F785FA1CF321BA00DC4536 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E18F4D491D421A470049DCDF /* ScheduleRemindView.swift */,
+				E18F4D4A1D421A470049DCDF /* ScheduleRemindView.xib */,
+				E18F4D471D421A470049DCDF /* ScheduleRemindCell.swift */,
+				E18F4D481D421A470049DCDF /* ScheduleRemindCell.xib */,
+				E18F4D411D421A470049DCDF /* NewScheduleView.swift */,
+				E18F4D421D421A470049DCDF /* NewScheduleView.xib */,
+				E18F4D431D421A470049DCDF /* RemindDetailsCell.swift */,
+				E18F4D441D421A470049DCDF /* RemindDetailsCell.xib */,
+				E18F4D451D421A470049DCDF /* RemindDetailsView.swift */,
+				E18F4D461D421A470049DCDF /* RemindDetailsView.xib */,
+				E1B395CF1D12CE8300E9BD62 /* ProgramAlertView.swift */,
+				E1B395D01D12CE8300E9BD62 /* ProgramAlertView.xib */,
+				E192055F1D0801FF00931774 /* MotionModeView.swift */,
+				E19205601D0801FF00931774 /* MotionModeView.xib */,
+				E195BDBB1D38D7A800E922B2 /* TimeScale.swift */,
+				E195BDBC1D38D7A800E922B2 /* TimeScale.xib */,
+				E1064EE91D2F446500C2907B /* MotionProgramCell.swift */,
+				E19205621D0801FF00931774 /* MotionProgramView.swift */,
+				E19205631D0801FF00931774 /* MotionProgramView.xib */,
+				E19205681D0801FF00931774 /* MyProgramView.swift */,
+				E19205691D0801FF00931774 /* MyProgramView.xib */,
+				FDF293E21E7BC5B30044DF95 /* MyProgramHeaderView.swift */,
+				FDF293E41E7BC5BE0044DF95 /* MyProgramHeaderView.xib */,
+				E1789FF41D12CCB20070CD63 /* ProgramSliderView.swift */,
+				E1789FF51D12CCB20070CD63 /* ProgramSliderView.xib */,
+				E19205641D0801FF00931774 /* MotionSettingView.swift */,
+				E19205651D0801FF00931774 /* MotionSettingView.xib */,
+				FDF293F21E7BE7810044DF95 /* ProgramViewTableViewCell.swift */,
+				FDF293F31E7BE7810044DF95 /* ProgramViewTableViewCell.xib */,
+				E192056C1D0801FF00931774 /* ProgramView.swift */,
+				E192056D1D0801FF00931774 /* ProgramView.xib */,
+				54F1B9851F32B49E003C2040 /* ProgramControlView.swift */,
+				54F1B9861F32B49E003C2040 /* ProgramControlView.xib */,
+				E192056E1D0801FF00931774 /* RecreationalView.swift */,
+				E192056F1D0801FF00931774 /* RecreationalView.xib */,
+				E1789FFC1D12CD240070CD63 /* ControlInterfaceView.swift */,
+				E1789FFD1D12CD240070CD63 /* ControlInterfaceView.xib */,
+				FDF293EE1E7BD4910044DF95 /* LocationProgramTableViewCell.swift */,
+				FDF293EF1E7BD4910044DF95 /* LocationProgramTableViewCell.xib */,
+				FD5C26A51E7FB32100D39CA4 /* MyProgramHeaderViewTableViewCell.swift */,
+				FD5C26A61E7FB32100D39CA4 /* MyProgramHeaderViewTableViewCell.xib */,
+				FDC447871E855801005848E2 /* ProgramGuideView.swift */,
+				54C53CC91EA8886A00399D5C /* TopImageView.swift */,
+				54F2752D1EA8AAEB00F049E8 /* TopPictureFlowLayout.swift */,
+				54F2752F1EA8D19100F049E8 /* MidSoundView.swift */,
+				545DDAF81EA9AE6C00569191 /* MidSoundFlowLayout.swift */,
+				547B01AA1EA9E71D00B19643 /* BotmTabView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E1F785FB1CF321C100DC4536 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E19205311D0801DF00931774 /* MainViewController.swift */,
+				E19205321D0801DF00931774 /* MotionModeViewController.swift */,
+				E19205331D0801DF00931774 /* MotionProgramViewController.swift */,
+				E19205341D0801DF00931774 /* MotionSettingViewController.swift */,
+				E7972ABA1F8EF77B0001C8E8 /* MusicListController.swift */,
+				E7972ABB1F8EF77B0001C8E8 /* MusicListController.xib */,
+				E7972ABC1F8EF77B0001C8E8 /* MusicLocationListController.swift */,
+				E7972ABD1F8EF77B0001C8E8 /* MusicLocationListController.xib */,
+				E7972ABE1F8EF77B0001C8E8 /* MusicPlayViewController.swift */,
+				E7972ABF1F8EF77B0001C8E8 /* MusicPlayViewController.xib */,
+				E7972AC01F8EF77B0001C8E8 /* MusicViewController.swift */,
+				E7972AC11F8EF77B0001C8E8 /* MusicViewController.xib */,
+				E7972AC21F8EF77B0001C8E8 /* RobotPlayHistoryController.swift */,
+				E7972AC31F8EF77B0001C8E8 /* RobotPlayHistoryController.xib */,
+				E19205361D0801DF00931774 /* MyProgramViewController.swift */,
+				E19205371D0801DF00931774 /* ProgramControlViewController.swift */,
+				E19205381D0801DF00931774 /* RecreationalViewController.swift */,
+				E1789FFA1D12CD180070CD63 /* ControlInterfaceViewController.swift */,
+				E18F4D551D421B290049DCDF /* NewScheduleViewController.swift */,
+				E18F4D561D421B290049DCDF /* RemindDetailsViewController.swift */,
+				E18F4D571D421B290049DCDF /* ScheduleRemindViewController.swift */,
+				541E3B701EA84781008F252A /* PlayViewController.swift */,
+				E79CB4361F5F91D600E79FA5 /* CompactSoundViewController.swift */,
+				E79CB4371F5F91D600E79FA5 /* CompactSoundViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E1F795DC1CFE8C92007AD026 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E19205871D08023300931774 /* ChangePasswordView.swift */,
+				E19205881D08023300931774 /* ChangePasswordView.xib */,
+				E19205891D08023300931774 /* JurisdictionView.swift */,
+				E192058A1D08023300931774 /* JurisdictionView.xib */,
+				E192058B1D08023300931774 /* MyView.swift */,
+				E192058C1D08023300931774 /* MyView.xib */,
+				E192058D1D08023300931774 /* MyViewCell.swift */,
+				E192058E1D08023300931774 /* MyViewCell.xib */,
+				E192058F1D08023300931774 /* PersonalInformationView.swift */,
+				E19205901D08023300931774 /* PersonalInformationView.xib */,
+				E19205911D08023300931774 /* RobotDetailsView.swift */,
+				E19205921D08023300931774 /* RobotDetailsView.xib */,
+				E1064EF51D2F44B500C2907B /* MySettingView.swift */,
+				E1064EF61D2F44B500C2907B /* MySettingView.xib */,
+				E195BDBF1D38D7C600E922B2 /* FeedBackView.swift */,
+				E195BDC01D38D7C600E922B2 /* FeedBackView.xib */,
+				E11982751D3CB80000239DDE /* HelpView.swift */,
+				E11982761D3CB80000239DDE /* HelpView.xib */,
+				E18F4D3D1D42198A0049DCDF /* About.swift */,
+				E18F4D3E1D42198A0049DCDF /* About.xib */,
+				E1D69E191DAE243A0061C736 /* PermissionView.swift */,
+				E1D69E1B1DAE24510061C736 /* PermissionView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E1F795DD1CFE8CA2007AD026 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E1064EF91D2F460B00C2907B /* MySettingViewController.swift */,
+				E192059F1D08023E00931774 /* ChangePasswordViewController.swift */,
+				E19205A01D08023E00931774 /* JurisdictionViewController.swift */,
+				E19205A11D08023E00931774 /* MyViewController.swift */,
+				E19205A21D08023E00931774 /* PersonalInformationViewController.swift */,
+				E19205A31D08023E00931774 /* RobotDetailsViewController.swift */,
+				E195BDC71D38D7D800E922B2 /* FeedBackViewController.swift */,
+				E195BDC81D38D7D800E922B2 /* HelpViewController.swift */,
+				E18F4D3B1D42197B0049DCDF /* AboutViewController.swift */,
+				E1D69E1D1DAE24670061C736 /* PermissionViewController.swift */,
+				E1D15E601DE41D1C00C7F23A /* Color.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E1FAEF3E1CF56BD700D26B0A /* 3rd part */ = {
+			isa = PBXGroup;
+			children = (
+				E19CA8EB1D2127E4001C103A /* DPMeterView */,
+				E1BB21331D9131670021F661 /* lame.h */,
+				E1BB21341D9131670021F661 /* libmp3lame.a */,
+				E190DC0E1D07F922001D2CA2 /* libcJSON.a */,
+				E17DFFA81D5C1BCC008F6E20 /* base64.c */,
+				E17DFFA91D5C1BCC008F6E20 /* cJSON_Utils.c */,
+				E17DFFAA1D5C1BCC008F6E20 /* cJSON_Utils.h */,
+				E17DFFAB1D5C1BCC008F6E20 /* cJSON.c */,
+				E17DFFAC1D5C1BCC008F6E20 /* cJSON.h */,
+				E7BDE8991F7CCA000013B70F /* RobotCtrl.c */,
+				E7BDE89A1F7CCA000013B70F /* RobotCtrl.h */,
+				E15703E81DEC3886006EC183 /* RobotConn.c */,
+				E15703E91DEC3886006EC183 /* RobotConn.h */,
+				E190DC111D07F922001D2CA2 /* RobotConnect.h */,
+				E190DC121D07F922001D2CA2 /* RobotConnect.m */,
+				E190DC131D07F922001D2CA2 /* RobotControl.h */,
+				E190DC141D07F922001D2CA2 /* RobotControl.m */,
+				E1E335751D251B1800D26128 /* Reachability.h */,
+				E1E335761D251B1800D26128 /* Reachability.m */,
+				E1FAEF421CF5938000D26B0A /* robosys-Bridging-Header.h */,
+				E10A088D1D9133D0007C49BE /* Convert.h */,
+				E10A088E1D9133D0007C49BE /* Convert.m */,
+				E199F5711D36482500CAD508 /* KeychainOptions.swift */,
+				E199F5721D36482500CAD508 /* KeychainWrapper.swift */,
+				E1D69E221DAE29240061C736 /* FileUpload.h */,
+				E1D69E231DAE29240061C736 /* FileUpload.m */,
+			);
+			name = "3rd part";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E11A693C1CEC0BBA00F58A6C /* robosys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11A69651CEC0BBA00F58A6C /* Build configuration list for PBXNativeTarget "robosys" */;
+			buildPhases = (
+				2FE76329666ABC99F829726F /* [CP] Check Pods Manifest.lock */,
+				E11A69391CEC0BBA00F58A6C /* Sources */,
+				E11A693A1CEC0BBA00F58A6C /* Frameworks */,
+				E11A693B1CEC0BBA00F58A6C /* Resources */,
+				54FC93071E8CFC0000224851 /* Embed Frameworks */,
+				9141D9DB8E77305894AA3FD5 /* [CP] Embed Pods Frameworks */,
+				FE3B6820E6AA5C51D539EF82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = robosys;
+			productName = robosys;
+			productReference = E11A693D1CEC0BBA00F58A6C /* robosys.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E11A69501CEC0BBA00F58A6C /* robosysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11A69681CEC0BBA00F58A6C /* Build configuration list for PBXNativeTarget "robosysTests" */;
+			buildPhases = (
+				14F820F38E963400A888B610 /* [CP] Check Pods Manifest.lock */,
+				E11A694D1CEC0BBA00F58A6C /* Sources */,
+				E11A694E1CEC0BBA00F58A6C /* Frameworks */,
+				E11A694F1CEC0BBA00F58A6C /* Resources */,
+				D3F731A23E0E6C51422EF026 /* [CP] Embed Pods Frameworks */,
+				D2B9ABD60215F628232C8A7A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E11A69531CEC0BBA00F58A6C /* PBXTargetDependency */,
+			);
+			name = robosysTests;
+			productName = robosysTests;
+			productReference = E11A69511CEC0BBA00F58A6C /* robosysTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E11A695B1CEC0BBA00F58A6C /* robosysUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11A696B1CEC0BBA00F58A6C /* Build configuration list for PBXNativeTarget "robosysUITests" */;
+			buildPhases = (
+				AD1C811EA9A8CA9B70B01910 /* [CP] Check Pods Manifest.lock */,
+				E11A69581CEC0BBA00F58A6C /* Sources */,
+				E11A69591CEC0BBA00F58A6C /* Frameworks */,
+				E11A695A1CEC0BBA00F58A6C /* Resources */,
+				B4D573D844DE0A2EBD7835BC /* [CP] Embed Pods Frameworks */,
+				5B8AA5007D58B76A0148E91F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E11A695E1CEC0BBA00F58A6C /* PBXTargetDependency */,
+			);
+			name = robosysUITests;
+			productName = robosysUITests;
+			productReference = E11A695C1CEC0BBA00F58A6C /* robosysUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E11A69351CEC0BBA00F58A6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = joekoe;
+				TargetAttributes = {
+					E11A693C1CEC0BBA00F58A6C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = TFN3C26YPX;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+					E11A69501CEC0BBA00F58A6C = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = E11A693C1CEC0BBA00F58A6C;
+					};
+					E11A695B1CEC0BBA00F58A6C = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = E11A693C1CEC0BBA00F58A6C;
+					};
+				};
+			};
+			buildConfigurationList = E11A69381CEC0BBA00F58A6C /* Build configuration list for PBXProject "robosys" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E11A69341CEC0BBA00F58A6C;
+			productRefGroup = E11A693E1CEC0BBA00F58A6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E11A693C1CEC0BBA00F58A6C /* robosys */,
+				E11A69501CEC0BBA00F58A6C /* robosysTests */,
+				E11A695B1CEC0BBA00F58A6C /* robosysUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E11A693B1CEC0BBA00F58A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E192047A1D07FA7B00931774 /* 造字工房悦黑体验版常规体.OTF in Resources */,
+				FD5C26A81E7FB32100D39CA4 /* MyProgramHeaderViewTableViewCell.xib in Resources */,
+				E18F4D521D421A470049DCDF /* ScheduleRemindCell.xib in Resources */,
+				FDF293E51E7BC5BE0044DF95 /* MyProgramHeaderView.xib in Resources */,
+				E195BDC41D38D7C600E922B2 /* FeedBackView.xib in Resources */,
+				54F1B9881F32B49E003C2040 /* ProgramControlView.xib in Resources */,
+				E19205941D08023300931774 /* ChangePasswordView.xib in Resources */,
+				E192052A1D08018100931774 /* BindView.xib in Resources */,
+				E19205801D0801FF00931774 /* RecreationalView.xib in Resources */,
+				E7A28D101F666132000A4481 /* LeftConnectViewController.xib in Resources */,
+				E19204A91D07FD1400931774 /* AppAlertView.xib in Resources */,
+				E18F4D4E1D421A470049DCDF /* RemindDetailsCell.xib in Resources */,
+				E1789FF91D12CCB20070CD63 /* ProgramSliderView.xib in Resources */,
+				E192051C1D08015A00931774 /* ScanRobotView.xib in Resources */,
+				E18F4D4C1D421A470049DCDF /* NewScheduleView.xib in Resources */,
+				E102F44F1D110DA50071F2E7 /* Entitlements.plist in Resources */,
+				E192057A1D0801FF00931774 /* MyProgramView.xib in Resources */,
+				E18F4D361D4219270049DCDF /* APPDatePicker1.xib in Resources */,
+				E192059A1D08023300931774 /* MyViewCell.xib in Resources */,
+				E79CB4391F5F91D600E79FA5 /* CompactSoundViewController.xib in Resources */,
+				E1064EE81D2F444300C2907B /* BindAlertView.xib in Resources */,
+				E18F4D401D42198A0049DCDF /* About.xib in Resources */,
+				E19205061D08013A00931774 /* SettingView.xib in Resources */,
+				E18F4D501D421A470049DCDF /* RemindDetailsView.xib in Resources */,
+				E192051A1D08015A00931774 /* ConnectWiFiView.xib in Resources */,
+				E7972ACD1F8EF77B0001C8E8 /* RobotPlayHistoryController.xib in Resources */,
+				E19205961D08023300931774 /* JurisdictionView.xib in Resources */,
+				E1D69E181DAE18690061C736 /* Assets.xcassets in Resources */,
+				E19205AC1D08024A00931774 /* LeftView.xib in Resources */,
+				E1789FFF1D12CD240070CD63 /* ControlInterfaceView.xib in Resources */,
+				E7972AC71F8EF77B0001C8E8 /* MusicLocationListController.xib in Resources */,
+				E11982781D3CB80000239DDE /* HelpView.xib in Resources */,
+				E192059C1D08023300931774 /* PersonalInformationView.xib in Resources */,
+				E19205181D08015A00931774 /* ConfigurationView.xib in Resources */,
+				E1D69E1C1DAE24510061C736 /* PermissionView.xib in Resources */,
+				E1064EF81D2F44B500C2907B /* MySettingView.xib in Resources */,
+				E1C768C71CF2C817005E9162 /* LaunchScreen.storyboard in Resources */,
+				E19205981D08023300931774 /* MyView.xib in Resources */,
+				E1B395D21D12CE8300E9BD62 /* ProgramAlertView.xib in Resources */,
+				FDF293F11E7BD4910044DF95 /* LocationProgramTableViewCell.xib in Resources */,
+				E19204AB1D07FD1400931774 /* AppCaptchaView.xib in Resources */,
+				E192057E1D0801FF00931774 /* ProgramView.xib in Resources */,
+				E18F4D541D421A470049DCDF /* ScheduleRemindView.xib in Resources */,
+				E7972ACB1F8EF77B0001C8E8 /* MusicViewController.xib in Resources */,
+				E19205741D0801FF00931774 /* MotionProgramView.xib in Resources */,
+				E19205021D08013A00931774 /* RegistView.xib in Resources */,
+				E19205761D0801FF00931774 /* MotionSettingView.xib in Resources */,
+				E195BDBE1D38D7A800E922B2 /* TimeScale.xib in Resources */,
+				FDF293F51E7BE7810044DF95 /* ProgramViewTableViewCell.xib in Resources */,
+				E1064EF41D2F44A200C2907B /* APPDatePicker.xib in Resources */,
+				E19204FF1D08013A00931774 /* ForgotPasswordView.xib in Resources */,
+				E192059E1D08023300931774 /* RobotDetailsView.xib in Resources */,
+				E7972AC91F8EF77B0001C8E8 /* MusicPlayViewController.xib in Resources */,
+				E7972AC51F8EF77B0001C8E8 /* MusicListController.xib in Resources */,
+				E19205711D0801FF00931774 /* MotionModeView.xib in Resources */,
+				E1C7689E1CF2C750005E9162 /* HomeViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11A694F1CEC0BBA00F58A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11A695A1CEC0BBA00F58A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14F820F38E963400A888B610 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2FE76329666ABC99F829726F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B8AA5007D58B76A0148E91F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-robosysUITests/Pods-robosysUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9141D9DB8E77305894AA3FD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-robosys/Pods-robosys-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD1C811EA9A8CA9B70B01910 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B4D573D844DE0A2EBD7835BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-robosysUITests/Pods-robosysUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2B9ABD60215F628232C8A7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-robosysTests/Pods-robosysTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3F731A23E0E6C51422EF026 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-robosysTests/Pods-robosysTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE3B6820E6AA5C51D539EF82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-robosys/Pods-robosys-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E11A69391CEC0BBA00F58A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E192053E1D0801DF00931774 /* MyProgramViewController.swift in Sources */,
+				E1BF71031D64105B00F64F02 /* AppViewController.swift in Sources */,
+				E18F4D4B1D421A470049DCDF /* NewScheduleView.swift in Sources */,
+				E18F4D511D421A470049DCDF /* ScheduleRemindCell.swift in Sources */,
+				E7972AC61F8EF77B0001C8E8 /* MusicLocationListController.swift in Sources */,
+				E192052C1D08019100931774 /* LearnViewController.swift in Sources */,
+				E18F4D3F1D42198A0049DCDF /* About.swift in Sources */,
+				E1D69E1A1DAE243A0061C736 /* PermissionView.swift in Sources */,
+				7AB362C31EC551B2009DBF0F /* CellWifiModel.swift in Sources */,
+				FDDD4F991E7A6B6400CD56BF /* ProgrammingManager.swift in Sources */,
+				E7972AC81F8EF77B0001C8E8 /* MusicPlayViewController.swift in Sources */,
+				E1B395D11D12CE8300E9BD62 /* ProgramAlertView.swift in Sources */,
+				E19205A51D08023E00931774 /* JurisdictionViewController.swift in Sources */,
+				E1C768911CF2A551005E9162 /* AppView.swift in Sources */,
+				FD5C26A71E7FB32100D39CA4 /* MyProgramHeaderViewTableViewCell.swift in Sources */,
+				7ACB19321EC9A75900AE4EEB /* InputPasswordViewController.swift in Sources */,
+				E192059B1D08023300931774 /* PersonalInformationView.swift in Sources */,
+				FDDD4F9B1E7A72FD00CD56BF /* Programming.swift in Sources */,
+				E19205051D08013A00931774 /* SettingView.swift in Sources */,
+				E1D15E611DE41D1C00C7F23A /* Color.swift in Sources */,
+				E19CA8F11D2127E4001C103A /* UIBezierPath+BasicShapes.m in Sources */,
+				E19205A71D08023E00931774 /* PersonalInformationViewController.swift in Sources */,
+				E19205791D0801FF00931774 /* MyProgramView.swift in Sources */,
+				E19205171D08015A00931774 /* ConfigurationView.swift in Sources */,
+				54F275301EA8D19100F049E8 /* MidSoundView.swift in Sources */,
+				E192050F1D08014A00931774 /* ResetPasswordViewController.swift in Sources */,
+				FDC447881E855801005848E2 /* ProgramGuideView.swift in Sources */,
+				E1064EEA1D2F446500C2907B /* MotionProgramCell.swift in Sources */,
+				E7972ACA1F8EF77B0001C8E8 /* MusicViewController.swift in Sources */,
+				54F1B9871F32B49E003C2040 /* ProgramControlView.swift in Sources */,
+				E19205191D08015A00931774 /* ConnectWiFiView.swift in Sources */,
+				541E3B711EA84781008F252A /* PlayViewController.swift in Sources */,
+				E11A69821CEC75C700F58A6C /* AppStruct.swift in Sources */,
+				E192053F1D0801DF00931774 /* ProgramControlViewController.swift in Sources */,
+				E18F4D0F1D41FF550049DCDF /* AppHUD.swift in Sources */,
+				E19205391D0801DF00931774 /* MainViewController.swift in Sources */,
+				E195BDBD1D38D7A800E922B2 /* TimeScale.swift in Sources */,
+				E1C768C01CF2C7E5005E9162 /* AppDelegate.swift in Sources */,
+				E1789FF81D12CCB20070CD63 /* ProgramSliderView.swift in Sources */,
+				E11A69781CEC4A6800F58A6C /* AppNavgationController.swift in Sources */,
+				E1C7689B1CF2C721005E9162 /* HomeViewController.swift in Sources */,
+				E190DC1C1D07F922001D2CA2 /* RobotControl.m in Sources */,
+				E19204AC1D07FD1400931774 /* AppDropButton.swift in Sources */,
+				E1789FFB1D12CD180070CD63 /* ControlInterfaceViewController.swift in Sources */,
+				E79CB4381F5F91D600E79FA5 /* CompactSoundViewController.swift in Sources */,
+				E18F4D4F1D421A470049DCDF /* RemindDetailsView.swift in Sources */,
+				E10A088F1D9133D0007C49BE /* Convert.m in Sources */,
+				FD5E18541E6D4B66008ABD6B /* RobotManager.swift in Sources */,
+				E19204AD1D07FD1400931774 /* AppHeadView.swift in Sources */,
+				E18F4D5A1D421B290049DCDF /* ScheduleRemindViewController.swift in Sources */,
+				E192053B1D0801DF00931774 /* MotionProgramViewController.swift in Sources */,
+				E19205731D0801FF00931774 /* MotionProgramView.swift in Sources */,
+				FDF293F01E7BD4910044DF95 /* LocationProgramTableViewCell.swift in Sources */,
+				E192050C1D08014A00931774 /* ForgotPasswordViewController.swift in Sources */,
+				FD18286F1E6E898700DD2EE6 /* Robot.swift in Sources */,
+				E18F4D351D4219270049DCDF /* APPDatePicker1.swift in Sources */,
+				E17DFFB21D5C1BCC008F6E20 /* cJSON_Utils.c in Sources */,
+				7A7E37311EC1A67D00FBCB2B /* SwitchWifiVC.swift in Sources */,
+				E7972ACC1F8EF77B0001C8E8 /* RobotPlayHistoryController.swift in Sources */,
+				E192057D1D0801FF00931774 /* ProgramView.swift in Sources */,
+				54CF70231ECBE53B00F41CD9 /* ConnectView.swift in Sources */,
+				E19205101D08014A00931774 /* SettingViewController.swift in Sources */,
+				E19CA8F01D2127E4001C103A /* DPMeterView.m in Sources */,
+				E195BDC91D38D7D800E922B2 /* FeedBackViewController.swift in Sources */,
+				E15703EC1DEC3886006EC183 /* RobotConn.c in Sources */,
+				E192053C1D0801DF00931774 /* MotionSettingViewController.swift in Sources */,
+				7A31359C1EBC5CBB004B623E /* ConfigurationVC.swift in Sources */,
+				E18F4D3C1D42197B0049DCDF /* AboutViewController.swift in Sources */,
+				E199F5741D36482500CAD508 /* KeychainWrapper.swift in Sources */,
+				E11A69721CEC31C600F58A6C /* AppExtension.swift in Sources */,
+				E1F08DBF1D33831A00AA80AF /* AppAlert.swift in Sources */,
+				E18F4D531D421A470049DCDF /* ScheduleRemindView.swift in Sources */,
+				FDF293F41E7BE7810044DF95 /* ProgramViewTableViewCell.swift in Sources */,
+				E18F4D581D421B290049DCDF /* NewScheduleViewController.swift in Sources */,
+				E195BDCA1D38D7D800E922B2 /* HelpViewController.swift in Sources */,
+				E7A28D0F1F666132000A4481 /* LeftConnectViewController.swift in Sources */,
+				E19205971D08023300931774 /* MyView.swift in Sources */,
+				E19205931D08023300931774 /* ChangePasswordView.swift in Sources */,
+				E19205A81D08023E00931774 /* RobotDetailsViewController.swift in Sources */,
+				E19205A41D08023E00931774 /* ChangePasswordViewController.swift in Sources */,
+				E7BDE89B1F7CCA000013B70F /* RobotCtrl.c in Sources */,
+				E19205231D08016800931774 /* QRCodeViewController.swift in Sources */,
+				E195BDC31D38D7C600E922B2 /* FeedBackView.swift in Sources */,
+				E192050E1D08014A00931774 /* RegistViewController.swift in Sources */,
+				E192053A1D0801DF00931774 /* MotionModeViewController.swift in Sources */,
+				E18F4D4D1D421A470049DCDF /* RemindDetailsCell.swift in Sources */,
+				E1D69E1E1DAE24670061C736 /* PermissionViewController.swift in Sources */,
+				FDF293E31E7BC5B30044DF95 /* MyProgramHeaderView.swift in Sources */,
+				E1789FFE1D12CD240070CD63 /* ControlInterfaceView.swift in Sources */,
+				E19205261D08017B00931774 /* BindViewController.swift in Sources */,
+				E19205851D08022000931774 /* FindView.swift in Sources */,
+				E18F4D591D421B290049DCDF /* RemindDetailsViewController.swift in Sources */,
+				E10952D21CEEBC6E0047AD53 /* AppModel.swift in Sources */,
+				547B01AB1EA9E71D00B19643 /* BotmTabView.swift in Sources */,
+				E1064EF31D2F44A200C2907B /* APPDatePicker.swift in Sources */,
+				E17DFFB11D5C1BCC008F6E20 /* base64.c in Sources */,
+				E19205751D0801FF00931774 /* MotionSettingView.swift in Sources */,
+				E19204AA1D07FD1400931774 /* AppCaptchaView.swift in Sources */,
+				E19205401D0801DF00931774 /* RecreationalViewController.swift in Sources */,
+				E19205241D08016800931774 /* ScanRobotViewController.swift in Sources */,
+				E188D6211DDC222700011982 /* AppTextField.swift in Sources */,
+				E192059D1D08023300931774 /* RobotDetailsView.swift in Sources */,
+				545DDAF91EA9AE6C00569191 /* MidSoundFlowLayout.swift in Sources */,
+				E19205AB1D08024A00931774 /* LeftView.swift in Sources */,
+				E190DC1B1D07F922001D2CA2 /* RobotConnect.m in Sources */,
+				E11982771D3CB80000239DDE /* HelpView.swift in Sources */,
+				E19205221D08016800931774 /* ConnectWiFiViewController.swift in Sources */,
+				E7972AC41F8EF77B0001C8E8 /* MusicListController.swift in Sources */,
+				E1064EEF1D2F449000C2907B /* MainHeadView.swift in Sources */,
+				E1064EF71D2F44B500C2907B /* MySettingView.swift in Sources */,
+				E19205821D08021B00931774 /* FindViewController.swift in Sources */,
+				7AB362C11EC54C4F009DBF0F /* WifiModel.swift in Sources */,
+				E1064EFA1D2F460B00C2907B /* MySettingViewController.swift in Sources */,
+				E19205001D08013A00931774 /* registAndForgotView.swift in Sources */,
+				7A3171431EC4016F006B2DAA /* SwitchTableViewCell.swift in Sources */,
+				E19204A81D07FD1400931774 /* AppAlertView.swift in Sources */,
+				54C53CCA1EA8886A00399D5C /* TopImageView.swift in Sources */,
+				E19205951D08023300931774 /* JurisdictionView.swift in Sources */,
+				E19205011D08013A00931774 /* RegistView.swift in Sources */,
+				541E3B7F1EA85D20008F252A /* UIBarButtonItem+Extension.swift in Sources */,
+				E19204FE1D08013A00931774 /* ForgotPasswordView.swift in Sources */,
+				E19205A61D08023E00931774 /* MyViewController.swift in Sources */,
+				E199F5731D36482500CAD508 /* KeychainOptions.swift in Sources */,
+				E192050D1D08014A00931774 /* ProtocolViewController.swift in Sources */,
+				E1D69E241DAE29240061C736 /* FileUpload.m in Sources */,
+				E19205291D08018100931774 /* BindView.swift in Sources */,
+				E19205991D08023300931774 /* MyViewCell.swift in Sources */,
+				542A0DCD1F2AD3CE006A9DDA /* LYLog.swift in Sources */,
+				E1064EEE1D2F449000C2907B /* APPWaveView.swift in Sources */,
+				E19205701D0801FF00931774 /* MotionModeView.swift in Sources */,
+				E17DFFB31D5C1BCC008F6E20 /* cJSON.c in Sources */,
+				E1064EE71D2F444300C2907B /* BindAlertView.swift in Sources */,
+				E19205211D08016800931774 /* ConfigurationViewController.swift in Sources */,
+				E192051B1D08015A00931774 /* ScanRobotView.swift in Sources */,
+				E1E335771D251B1800D26128 /* Reachability.m in Sources */,
+				54F2752E1EA8AAEB00F049E8 /* TopPictureFlowLayout.swift in Sources */,
+				E192057F1D0801FF00931774 /* RecreationalView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11A694D1CEC0BBA00F58A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11A69561CEC0BBA00F58A6C /* robosysTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11A69581CEC0BBA00F58A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11A69611CEC0BBA00F58A6C /* robosysUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E11A69531CEC0BBA00F58A6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E11A693C1CEC0BBA00F58A6C /* robosys */;
+			targetProxy = E11A69521CEC0BBA00F58A6C /* PBXContainerItemProxy */;
+		};
+		E11A695E1CEC0BBA00F58A6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E11A693C1CEC0BBA00F58A6C /* robosys */;
+			targetProxy = E11A695D1CEC0BBA00F58A6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1C7689C1CF2C750005E9162 /* HomeViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1C7689D1CF2C750005E9162 /* Base */,
+			);
+			name = HomeViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		E1C768C51CF2C817005E9162 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1C768C61CF2C817005E9162 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E11A69631CEC0BBA00F58A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E11A69641CEC0BBA00F58A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E11A69661CEC0BBA00F58A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D26D691161C958974E96A8 /* Pods-robosys.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TFN3C26YPX;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rd\\ part",
+					"$(PROJECT_DIR)/3rd\\ part",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = robosys/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_CFLAGS[arch=*]" = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = robosys.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a2d7fac5-505f-4c21-a062-67d421040ec0";
+				PROVISIONING_PROFILE_SPECIFIER = LY_Development;
+				SWIFT_OBJC_BRIDGING_HEADER = "robosys-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		E11A69671CEC0BBA00F58A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B84CA04679B55A75BE215B /* Pods-robosys.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TFN3C26YPX;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rd\\ part",
+					"$(PROJECT_DIR)/3rd\\ part",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = robosys/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+					"$(PROJECT_DIR)/3rd",
+					part,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = robosys.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8efb6ca4-ce6a-43db-81d2-bfd35267a8d1";
+				PROVISIONING_PROFILE_SPECIFIER = LY_Distribution;
+				SWIFT_OBJC_BRIDGING_HEADER = "robosys-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		E11A69691CEC0BBA00F58A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F2B088E27F3F5633E58DB22 /* Pods-robosysTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = robosysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = joekoe.robosysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/robosys.app/robosys";
+			};
+			name = Debug;
+		};
+		E11A696A1CEC0BBA00F58A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 918AC18C8A31A286A1B7ED61 /* Pods-robosysTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = robosysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = joekoe.robosysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/robosys.app/robosys";
+			};
+			name = Release;
+		};
+		E11A696C1CEC0BBA00F58A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324FBD21279AB1E22B8B5FF8 /* Pods-robosysUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = robosysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = joekoe.robosysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = robosys;
+			};
+			name = Debug;
+		};
+		E11A696D1CEC0BBA00F58A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B4AE85B6D65691A60CEB7C1 /* Pods-robosysUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = robosysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = joekoe.robosysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = robosys;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E11A69381CEC0BBA00F58A6C /* Build configuration list for PBXProject "robosys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11A69631CEC0BBA00F58A6C /* Debug */,
+				E11A69641CEC0BBA00F58A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11A69651CEC0BBA00F58A6C /* Build configuration list for PBXNativeTarget "robosys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11A69661CEC0BBA00F58A6C /* Debug */,
+				E11A69671CEC0BBA00F58A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11A69681CEC0BBA00F58A6C /* Build configuration list for PBXNativeTarget "robosysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11A69691CEC0BBA00F58A6C /* Debug */,
+				E11A696A1CEC0BBA00F58A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11A696B1CEC0BBA00F58A6C /* Build configuration list for PBXNativeTarget "robosysUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11A696C1CEC0BBA00F58A6C /* Debug */,
+				E11A696D1CEC0BBA00F58A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E11A69351CEC0BBA00F58A6C /* Project object */;
+}

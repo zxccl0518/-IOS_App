@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgramControlViewController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="T49-K0-KLA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProgramControlView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-背景" translatesAutoresizingMaskIntoConstraints="NO" id="bGr-eW-UnY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIM-n1-MzO">
+                    <rect key="frame" x="104" y="358" width="167" height="84"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="167" id="NKg-QO-iJi"/>
+                        <constraint firstAttribute="height" constant="84" id="fcl-6Y-BZD"/>
+                    </constraints>
+                    <state key="normal" image="编程管理">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="myProgram:" destination="iN0-l3-epB" eventType="touchUpInside" id="dxb-mc-Pj3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMR-U4-LOG">
+                    <rect key="frame" x="104" y="225" width="167" height="84"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="167" id="JY6-5h-cqK"/>
+                        <constraint firstAttribute="height" constant="84" id="lbf-oS-dx1"/>
+                    </constraints>
+                    <state key="normal" image="动作编程">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="motionProgram:" destination="iN0-l3-epB" eventType="touchUpInside" id="SJT-mZ-uLm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bGr-eW-UnY" secondAttribute="bottom" id="4z0-3L-ZXr"/>
+                <constraint firstAttribute="trailing" secondItem="bGr-eW-UnY" secondAttribute="trailing" id="7Sp-IK-9wi"/>
+                <constraint firstItem="NIM-n1-MzO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.2" id="DnH-mq-z61"/>
+                <constraint firstItem="bGr-eW-UnY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XKT-se-BZk"/>
+                <constraint firstItem="bGr-eW-UnY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dUe-Hn-ljM"/>
+                <constraint firstItem="SMR-U4-LOG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.8" id="lSF-fM-rpr"/>
+                <constraint firstItem="SMR-U4-LOG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pb9-2f-Xzc"/>
+                <constraint firstItem="NIM-n1-MzO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sD6-x6-BZB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="bGr-eW-UnY"/>
+                    <exclude reference="NIM-n1-MzO"/>
+                    <exclude reference="SMR-U4-LOG"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="4z0-3L-ZXr"/>
+                    <exclude reference="7Sp-IK-9wi"/>
+                    <exclude reference="XKT-se-BZk"/>
+                    <exclude reference="dUe-Hn-ljM"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="bGr-eW-UnY"/>
+                    <include reference="NIM-n1-MzO"/>
+                    <include reference="SMR-U4-LOG"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="4z0-3L-ZXr"/>
+                    <include reference="7Sp-IK-9wi"/>
+                    <include reference="XKT-se-BZk"/>
+                    <include reference="dUe-Hn-ljM"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="myProgramBtn" destination="NIM-n1-MzO" id="zCc-Ol-WPX"/>
+            </connections>
+            <point key="canvasLocation" x="148" y="185"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="动作编程" width="167" height="84"/>
+        <image name="编程管理" width="167" height="84"/>
+        <image name="首页-背景" width="375" height="667"/>
+    </resources>
+</document>

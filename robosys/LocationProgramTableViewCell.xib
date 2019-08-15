@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="LocationProgramTableViewCell" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQr-ji-wgo">
+                        <rect key="frame" x="0.0" y="5" width="310" height="87.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLw-O3-w3f">
+                                <rect key="frame" x="0.0" y="24" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aPL-fF-Chh"/>
+                                    <constraint firstAttribute="width" constant="40" id="may-nB-fns"/>
+                                </constraints>
+                                <state key="normal" image="性别选择底"/>
+                                <state key="selected" image="性别选择"/>
+                                <connections>
+                                    <action selector="selectBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IrQ-NC-tdT"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="U2E-Gm-4Lv">
+                                <rect key="frame" x="40" y="0.0" width="270" height="87.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="夏的司法鉴定饭卡里富家大室看来就法兰克福的拉近了看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZv-Tc-AgR">
+                                <rect key="frame" x="50" y="35.5" width="69" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="电视剧分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjq-ol-ygO">
+                                <rect key="frame" x="129" y="35.5" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="252" text="额鹅鹅鹅付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eji-ea-kAL">
+                                <rect key="frame" x="196.5" y="35.5" width="71.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="254" verticalHuggingPriority="254" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxe-mV-huo">
+                                <rect key="frame" x="278" y="31" width="22" height="26"/>
+                                <state key="normal" image="programPush">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8eJ-5y-HzG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="U2E-Gm-4Lv" firstAttribute="leading" secondItem="JLw-O3-w3f" secondAttribute="trailing" id="1qT-ac-mDZ"/>
+                            <constraint firstItem="Eji-ea-kAL" firstAttribute="leading" secondItem="Kjq-ol-ygO" secondAttribute="trailing" constant="10" id="54P-V2-vT6"/>
+                            <constraint firstAttribute="bottom" secondItem="U2E-Gm-4Lv" secondAttribute="bottom" id="60n-jG-aad"/>
+                            <constraint firstItem="Sxe-mV-huo" firstAttribute="centerY" secondItem="U2E-Gm-4Lv" secondAttribute="centerY" id="K0j-fK-GS0"/>
+                            <constraint firstItem="Eji-ea-kAL" firstAttribute="centerY" secondItem="U2E-Gm-4Lv" secondAttribute="centerY" id="QWY-Gh-blh"/>
+                            <constraint firstItem="U2E-Gm-4Lv" firstAttribute="leading" secondItem="XZv-Tc-AgR" secondAttribute="leading" constant="-10" id="RNB-Ts-Fwo"/>
+                            <constraint firstItem="Sxe-mV-huo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Eji-ea-kAL" secondAttribute="trailing" constant="10" id="RzK-jx-lG9"/>
+                            <constraint firstItem="U2E-Gm-4Lv" firstAttribute="top" secondItem="yQr-ji-wgo" secondAttribute="top" id="X0S-Pw-04H"/>
+                            <constraint firstItem="Kjq-ol-ygO" firstAttribute="leading" secondItem="XZv-Tc-AgR" secondAttribute="trailing" constant="10" id="bWw-of-lpj"/>
+                            <constraint firstAttribute="trailing" secondItem="U2E-Gm-4Lv" secondAttribute="trailing" id="f1w-Tk-sEk"/>
+                            <constraint firstItem="JLw-O3-w3f" firstAttribute="leading" secondItem="yQr-ji-wgo" secondAttribute="leading" id="jV1-pb-7gf"/>
+                            <constraint firstItem="Kjq-ol-ygO" firstAttribute="centerY" secondItem="U2E-Gm-4Lv" secondAttribute="centerY" id="lZ6-AT-N0f"/>
+                            <constraint firstItem="XZv-Tc-AgR" firstAttribute="centerY" secondItem="U2E-Gm-4Lv" secondAttribute="centerY" id="rD3-eq-dah"/>
+                            <constraint firstItem="JLw-O3-w3f" firstAttribute="centerY" secondItem="yQr-ji-wgo" secondAttribute="centerY" id="sPc-xk-iZ7"/>
+                            <constraint firstItem="Sxe-mV-huo" firstAttribute="trailing" secondItem="U2E-Gm-4Lv" secondAttribute="trailing" constant="-10" id="vm6-9z-2Ub"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yQr-ji-wgo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8fg-7I-Pma"/>
+                    <constraint firstAttribute="trailing" secondItem="yQr-ji-wgo" secondAttribute="trailing" constant="10" id="BCE-Xs-bWi"/>
+                    <constraint firstItem="yQr-ji-wgo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="F4F-4R-3kC"/>
+                    <constraint firstAttribute="bottom" secondItem="yQr-ji-wgo" secondAttribute="bottom" constant="5" id="RwZ-oC-TCx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backImageView" destination="U2E-Gm-4Lv" id="nIv-EU-Kl7"/>
+                <outlet property="dateLabel" destination="Eji-ea-kAL" id="TIh-Sq-GeU"/>
+                <outlet property="nameLabel" destination="XZv-Tc-AgR" id="bB4-cY-sAi"/>
+                <outlet property="selectBtn" destination="JLw-O3-w3f" id="BAY-BZ-mAH"/>
+                <outlet property="timeLabel" destination="Kjq-ol-ygO" id="vPO-X4-i33"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="81"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="programPush" width="22" height="26"/>
+        <image name="性别选择" width="17" height="17"/>
+        <image name="性别选择底" width="17" height="17"/>
+    </resources>
+</document>

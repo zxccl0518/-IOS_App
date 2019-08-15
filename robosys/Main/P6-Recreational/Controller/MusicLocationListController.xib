@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicLocationListController" customModule="robosys" customModuleProvider="target">
+            <connections>
+                <outlet property="appView" destination="i5M-Pr-FkT" id="VvV-Aj-NJi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="AppView" customModule="robosys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-背景" translatesAutoresizingMaskIntoConstraints="NO" id="tor-ja-egq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1Q-7k-mqN">
+                    <rect key="frame" x="8" y="150" width="359" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="pLJ-0x-xRd"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Configure Network-Middle-Background1-"/>
+                    <connections>
+                        <action selector="popLocationList:" destination="-1" eventType="touchUpInside" id="kn8-SS-IZ3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scJ-of-9Ta">
+                    <rect key="frame" x="8" y="210" width="359" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Afl-Dd-x9H"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Configure Network-Middle-Background1-"/>
+                    <connections>
+                        <action selector="popHistoryList:" destination="-1" eventType="touchUpInside" id="gBv-Ei-BoE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小盒音乐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIJ-wQ-9EH">
+                    <rect key="frame" x="64" y="160" width="72" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="i25-m8-vVS"/>
+                        <constraint firstAttribute="height" constant="30" id="sot-XV-hHc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="历史列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncr-Qy-i2R">
+                    <rect key="frame" x="64" y="220" width="72" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="PlD-0l-Wgh"/>
+                        <constraint firstAttribute="width" constant="72" id="coj-ik-aS0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="侧边分割线" translatesAutoresizingMaskIntoConstraints="NO" id="Ig0-A1-s3r">
+                    <rect key="frame" x="8" y="150" width="359" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="il4-YG-SLf"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="侧边分割线" translatesAutoresizingMaskIntoConstraints="NO" id="fpV-eS-9Ab">
+                    <rect key="frame" x="8" y="200" width="359" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="zUq-cK-e1i"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="侧边分割线" translatesAutoresizingMaskIntoConstraints="NO" id="7TY-QB-nnN">
+                    <rect key="frame" x="8" y="210" width="359" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="u5H-tS-VYn"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="侧边分割线" translatesAutoresizingMaskIntoConstraints="NO" id="rVU-Ss-06N">
+                    <rect key="frame" x="8" y="260" width="359" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dem-br-3zt"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkR-Uf-9zv">
+                    <rect key="frame" x="26" y="220" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="XQV-jt-OTf"/>
+                        <constraint firstAttribute="width" constant="30" id="mWv-Rf-MfS"/>
+                    </constraints>
+                    <state key="normal" image="最近播放-图标"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCS-q5-xbs">
+                    <rect key="frame" x="26" y="160" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="kes-ak-TIg"/>
+                        <constraint firstAttribute="height" constant="30" id="pJl-X7-Mbn"/>
+                    </constraints>
+                    <state key="normal" image="本地音乐-图标"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yIJ-wQ-9EH" firstAttribute="centerY" secondItem="FCS-q5-xbs" secondAttribute="centerY" id="2AF-CL-6hs"/>
+                <constraint firstItem="rVU-Ss-06N" firstAttribute="top" secondItem="scJ-of-9Ta" secondAttribute="bottom" id="2bL-s4-0ED"/>
+                <constraint firstAttribute="trailing" secondItem="7TY-QB-nnN" secondAttribute="trailing" constant="8" id="3DO-YD-ILG"/>
+                <constraint firstItem="Ncr-Qy-i2R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="64" id="BN5-r2-f6Y"/>
+                <constraint firstItem="rVU-Ss-06N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ERd-Ql-JST"/>
+                <constraint firstAttribute="trailing" secondItem="tor-ja-egq" secondAttribute="trailing" id="Hrh-8h-Dc6"/>
+                <constraint firstItem="fpV-eS-9Ab" firstAttribute="top" secondItem="a1Q-7k-mqN" secondAttribute="bottom" id="JsG-Hq-e41"/>
+                <constraint firstItem="XkR-Uf-9zv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="26" id="KmI-wc-v8M"/>
+                <constraint firstAttribute="trailing" secondItem="rVU-Ss-06N" secondAttribute="trailing" constant="8" id="Nce-lD-Mfv"/>
+                <constraint firstAttribute="trailing" secondItem="a1Q-7k-mqN" secondAttribute="trailing" constant="8" id="Ndx-wW-Duw"/>
+                <constraint firstItem="scJ-of-9Ta" firstAttribute="top" secondItem="fpV-eS-9Ab" secondAttribute="bottom" constant="9" id="Rtw-SR-0jI"/>
+                <constraint firstItem="yIJ-wQ-9EH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="64" id="VB1-Zg-Or2"/>
+                <constraint firstAttribute="trailing" secondItem="scJ-of-9Ta" secondAttribute="trailing" constant="8" id="Vni-3G-qZY"/>
+                <constraint firstItem="Ncr-Qy-i2R" firstAttribute="centerY" secondItem="XkR-Uf-9zv" secondAttribute="centerY" id="VxL-Lu-naC"/>
+                <constraint firstItem="a1Q-7k-mqN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="Wz8-nA-TZn"/>
+                <constraint firstItem="7TY-QB-nnN" firstAttribute="top" secondItem="fpV-eS-9Ab" secondAttribute="bottom" constant="9" id="aiC-rY-t8Q"/>
+                <constraint firstItem="a1Q-7k-mqN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="cnc-Jb-7yk"/>
+                <constraint firstItem="Ig0-A1-s3r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="hrb-ze-pm2"/>
+                <constraint firstItem="yIJ-wQ-9EH" firstAttribute="centerY" secondItem="a1Q-7k-mqN" secondAttribute="centerY" id="i2l-Kh-qcs"/>
+                <constraint firstItem="FCS-q5-xbs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="26" id="lSM-QH-QDX"/>
+                <constraint firstItem="fpV-eS-9Ab" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="or6-H6-4ce"/>
+                <constraint firstItem="tor-ja-egq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rJa-Ua-fl9"/>
+                <constraint firstItem="scJ-of-9Ta" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="slX-Hd-GS3"/>
+                <constraint firstItem="tor-ja-egq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tIC-Tr-QaU"/>
+                <constraint firstItem="7TY-QB-nnN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="tVU-zJ-be2"/>
+                <constraint firstAttribute="bottom" secondItem="tor-ja-egq" secondAttribute="bottom" id="uae-ay-ie3"/>
+                <constraint firstItem="yIJ-wQ-9EH" firstAttribute="top" secondItem="Ig0-A1-s3r" secondAttribute="bottom" constant="9" id="uzY-AO-WA4"/>
+                <constraint firstItem="Ncr-Qy-i2R" firstAttribute="centerY" secondItem="scJ-of-9Ta" secondAttribute="centerY" id="v5C-op-ddm"/>
+                <constraint firstAttribute="trailing" secondItem="Ig0-A1-s3r" secondAttribute="trailing" constant="8" id="wYV-fy-EN0"/>
+                <constraint firstAttribute="trailing" secondItem="fpV-eS-9Ab" secondAttribute="trailing" constant="8" id="yhg-Ts-TRa"/>
+            </constraints>
+            <point key="canvasLocation" x="70.5" y="80.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Configure Network-Middle-Background1-" width="375" height="41"/>
+        <image name="侧边分割线" width="816" height="1"/>
+        <image name="最近播放-图标" width="16" height="16"/>
+        <image name="本地音乐-图标" width="12" height="19"/>
+        <image name="首页-背景" width="375" height="667"/>
+    </resources>
+</document>
